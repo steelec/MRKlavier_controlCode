@@ -583,7 +583,7 @@ class MyBoard:
 		#extract velocity here
 		#This does not do a robust search of previous key presses, look-back should be tuned for piano gestures (i.e., tradeoff between slow gestures and )
 		#If polarity is swapped, changes may be needed (-1*val)
-		PLOT_ON=True#TRUE 			#Debug, show plot
+		PLOT_ON=False#TRUE 			#Debug, show plot
 		SMOOTHING_COEF=1000		#0 is no smoothing, >0 smoothing (default=10)
 		LOOK_BACK_SAMPLES=100	#Window size for velocity estimate (default=100) #SHOULD BE 200???
 		NORM_DISTANCE=100 		#100mm from released to pressed [1..0]
