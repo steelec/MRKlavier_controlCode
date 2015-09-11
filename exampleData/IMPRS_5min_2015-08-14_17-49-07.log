@@ -1,0 +1,2501 @@
+2015-08-14,17:49:07--1439567347.265885 - Main_Logger - INFO - Logger initialized, file: ./data/IMPRS_5min_2015-08-14_17-49-07.log
+2015-08-14,17:49:07--1439567347.266069 - Main_Logger - INFO - Day/time: Fri Aug 14 17:49:07 2015
+2015-08-14,17:49:07--1439567347.266154 - Main_Logger - INFO - {u'Count': 0, u'FeedbackID': u'None', u'StimNum': 0, u'StreamDat': [255, 0, 0, 0, 0, 0, 1439567347.265423], u'FeedbackNum': 0, u'BlockID': u'SETUP', u'TrialNum': 0, u'SubjectID': u'IMPRS_5min', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1439567347.265423, u'date': u'Fri Aug 14 17:49:07 2015', u'BlockType': u'Baseline', u'TrialID': u'SETUP', u'BlockNum': 0}
+2015-08-14,17:49:07--1439567347.266270 - Main_Logger - INFO - Requesting ntp time from server: 192.168.1.128
+2015-08-14,17:49:07--1439567347.267012 - Main_Logger - INFO - NTP time is: 3648556147.266926765
+2015-08-14,17:49:07--1439567347.267126 - Main_Logger - INFO - UTC time is: 1439567347.266926765
+2015-08-14,17:49:07--1439567347.267431 - Main_Logger - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
+2015-08-14,17:49:07--1439567347.267916 - Main_Logger - INFO - Serial port/dev/ttyACM6 opened.
+2015-08-14,17:49:07--1439567347.286654 - Main_Logger - INFO - Serial Port /dev/ttyACM6 has board ID: 6
+2015-08-14,17:49:07--1439567347.290886 - Board_6_Logger - INFO - ARM$ Sa0Channel 0 has name 78
+
+2015-08-14,17:49:07--1439567347.291617 - Board_6_Logger - INFO - Board 6, Channel 0 has name 78
+
+2015-08-14,17:49:07--1439567347.295837 - Board_6_Logger - INFO - ARM$ Sa1Channel 1 has name 79
+
+2015-08-14,17:49:07--1439567347.296593 - Board_6_Logger - INFO - Board 6, Channel 1 has name 79
+
+2015-08-14,17:49:07--1439567347.300828 - Board_6_Logger - INFO - ARM$ Sa2Channel 2 has name 80
+
+2015-08-14,17:49:07--1439567347.301633 - Board_6_Logger - INFO - Board 6, Channel 2 has name 80
+
+2015-08-14,17:49:07--1439567347.305878 - Board_6_Logger - INFO - ARM$ Sa3Channel 3 has name 81
+
+2015-08-14,17:49:07--1439567347.306608 - Board_6_Logger - INFO - Board 6, Channel 3 has name 81
+
+2015-08-14,17:49:07--1439567347.309808 - Board_6_Logger - INFO - ARM$ kCKeyboard calibration disabled
+
+2015-08-14,17:49:07--1439567347.310023 - Board_6_Logger - INFO - Channel 0 has min -4579 and max -2153
+
+2015-08-14,17:49:07--1439567347.310118 - Board_6_Logger - INFO - Channel 0 off threshold: {}
+2015-08-14,17:49:07--1439567347.310194 - Board_6_Logger - INFO - Channel 0 on threshold: {}
+2015-08-14,17:49:07--1439567347.310266 - Board_6_Logger - INFO - Channel 0 min value: {0: -4579}
+2015-08-14,17:49:07--1439567347.310335 - Board_6_Logger - INFO - Channel 0 max value: {0: -2153}
+2015-08-14,17:49:07--1439567347.310579 - Board_6_Logger - INFO - Channel 0 has low -4093 and high -2638 thresholds
+
+2015-08-14,17:49:07--1439567347.310777 - Board_6_Logger - INFO - Channel 1 has min -6191 and max -2882
+
+2015-08-14,17:49:07--1439567347.311006 - Board_6_Logger - INFO - Channel 1 has low -5529 and high -3543 thresholds
+
+2015-08-14,17:49:07--1439567347.311205 - Board_6_Logger - INFO - Channel 2 has min -6076 and max -2768
+
+2015-08-14,17:49:07--1439567347.311445 - Board_6_Logger - INFO - Channel 2 has low -5414 and high -3429 thresholds
+
+2015-08-14,17:49:07--1439567347.311646 - Board_6_Logger - INFO - Channel 3 has min -5160 and max -2415
+
+2015-08-14,17:49:07--1439567347.311876 - Board_6_Logger - INFO - Channel 3 has low -4611 and high -2964 thresholds
+
+2015-08-14,17:49:07--1439567347.322104 - Board_6_Logger - INFO - Channel 3 off threshold: {0: -2638, 1: -3543, 2: -3429, 3: -2964}
+2015-08-14,17:49:07--1439567347.322195 - Board_6_Logger - INFO - Channel 3 on threshold: {0: -4093, 1: -5529, 2: -5414, 3: -4611}
+2015-08-14,17:49:07--1439567347.322270 - Board_6_Logger - INFO - Channel 3 min value: {0: -4579, 1: -6191, 2: -6076, 3: -5160}
+2015-08-14,17:49:07--1439567347.322341 - Board_6_Logger - INFO - Channel 3 max value: {0: -2153, 1: -2882, 2: -2768, 3: -2415}
+2015-08-14,17:49:07--1439567347.322425 - Board_6_Logger - WARNING - Channel thresholds not found on first pass: {0: -2638, 1: -3543, 2: -3429, 3: -2964} and {0: -4093, 1: -5529, 2: -5414, 3: -4611}
+2015-08-14,17:49:07--1439567347.425784 - Board_6_Logger - INFO - Ni
+
+2015-08-14,17:49:07--1439567347.426061 - Board_6_Logger - INFO - ===== W5500 NET CONF : Static =====
+
+2015-08-14,17:49:07--1439567347.426243 - Board_6_Logger - INFO -  MAC : 00:00:00:06:C0:A8
+
+2015-08-14,17:49:07--1439567347.426394 - Board_6_Logger - INFO -  IP : 192.168.1.6
+
+2015-08-14,17:49:07--1439567347.426543 - Board_6_Logger - INFO -  GW : 192.168.1.10
+
+2015-08-14,17:49:07--1439567347.426691 - Board_6_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:07--1439567347.426894 - Board_6_Logger - INFO - =======================================
+
+2015-08-14,17:49:07--1439567347.437132 - Board_6_Logger - INFO - IP address is: 192.168.1.6
+2015-08-14,17:49:07--1439567347.443744 - Board_6_Logger - INFO - ??File touched on: Thu Dec 04 14:31:21 2014 
+
+2015-08-14,17:49:07--1439567347.443962 - Board_6_Logger - INFO - File compiled on: Dec  4 2014 14:31:25 
+
+2015-08-14,17:49:07--1439567347.444126 - Board_6_Logger - INFO - Compiled File: .\main.c 
+
+2015-08-14,17:49:07--1439567347.444276 - Board_6_Logger - INFO - Compiled Line: 1923 
+
+2015-08-14,17:49:07--1439567347.444507 - Board_6_Logger - INFO - Master Clk Freq: 48000000, Bus Clk Freq: 48000000 
+
+2015-08-14,17:49:07--1439567347.444775 - Board_6_Logger - INFO - ARM$ ?cCurrent Configuration, printing contents:
+
+2015-08-14,17:49:07--1439567347.445004 - Board_6_Logger - INFO - EEPROM ID 0, Board ID 6, Board Name Fungible 2.1:
+
+2015-08-14,17:49:07--1439567347.445196 - Board_6_Logger - INFO - Analog Channel Names: 78,	79,	80,	81
+
+2015-08-14,17:49:07--1439567347.445355 - Board_6_Logger - INFO - Amp Gains: 7,	7,	7,	7
+
+2015-08-14,17:49:07--1439567347.445517 - Board_6_Logger - INFO - Amp Cutoff: 3,	3,	3,	3
+
+2015-08-14,17:49:07--1439567347.445729 - Board_6_Logger - INFO - Internal SAR Reference Dac value is: 128
+
+2015-08-14,17:49:07--1439567347.445918 - Board_6_Logger - INFO - Epot val 0 gives Vadj= 1.258818V
+
+2015-08-14,17:49:07--1439567347.446138 - Board_6_Logger - INFO - Epot val 0 gives max LED current 0.052068mA
+
+2015-08-14,17:49:07--1439567347.446390 - Board_6_Logger - INFO - Adjustable LDO Voltage: 1.258818, Max LED current 0.052068
+
+2015-08-14,17:49:07--1439567347.446627 - Board_6_Logger - INFO - For LED channel 0: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.446866 - Board_6_Logger - INFO - For LED channel 1: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:07--1439567347.447103 - Board_6_Logger - INFO - For LED channel 2: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:07--1439567347.447353 - Board_6_Logger - INFO - For LED channel 3: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.447598 - Board_6_Logger - INFO - For LED channel 4: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.447838 - Board_6_Logger - INFO - For LED channel 5: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.448076 - Board_6_Logger - INFO - For LED channel 6: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.448314 - Board_6_Logger - INFO - For LED channel 7: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.448554 - Board_6_Logger - INFO - For LED channel 8: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:07--1439567347.448793 - Board_6_Logger - INFO - For LED channel 9: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:07--1439567347.449035 - Board_6_Logger - INFO - For LED channel 10: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:07--1439567347.449276 - Board_6_Logger - INFO - For LED channel 11: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:07--1439567347.449505 - Board_6_Logger - INFO - For LED channel 12: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.449736 - Board_6_Logger - INFO - For LED channel 13: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.449969 - Board_6_Logger - INFO - For LED channel 14: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.450211 - Board_6_Logger - INFO - For LED channel 15: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:07--1439567347.963099 - Board_6_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.963565 - Board_6_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.963919 - Board_6_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.964262 - Board_6_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.964602 - Board_6_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.964938 - Board_6_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.965273 - Board_6_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.965606 - Board_6_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.965939 - Board_6_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.966275 - Board_6_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.966608 - Board_6_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.966940 - Board_6_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.967271 - Board_6_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.967612 - Board_6_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.967948 - Board_6_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:07--1439567347.968285 - Board_6_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.322118 - Board_6_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.322571 - Board_6_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.322923 - Board_6_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.323266 - Board_6_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.323623 - Board_6_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.323963 - Board_6_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.324299 - Board_6_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.324633 - Board_6_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.324967 - Board_6_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.325301 - Board_6_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.325633 - Board_6_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.325967 - Board_6_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.326311 - Board_6_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.326645 - Board_6_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.326979 - Board_6_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.327315 - Board_6_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.521079 - Board_6_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.521529 - Board_6_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.521881 - Board_6_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.522222 - Board_6_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.522560 - Board_6_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.522897 - Board_6_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.523232 - Board_6_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.523577 - Board_6_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.523915 - Board_6_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.524249 - Board_6_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.524581 - Board_6_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.524913 - Board_6_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.525243 - Board_6_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.525577 - Board_6_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.525909 - Board_6_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.526244 - Board_6_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.591045 - Board_6_Logger - INFO - Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.591499 - Board_6_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.591853 - Board_6_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.592194 - Board_6_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.592533 - Board_6_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.592869 - Board_6_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.593206 - Board_6_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.593542 - Board_6_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:08--1439567348.603786 - Board_6_Logger - INFO - Enabling Networking
+2015-08-14,17:49:08--1439567348.606972 - Board_6_Logger - INFO - NEEthernet already initialized
+
+2015-08-14,17:49:08--1439567348.607094 - Board_6_Logger - INFO - Sending Ping to 192.168.1.6 confirm networking is enabled
+2015-08-14,17:49:08--1439567348.632796 - Board_6_Logger - INFO - Ping 192.168.1.6 successful, networking enabled!
+2015-08-14,17:49:08--1439567348.633096 - Board_6_Logger - INFO - Switching to local NTP IP: 192.168.1.128
+2015-08-14,17:49:08--1439567348.648967 - Board_6_Logger - INFO - ===== W5500 NET CONF : Static =====
+
+2015-08-14,17:49:08--1439567348.649216 - Board_6_Logger - INFO -  MAC : 00:00:00:06:C0:A8
+
+2015-08-14,17:49:08--1439567348.649436 - Board_6_Logger - INFO -  IP : 192.168.1.6
+
+2015-08-14,17:49:08--1439567348.649611 - Board_6_Logger - INFO -  GW : 192.168.1.10
+
+2015-08-14,17:49:08--1439567348.649771 - Board_6_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:08--1439567348.649983 - Board_6_Logger - INFO - =======================================
+
+2015-08-14,17:49:08--1439567348.650269 - Board_6_Logger - INFO - ARM$ Nn192.168.1.128NTP address is: 192.168.1.128
+
+2015-08-14,17:49:08--1439567348.660548 - Board_6_Logger - INFO - Querying local NTP server
+2015-08-14,17:49:08--1439567348.764158 - Board_6_Logger - INFO - NNOriginally received 56, rptr set to 56
+
+2015-08-14,17:49:08--1439567348.764473 - Board_6_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:08--1439567348.764834 - Board_6_Logger - INFO - Send time (time sent) seconds 3648556148 and microseconds 636752, Counter3: 457559844 
+
+2015-08-14,17:49:08--1439567348.765211 - Board_6_Logger - INFO - Sent time (time after sending) seconds 3648556148 and microseconds 638622, Counter3: 457560031  
+
+2015-08-14,17:49:08--1439567348.765585 - Board_6_Logger - INFO - Receive time (reply received) seconds 3648556148 and microseconds 641582, Counter3: 457560327 
+
+2015-08-14,17:49:08--1439567348.765878 - Board_6_Logger - INFO - Full transit and receive duration (subtract) is 4829.88 microseconds
+
+2015-08-14,17:49:08--1439567348.766144 - Board_6_Logger - INFO - Local process time microseconds 1869.68 (float, difference)
+
+2015-08-14,17:49:08--1439567348.766426 - Board_6_Logger - INFO - Remote processing time is 2960.21 microseconds (float, difference)
+
+2015-08-14,17:49:08--1439567348.766630 - Board_6_Logger - INFO - roundtrip delay (miliseconds): 4.88043
+
+2015-08-14,17:49:08--1439567348.766838 - Board_6_Logger - INFO - clock offset (seconds): 0	 and us: 26639
+
+2015-08-14,17:49:08--1439567348.767263 - Board_6_Logger - INFO - Received NTP time is secs,fracs: 3648556148,2859725642, recv counter is: 457560327, and 423 seconds since last sync'd
+
+2015-08-14,17:49:08--1439567348.767700 - Board_6_Logger - INFO - Last NTP update secs,fracs: 3648555725,3127991860, Counter3 last update count: 415268998, current Counter3: 457560705
+
+2015-08-14,17:49:08--1439567348.767888 - Board_6_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:08--1439567348.778123 - Board_6_Logger - INFO - Getting time update.
+2015-08-14,17:49:08--1439567348.778223 - Board_6_Logger - INFO - Getting time update.
+2015-08-14,17:49:08--1439567348.881873 - Board_6_Logger - INFO - ?tCurrent time (counter_3):	457571534, with 0 overflow
+
+2015-08-14,17:49:08--1439567348.882175 - Board_6_Logger - INFO - Time elapsed in microseconds (counter_3):	180
+
+2015-08-14,17:49:08--1439567348.882438 - Board_6_Logger - INFO - Counter 2 reads: 		4575 seconds,	334 ms,	614.833 us 
+
+2015-08-14,17:49:08--1439567348.882658 - Board_6_Logger - INFO - Originally received 56, rptr set to 56
+
+2015-08-14,17:49:08--1439567348.882873 - Board_6_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:08--1439567348.883209 - Board_6_Logger - INFO - Send time (time sent) seconds 3648556148 and microseconds 778671, Counter3: 457571611 
+
+2015-08-14,17:49:08--1439567348.883583 - Board_6_Logger - INFO - Sent time (time after sending) seconds 3648556148 and microseconds 780551, Counter3: 457571799  
+
+2015-08-14,17:49:08--1439567348.883941 - Board_6_Logger - INFO - Receive time (reply received) seconds 3648556148 and microseconds 783521, Counter3: 457572096 
+
+2015-08-14,17:49:08--1439567348.884237 - Board_6_Logger - INFO - Full transit and receive duration (subtract) is 4850.39 microseconds
+
+2015-08-14,17:49:08--1439567348.884498 - Board_6_Logger - INFO - Local process time microseconds 1880.17 (float, difference)
+
+2015-08-14,17:49:08--1439567348.884775 - Board_6_Logger - INFO - Remote processing time is 2970.22 microseconds (float, difference)
+
+2015-08-14,17:49:08--1439567348.884974 - Board_6_Logger - INFO - roundtrip delay (miliseconds): 4.87804
+
+2015-08-14,17:49:08--1439567348.885173 - Board_6_Logger - INFO - clock offset (seconds): 0	 and us: 2403
+
+2015-08-14,17:49:08--1439567348.885582 - Board_6_Logger - INFO - Received NTP time is secs,fracs: 3648556148,3365165563, recv counter is: 457572096, and 0 seconds since last sync'd
+
+2015-08-14,17:49:08--1439567348.886003 - Board_6_Logger - INFO - Last NTP update secs,fracs: 3648556148,2859725642, Counter3 last update count: 457560327, current Counter3: 457572475
+
+2015-08-14,17:49:08--1439567348.886188 - Board_6_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:08--1439567348.886426 - Board_6_Logger - INFO - Current time (counter_3):	457572548, with 0 overflow
+
+2015-08-14,17:49:08--1439567348.896696 - Board_6_Logger - INFO - Board NTP originate time seconds (float): 3648556148.778670788
+2015-08-14,17:49:08--1439567348.896797 - Board_6_Logger - INFO - Board counter3 at originate: 457571611
+2015-08-14,17:49:08--1439567348.896885 - Board_6_Logger - INFO - Offset is (seconds): 0.002403
+2015-08-14,17:49:08--1439567348.896961 - Board_6_Logger - INFO - Received NTP time seconds (int): 3648556148, and fractional (int): 3365165563
+2015-08-14,17:49:08--1439567348.897039 - Board_6_Logger - INFO - Received NTP time seconds (float): 3648556148.783513546
+2015-08-14,17:49:08--1439567348.897110 - Board_6_Logger - INFO - Counter3 value at received NTP time : 457572096
+2015-08-14,17:49:08--1439567348.897182 - Board_6_Logger - INFO - Last NTP sync time seconds (int): 3648556148, and fractional (int): 2859725642
+2015-08-14,17:49:08--1439567348.897256 - Board_6_Logger - INFO - Last NTP sync time seconds (float): 3648556148.665831566
+2015-08-14,17:49:08--1439567348.897326 - Board_6_Logger - INFO - Last NTP sync time, counter3 value: 457560327
+2015-08-14,17:49:08--1439567348.897397 - Board_6_Logger - INFO - Received NTP time seconds (float): 3648556148.783513546
+2015-08-14,17:49:08--1439567348.897471 - Board_6_Logger - INFO - Board NTP from Counter3 receive count: 3648556148.783521652
+2015-08-14,17:49:08--1439567348.897564 - Board_6_Logger - INFO - Host UTC time (includes offset) from NTP at <?t> was: 1439567348.781484604
+2015-08-14,17:49:08--1439567348.898289 - Board_6_Logger - INFO - Current UTC time from NTP is (includes offset): 1439567348.898228645
+2015-08-14,17:49:08--1439567348.898412 - Board_6_Logger - INFO - Received time from counter 3: 3648556148.783521652
+2015-08-14,17:49:08--1439567348.898496 - Board_6_Logger - INFO - Received time from board NTP: 3648556148.783513546
+2015-08-14,17:49:08--1439567348.898573 - Board_6_Logger - INFO - Initializing data stream socket on board
+2015-08-14,17:49:08--1439567348.901833 - Board_6_Logger - INFO - <NSt> command sent to board, initialized
+2015-08-14,17:49:08--1439567348.912003 - Board_6_Logger - INFO - Going to connect to socket on port: 9004 and IP: 192.168.1.6
+2015-08-14,17:49:08--1439567348.912625 - Board_6_Logger - INFO - NStSocket 3 opened for TCP streaming
+
+2015-08-14,17:49:08--1439567348.912908 - Board_6_Logger - INFO - Socket 3 does not show as TCP port, rather 19
+
+2015-08-14,17:49:08--1439567348.916394 - Board_6_Logger - INFO - ARM$ 3:Waiting for remote connection from TCP data stream. Listening on port [9004]3:Connected to host at - 192.168.1.128 : 40494
+
+2015-08-14,17:49:08--1439567348.916551 - Board_6_Logger - INFO - Data link established---will return first sample then wait 1 seconds. Expect buffer over-run, this is normal while waiting.
+2015-08-14,17:49:09--1439567349.919060 - Board_6_Logger - INFO - Initilization done on this board, ready to collect data!
+2015-08-14,17:49:09--1439567349.919590 - Main_Logger - INFO - Serial port/dev/ttyACM5 opened.
+2015-08-14,17:49:09--1439567349.938583 - Main_Logger - INFO - Serial Port /dev/ttyACM5 has board ID: 5
+2015-08-14,17:49:09--1439567349.942723 - Board_5_Logger - INFO - ARM$ Sa0Channel 0 has name 74
+
+2015-08-14,17:49:09--1439567349.943475 - Board_5_Logger - INFO - Board 5, Channel 0 has name 74
+
+2015-08-14,17:49:09--1439567349.947716 - Board_5_Logger - INFO - ARM$ Sa1Channel 1 has name 75
+
+2015-08-14,17:49:09--1439567349.948513 - Board_5_Logger - INFO - Board 5, Channel 1 has name 75
+
+2015-08-14,17:49:09--1439567349.952722 - Board_5_Logger - INFO - ARM$ Sa2Channel 2 has name 76
+
+2015-08-14,17:49:09--1439567349.953534 - Board_5_Logger - INFO - Board 5, Channel 2 has name 76
+
+2015-08-14,17:49:09--1439567349.957692 - Board_5_Logger - INFO - ARM$ Sa3Channel 3 has name 77
+
+2015-08-14,17:49:09--1439567349.958553 - Board_5_Logger - INFO - Board 5, Channel 3 has name 77
+
+2015-08-14,17:49:09--1439567349.961690 - Board_5_Logger - INFO - ARM$ kCKeyboard calibration disabled
+
+2015-08-14,17:49:09--1439567349.961931 - Board_5_Logger - INFO - Channel 0 has min -3519 and max -1892
+
+2015-08-14,17:49:09--1439567349.962170 - Board_5_Logger - INFO - Channel 0 has low -3193 and high -2217 thresholds
+
+2015-08-14,17:49:09--1439567349.962373 - Board_5_Logger - INFO - Channel 1 has min -3697 and max -1817
+
+2015-08-14,17:49:09--1439567349.962610 - Board_5_Logger - INFO - Channel 1 has low -3321 and high -2193 thresholds
+
+2015-08-14,17:49:09--1439567349.962811 - Board_5_Logger - INFO - Channel 2 has min -3165 and max -1815
+
+2015-08-14,17:49:09--1439567349.963049 - Board_5_Logger - INFO - Channel 2 has low -2895 and high -2085 thresholds
+
+2015-08-14,17:49:09--1439567349.963251 - Board_5_Logger - INFO - Channel 3 has min -3531 and max -1846
+
+2015-08-14,17:49:09--1439567349.963495 - Board_5_Logger - INFO - Channel 3 has low -3194 and high -2183 thresholds
+
+2015-08-14,17:49:09--1439567349.973764 - Board_5_Logger - INFO - Channel 3 off threshold: {0: -2217, 1: -2193, 2: -2085, 3: -2183}
+2015-08-14,17:49:09--1439567349.973862 - Board_5_Logger - INFO - Channel 3 on threshold: {0: -3193, 1: -3321, 2: -2895, 3: -3194}
+2015-08-14,17:49:09--1439567349.973939 - Board_5_Logger - INFO - Channel 3 min value: {0: -3519, 1: -3697, 2: -3165, 3: -3531}
+2015-08-14,17:49:09--1439567349.974014 - Board_5_Logger - INFO - Channel 3 max value: {0: -1892, 1: -1817, 2: -1815, 3: -1846}
+2015-08-14,17:49:10--1439567350.076671 - Board_5_Logger - INFO - Ni
+
+2015-08-14,17:49:10--1439567350.076926 - Board_5_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:10--1439567350.077100 - Board_5_Logger - INFO -  MAC : 00:00:00:05:CD:EF
+
+2015-08-14,17:49:10--1439567350.077248 - Board_5_Logger - INFO -  IP : 192.168.1.5
+
+2015-08-14,17:49:10--1439567350.077395 - Board_5_Logger - INFO -  GW : 192.168.1.1
+
+2015-08-14,17:49:10--1439567350.077543 - Board_5_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:10--1439567350.077750 - Board_5_Logger - INFO - =======================================
+
+2015-08-14,17:49:10--1439567350.087987 - Board_5_Logger - INFO - IP address is: 192.168.1.5
+2015-08-14,17:49:10--1439567350.094676 - Board_5_Logger - INFO - ??File touched on: Thu Dec 04 14:31:21 2014 
+
+2015-08-14,17:49:10--1439567350.094904 - Board_5_Logger - INFO - File compiled on: Dec  4 2014 14:31:25 
+
+2015-08-14,17:49:10--1439567350.095075 - Board_5_Logger - INFO - Compiled File: .\main.c 
+
+2015-08-14,17:49:10--1439567350.095229 - Board_5_Logger - INFO - Compiled Line: 1923 
+
+2015-08-14,17:49:10--1439567350.095474 - Board_5_Logger - INFO - Master Clk Freq: 48000000, Bus Clk Freq: 48000000 
+
+2015-08-14,17:49:10--1439567350.095755 - Board_5_Logger - INFO - ARM$ ?cCurrent Configuration, printing contents:
+
+2015-08-14,17:49:10--1439567350.095989 - Board_5_Logger - INFO - EEPROM ID 0, Board ID 5, Board Name Fungible 2.1:
+
+2015-08-14,17:49:10--1439567350.096183 - Board_5_Logger - INFO - Analog Channel Names: 74,	75,	76,	77
+
+2015-08-14,17:49:10--1439567350.096356 - Board_5_Logger - INFO - Amp Gains: 7,	7,	7,	7
+
+2015-08-14,17:49:10--1439567350.096526 - Board_5_Logger - INFO - Amp Cutoff: 3,	3,	3,	3
+
+2015-08-14,17:49:10--1439567350.096740 - Board_5_Logger - INFO - Internal SAR Reference Dac value is: 128
+
+2015-08-14,17:49:10--1439567350.096938 - Board_5_Logger - INFO - Epot val 128 gives Vadj= 3.107303V
+
+2015-08-14,17:49:10--1439567350.097161 - Board_5_Logger - INFO - Epot val 4 gives max LED current 0.021334mA
+
+2015-08-14,17:49:10--1439567350.097416 - Board_5_Logger - INFO - Adjustable LDO Voltage: 3.107303, Max LED current 0.021334
+
+2015-08-14,17:49:10--1439567350.097654 - Board_5_Logger - INFO - For LED channel 0: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:10--1439567350.097896 - Board_5_Logger - INFO - For LED channel 1: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.098137 - Board_5_Logger - INFO - For LED channel 2: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:10--1439567350.098377 - Board_5_Logger - INFO - For LED channel 3: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.098617 - Board_5_Logger - INFO - For LED channel 4: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.098858 - Board_5_Logger - INFO - For LED channel 5: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.099098 - Board_5_Logger - INFO - For LED channel 6: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.099344 - Board_5_Logger - INFO - For LED channel 7: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.099588 - Board_5_Logger - INFO - For LED channel 8: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:10--1439567350.099831 - Board_5_Logger - INFO - For LED channel 9: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:10--1439567350.100077 - Board_5_Logger - INFO - For LED channel 10: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:10--1439567350.100324 - Board_5_Logger - INFO - For LED channel 11: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:10--1439567350.100560 - Board_5_Logger - INFO - For LED channel 12: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.100802 - Board_5_Logger - INFO - For LED channel 13: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.101039 - Board_5_Logger - INFO - For LED channel 14: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.101275 - Board_5_Logger - INFO - For LED channel 15: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:10--1439567350.614882 - Board_5_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.615353 - Board_5_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.615717 - Board_5_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.616064 - Board_5_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.616410 - Board_5_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.616751 - Board_5_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.617093 - Board_5_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.617432 - Board_5_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.617774 - Board_5_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.618111 - Board_5_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.618448 - Board_5_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.618797 - Board_5_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.619136 - Board_5_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.619479 - Board_5_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.619822 - Board_5_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.620164 - Board_5_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.974002 - Board_5_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.974462 - Board_5_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.974819 - Board_5_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.975165 - Board_5_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.975521 - Board_5_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.975868 - Board_5_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.976210 - Board_5_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.976551 - Board_5_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.976892 - Board_5_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.977231 - Board_5_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.977568 - Board_5_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.977909 - Board_5_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.978249 - Board_5_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.978588 - Board_5_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.978924 - Board_5_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:10--1439567350.979267 - Board_5_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.172949 - Board_5_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.173411 - Board_5_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.173759 - Board_5_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.174108 - Board_5_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.174451 - Board_5_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.174789 - Board_5_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.175129 - Board_5_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.175481 - Board_5_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.175832 - Board_5_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.176173 - Board_5_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.176512 - Board_5_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.176849 - Board_5_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.177185 - Board_5_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.177521 - Board_5_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.177862 - Board_5_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.178205 - Board_5_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.244058 - Board_5_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.244525 - Board_5_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.244881 - Board_5_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.245225 - Board_5_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.245572 - Board_5_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.245911 - Board_5_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.246253 - Board_5_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.246597 - Board_5_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:11--1439567351.256848 - Board_5_Logger - INFO - Enabling Networking
+2015-08-14,17:49:11--1439567351.259910 - Board_5_Logger - INFO - NEEthernet already initialized
+
+2015-08-14,17:49:11--1439567351.260034 - Board_5_Logger - INFO - Sending Ping to 192.168.1.5 confirm networking is enabled
+2015-08-14,17:49:11--1439567351.283594 - Board_5_Logger - INFO - Ping 192.168.1.5 successful, networking enabled!
+2015-08-14,17:49:11--1439567351.283842 - Board_5_Logger - INFO - Switching to local NTP IP: 192.168.1.128
+2015-08-14,17:49:11--1439567351.300014 - Board_5_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:11--1439567351.300285 - Board_5_Logger - INFO -  MAC : 00:00:00:05:CD:EF
+
+2015-08-14,17:49:11--1439567351.300442 - Board_5_Logger - INFO -  IP : 192.168.1.5
+
+2015-08-14,17:49:11--1439567351.300592 - Board_5_Logger - INFO -  GW : 192.168.1.1
+
+2015-08-14,17:49:11--1439567351.300800 - Board_5_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:11--1439567351.301021 - Board_5_Logger - INFO - =======================================
+
+2015-08-14,17:49:11--1439567351.301310 - Board_5_Logger - INFO - ARM$ Nn192.168.1.128NTP address is: 192.168.1.128
+
+2015-08-14,17:49:11--1439567351.311653 - Board_5_Logger - INFO - Querying local NTP server
+2015-08-14,17:49:11--1439567351.415066 - Board_5_Logger - INFO - NNOriginally received 56, rptr set to 56
+
+2015-08-14,17:49:11--1439567351.415388 - Board_5_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:11--1439567351.415745 - Board_5_Logger - INFO - Send time (time sent) seconds 3648556151 and microseconds 283664, Counter3: 457820664 
+
+2015-08-14,17:49:11--1439567351.416123 - Board_5_Logger - INFO - Sent time (time after sending) seconds 3648556151 and microseconds 285544, Counter3: 457820852  
+
+2015-08-14,17:49:11--1439567351.416499 - Board_5_Logger - INFO - Receive time (reply received) seconds 3648556151 and microseconds 288494, Counter3: 457821147 
+
+2015-08-14,17:49:11--1439567351.416787 - Board_5_Logger - INFO - Full transit and receive duration (subtract) is 4829.88 microseconds
+
+2015-08-14,17:49:11--1439567351.417050 - Board_5_Logger - INFO - Local process time microseconds 1879.69 (float, difference)
+
+2015-08-14,17:49:11--1439567351.417372 - Board_5_Logger - INFO - Remote processing time is 2950.19 microseconds (float, difference)
+
+2015-08-14,17:49:11--1439567351.417589 - Board_5_Logger - INFO - roundtrip delay (miliseconds): 4.87614
+
+2015-08-14,17:49:11--1439567351.417800 - Board_5_Logger - INFO - clock offset (seconds): 0	 and us: 30641
+
+2015-08-14,17:49:11--1439567351.418225 - Board_5_Logger - INFO - Received NTP time is secs,fracs: 3648556151,1360401853, recv counter is: 457821147, and 423 seconds since last sync'd
+
+2015-08-14,17:49:11--1439567351.418655 - Board_5_Logger - INFO - Last NTP update secs,fracs: 3648555728,1646063985, Counter3 last update count: 415530623, current Counter3: 457821538
+
+2015-08-14,17:49:11--1439567351.418843 - Board_5_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:11--1439567351.429071 - Board_5_Logger - INFO - Getting time update.
+2015-08-14,17:49:11--1439567351.429188 - Board_5_Logger - INFO - Getting time update.
+2015-08-14,17:49:11--1439567351.532864 - Board_5_Logger - INFO - ?tCurrent time (counter_3):	457832356, with 0 overflow
+
+2015-08-14,17:49:11--1439567351.533206 - Board_5_Logger - INFO - Time elapsed in microseconds (counter_3):	170
+
+2015-08-14,17:49:11--1439567351.533462 - Board_5_Logger - INFO - Counter 2 reads: 		4577 seconds,	942 ms,	582.083 us 
+
+2015-08-14,17:49:11--1439567351.533682 - Board_5_Logger - INFO - Originally received 56, rptr set to 56
+
+2015-08-14,17:49:11--1439567351.533897 - Board_5_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:11--1439567351.534288 - Board_5_Logger - INFO - Send time (time sent) seconds 3648556151 and microseconds 429633, Counter3: 457832436 
+
+2015-08-14,17:49:11--1439567351.534665 - Board_5_Logger - INFO - Sent time (time after sending) seconds 3648556151 and microseconds 431523, Counter3: 457832625  
+
+2015-08-14,17:49:11--1439567351.535029 - Board_5_Logger - INFO - Receive time (reply received) seconds 3648556151 and microseconds 434473, Counter3: 457832920 
+
+2015-08-14,17:49:11--1439567351.535312 - Board_5_Logger - INFO - Full transit and receive duration (subtract) is 4839.9 microseconds
+
+2015-08-14,17:49:11--1439567351.535588 - Board_5_Logger - INFO - Local process time microseconds 1889.71 (float, difference)
+
+2015-08-14,17:49:11--1439567351.535868 - Board_5_Logger - INFO - Remote processing time is 2950.19 microseconds (float, difference)
+
+2015-08-14,17:49:11--1439567351.536069 - Board_5_Logger - INFO - roundtrip delay (miliseconds): 4.86755
+
+2015-08-14,17:49:11--1439567351.536270 - Board_5_Logger - INFO - clock offset (seconds): 0	 and us: 2349
+
+2015-08-14,17:49:11--1439567351.536686 - Board_5_Logger - INFO - Received NTP time is secs,fracs: 3648556151,1865806208, recv counter is: 457832920, and 0 seconds since last sync'd
+
+2015-08-14,17:49:11--1439567351.537110 - Board_5_Logger - INFO - Last NTP update secs,fracs: 3648556151,1360401853, Counter3 last update count: 457821147, current Counter3: 457833299
+
+2015-08-14,17:49:11--1439567351.537295 - Board_5_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:11--1439567351.537537 - Board_5_Logger - INFO - Current time (counter_3):	457833371, with 0 overflow
+
+2015-08-14,17:49:11--1439567351.547820 - Board_5_Logger - INFO - Board NTP originate time seconds (float): 3648556151.429633141
+2015-08-14,17:49:11--1439567351.547938 - Board_5_Logger - INFO - Board counter3 at originate: 457832436
+2015-08-14,17:49:11--1439567351.548034 - Board_5_Logger - INFO - Offset is (seconds): 0.002349
+2015-08-14,17:49:11--1439567351.548125 - Board_5_Logger - INFO - Received NTP time seconds (int): 3648556151, and fractional (int): 1865806208
+2015-08-14,17:49:11--1439567351.548205 - Board_5_Logger - INFO - Received NTP time seconds (float): 3648556151.434416771
+2015-08-14,17:49:11--1439567351.548280 - Board_5_Logger - INFO - Counter3 value at received NTP time : 457832920
+2015-08-14,17:49:11--1439567351.548354 - Board_5_Logger - INFO - Last NTP sync time seconds (int): 3648556151, and fractional (int): 1360401853
+2015-08-14,17:49:11--1439567351.548429 - Board_5_Logger - INFO - Last NTP sync time seconds (float): 3648556151.316743374
+2015-08-14,17:49:11--1439567351.548500 - Board_5_Logger - INFO - Last NTP sync time, counter3 value: 457821147
+2015-08-14,17:49:11--1439567351.548572 - Board_5_Logger - INFO - Received NTP time seconds (float): 3648556151.434416771
+2015-08-14,17:49:11--1439567351.548649 - Board_5_Logger - INFO - Board NTP from Counter3 receive count: 3648556151.434473515
+2015-08-14,17:49:11--1439567351.548753 - Board_5_Logger - INFO - Host UTC time (includes offset) from NTP at <?t> was: 1439567351.432366848
+2015-08-14,17:49:11--1439567351.549524 - Board_5_Logger - INFO - Current UTC time from NTP is (includes offset): 1439567351.549443245
+2015-08-14,17:49:11--1439567351.549651 - Board_5_Logger - INFO - Received time from counter 3: 3648556151.434473515
+2015-08-14,17:49:11--1439567351.549739 - Board_5_Logger - INFO - Received time from board NTP: 3648556151.434416771
+2015-08-14,17:49:11--1439567351.549816 - Board_5_Logger - INFO - Initializing data stream socket on board
+2015-08-14,17:49:11--1439567351.553740 - Board_5_Logger - INFO - <NSt> command sent to board, initialized
+2015-08-14,17:49:11--1439567351.563935 - Board_5_Logger - INFO - Going to connect to socket on port: 9004 and IP: 192.168.1.5
+2015-08-14,17:49:11--1439567351.564595 - Board_5_Logger - INFO - NStSocket 3 opened for TCP streaming
+
+2015-08-14,17:49:11--1439567351.564871 - Board_5_Logger - INFO - Socket 3 does not show as TCP port, rather 19
+
+2015-08-14,17:49:11--1439567351.569144 - Board_5_Logger - INFO - ARM$ 3:Waiting for remote connection from TCP data stream. Listening on port [9004]3:Connected to host at - 192.168.1.128 : 39668
+
+2015-08-14,17:49:11--1439567351.569286 - Board_5_Logger - INFO - Data link established---will return first sample then wait 1 seconds. Expect buffer over-run, this is normal while waiting.
+2015-08-14,17:49:12--1439567352.571721 - Board_5_Logger - INFO - Initilization done on this board, ready to collect data!
+2015-08-14,17:49:12--1439567352.572203 - Main_Logger - INFO - Serial port/dev/ttyACM4 opened.
+2015-08-14,17:49:12--1439567352.580048 - Main_Logger - INFO - Serial Port /dev/ttyACM4 has board ID: 3
+2015-08-14,17:49:12--1439567352.585066 - Board_3_Logger - INFO - ARM$ Sa0Channel 0 has name 66
+
+2015-08-14,17:49:12--1439567352.585779 - Board_3_Logger - INFO - Board 3, Channel 0 has name 66
+
+2015-08-14,17:49:12--1439567352.589961 - Board_3_Logger - INFO - ARM$ Sa1Channel 1 has name 67
+
+2015-08-14,17:49:12--1439567352.590079 - Board_3_Logger - INFO - Board 3, Channel 1 has name 67
+
+2015-08-14,17:49:12--1439567352.594972 - Board_3_Logger - INFO - ARM$ Sa2Channel 2 has name 68
+
+2015-08-14,17:49:12--1439567352.595798 - Board_3_Logger - INFO - Board 3, Channel 2 has name 68
+
+2015-08-14,17:49:12--1439567352.600066 - Board_3_Logger - INFO - ARM$ Sa3Channel 3 has name 69
+
+2015-08-14,17:49:12--1439567352.600743 - Board_3_Logger - INFO - Board 3, Channel 3 has name 69
+
+2015-08-14,17:49:12--1439567352.603976 - Board_3_Logger - INFO - ARM$ kCKeyboard calibration disabled
+
+2015-08-14,17:49:12--1439567352.604238 - Board_3_Logger - INFO - Channel 0 has min -2901 and max -1330
+
+2015-08-14,17:49:12--1439567352.604483 - Board_3_Logger - INFO - Channel 0 has low -2586 and high -1644 thresholds
+
+2015-08-14,17:49:12--1439567352.604690 - Board_3_Logger - INFO - Channel 1 has min -3704 and max -1799
+
+2015-08-14,17:49:12--1439567352.604928 - Board_3_Logger - INFO - Channel 1 has low -3323 and high -2180 thresholds
+
+2015-08-14,17:49:12--1439567352.605138 - Board_3_Logger - INFO - Channel 2 has min -2569 and max -1153
+
+2015-08-14,17:49:12--1439567352.605373 - Board_3_Logger - INFO - Channel 2 has low -2285 and high -1436 thresholds
+
+2015-08-14,17:49:12--1439567352.605575 - Board_3_Logger - INFO - Channel 3 has min -2249 and max -1138
+
+2015-08-14,17:49:12--1439567352.605808 - Board_3_Logger - INFO - Channel 3 has low -2026 and high -1360 thresholds
+
+2015-08-14,17:49:12--1439567352.605964 - Board_3_Logger - INFO - Channel 3 off threshold: {0: -1644, 1: -2180, 2: -1436, 3: -1360}
+2015-08-14,17:49:12--1439567352.606048 - Board_3_Logger - INFO - Channel 3 on threshold: {0: -2586, 1: -3323, 2: -2285, 3: -2026}
+2015-08-14,17:49:12--1439567352.606123 - Board_3_Logger - INFO - Channel 3 min value: {0: -2901, 1: -3704, 2: -2569, 3: -2249}
+2015-08-14,17:49:12--1439567352.606194 - Board_3_Logger - INFO - Channel 3 max value: {0: -1330, 1: -1799, 2: -1153, 3: -1138}
+2015-08-14,17:49:12--1439567352.708998 - Board_3_Logger - INFO - ARM$ Ni
+
+2015-08-14,17:49:12--1439567352.709271 - Board_3_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:12--1439567352.709449 - Board_3_Logger - INFO -  MAC : 00:00:00:03:CD:EF
+
+2015-08-14,17:49:12--1439567352.709601 - Board_3_Logger - INFO -  IP : 192.168.1.3
+
+2015-08-14,17:49:12--1439567352.709747 - Board_3_Logger - INFO -  GW : 192.168.1.1
+
+2015-08-14,17:49:12--1439567352.709898 - Board_3_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:12--1439567352.710101 - Board_3_Logger - INFO - =======================================
+
+2015-08-14,17:49:12--1439567352.720329 - Board_3_Logger - INFO - IP address is: 192.168.1.3
+2015-08-14,17:49:12--1439567352.726872 - Board_3_Logger - INFO - ??File touched on: Thu Dec 04 14:31:21 2014 
+
+2015-08-14,17:49:12--1439567352.727096 - Board_3_Logger - INFO - File compiled on: Dec  4 2014 14:31:25 
+
+2015-08-14,17:49:12--1439567352.727263 - Board_3_Logger - INFO - Compiled File: .\main.c 
+
+2015-08-14,17:49:12--1439567352.727423 - Board_3_Logger - INFO - Compiled Line: 1923 
+
+2015-08-14,17:49:12--1439567352.727663 - Board_3_Logger - INFO - Master Clk Freq: 48000000, Bus Clk Freq: 48000000 
+
+2015-08-14,17:49:12--1439567352.727935 - Board_3_Logger - INFO - ARM$ ?cCurrent Configuration, printing contents:
+
+2015-08-14,17:49:12--1439567352.728170 - Board_3_Logger - INFO - EEPROM ID 0, Board ID 3, Board Name Fungible 2.1:
+
+2015-08-14,17:49:12--1439567352.728366 - Board_3_Logger - INFO - Analog Channel Names: 66,	67,	68,	69
+
+2015-08-14,17:49:12--1439567352.728527 - Board_3_Logger - INFO - Amp Gains: 7,	7,	7,	7
+
+2015-08-14,17:49:12--1439567352.728692 - Board_3_Logger - INFO - Amp Cutoff: 3,	3,	3,	3
+
+2015-08-14,17:49:12--1439567352.728905 - Board_3_Logger - INFO - Internal SAR Reference Dac value is: 128
+
+2015-08-14,17:49:12--1439567352.729100 - Board_3_Logger - INFO - Epot val 128 gives Vadj= 3.107303V
+
+2015-08-14,17:49:12--1439567352.729322 - Board_3_Logger - INFO - Epot val 4 gives max LED current 0.021334mA
+
+2015-08-14,17:49:12--1439567352.729576 - Board_3_Logger - INFO - Adjustable LDO Voltage: 3.107303, Max LED current 0.021334
+
+2015-08-14,17:49:12--1439567352.729817 - Board_3_Logger - INFO - For LED channel 0: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:12--1439567352.730059 - Board_3_Logger - INFO - For LED channel 1: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:12--1439567352.730297 - Board_3_Logger - INFO - For LED channel 2: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.730538 - Board_3_Logger - INFO - For LED channel 3: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.730780 - Board_3_Logger - INFO - For LED channel 4: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.731018 - Board_3_Logger - INFO - For LED channel 5: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.731257 - Board_3_Logger - INFO - For LED channel 6: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.731502 - Board_3_Logger - INFO - For LED channel 7: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.731758 - Board_3_Logger - INFO - For LED channel 8: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:12--1439567352.732000 - Board_3_Logger - INFO - For LED channel 9: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:12--1439567352.732242 - Board_3_Logger - INFO - For LED channel 10: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:12--1439567352.732488 - Board_3_Logger - INFO - For LED channel 11: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:12--1439567352.732724 - Board_3_Logger - INFO - For LED channel 12: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.732959 - Board_3_Logger - INFO - For LED channel 13: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.733200 - Board_3_Logger - INFO - For LED channel 14: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:12--1439567352.733436 - Board_3_Logger - INFO - For LED channel 15: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:13--1439567353.247207 - Board_3_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.247674 - Board_3_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.248028 - Board_3_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.248375 - Board_3_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.248719 - Board_3_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.249062 - Board_3_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.249400 - Board_3_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.249736 - Board_3_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.250074 - Board_3_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.250411 - Board_3_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.250746 - Board_3_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.251084 - Board_3_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.251427 - Board_3_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.251766 - Board_3_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.252106 - Board_3_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.252446 - Board_3_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.606194 - Board_3_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.606636 - Board_3_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.606990 - Board_3_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.607351 - Board_3_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.607702 - Board_3_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.608043 - Board_3_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.608390 - Board_3_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.608732 - Board_3_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.609073 - Board_3_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.609413 - Board_3_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.609752 - Board_3_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.610087 - Board_3_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.610420 - Board_3_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.610755 - Board_3_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.611093 - Board_3_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.611435 - Board_3_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.804119 - Board_3_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.804568 - Board_3_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.804924 - Board_3_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.805272 - Board_3_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.805617 - Board_3_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.805961 - Board_3_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.806304 - Board_3_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.806649 - Board_3_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.806987 - Board_3_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.807325 - Board_3_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.807677 - Board_3_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.808015 - Board_3_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.808356 - Board_3_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.808694 - Board_3_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.809031 - Board_3_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.809370 - Board_3_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.874238 - Board_3_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.874693 - Board_3_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.875057 - Board_3_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.875439 - Board_3_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.875802 - Board_3_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.876150 - Board_3_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.876497 - Board_3_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.876846 - Board_3_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:13--1439567353.887126 - Board_3_Logger - INFO - Enabling Networking
+2015-08-14,17:49:13--1439567353.890174 - Board_3_Logger - INFO - NEEthernet already initialized
+
+2015-08-14,17:49:13--1439567353.890298 - Board_3_Logger - INFO - Sending Ping to 192.168.1.3 confirm networking is enabled
+2015-08-14,17:49:13--1439567353.916618 - Board_3_Logger - INFO - Ping 192.168.1.3 successful, networking enabled!
+2015-08-14,17:49:13--1439567353.916934 - Board_3_Logger - INFO - Switching to local NTP IP: 192.168.1.128
+2015-08-14,17:49:13--1439567353.933406 - Board_3_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:13--1439567353.933673 - Board_3_Logger - INFO -  MAC : 00:00:00:03:CD:EF
+
+2015-08-14,17:49:13--1439567353.933854 - Board_3_Logger - INFO -  IP : 192.168.1.3
+
+2015-08-14,17:49:13--1439567353.934073 - Board_3_Logger - INFO -  GW : 192.168.1.1
+
+2015-08-14,17:49:13--1439567353.934249 - Board_3_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:13--1439567353.934463 - Board_3_Logger - INFO - =======================================
+
+2015-08-14,17:49:13--1439567353.934746 - Board_3_Logger - INFO - ARM$ Nn192.168.1.128NTP address is: 192.168.1.128
+
+2015-08-14,17:49:13--1439567353.945011 - Board_3_Logger - INFO - Querying local NTP server
+2015-08-14,17:49:14--1439567354.048420 - Board_3_Logger - INFO - NNOriginally received 56, rptr set to 56
+
+2015-08-14,17:49:14--1439567354.048746 - Board_3_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:14--1439567354.049095 - Board_3_Logger - INFO - Send time (time sent) seconds 3648556153 and microseconds 922173, Counter3: 458089591 
+
+2015-08-14,17:49:14--1439567354.049473 - Board_3_Logger - INFO - Sent time (time after sending) seconds 3648556153 and microseconds 924043, Counter3: 458089778  
+
+2015-08-14,17:49:14--1439567354.049838 - Board_3_Logger - INFO - Receive time (reply received) seconds 3648556153 and microseconds 927003, Counter3: 458090074 
+
+2015-08-14,17:49:14--1439567354.050130 - Board_3_Logger - INFO - Full transit and receive duration (subtract) is 4829.88 microseconds
+
+2015-08-14,17:49:14--1439567354.050392 - Board_3_Logger - INFO - Local process time microseconds 1870.16 (float, difference)
+
+2015-08-14,17:49:14--1439567354.050681 - Board_3_Logger - INFO - Remote processing time is 2959.73 microseconds (float, difference)
+
+2015-08-14,17:49:14--1439567354.050886 - Board_3_Logger - INFO - roundtrip delay (miliseconds): 4.87709
+
+2015-08-14,17:49:14--1439567354.051095 - Board_3_Logger - INFO - clock offset (seconds): 0	 and us: 25379
+
+2015-08-14,17:49:14--1439567354.051534 - Board_3_Logger - INFO - Received NTP time is secs,fracs: 3648556153,4080178898, recv counter is: 458090074, and 422 seconds since last sync'd
+
+2015-08-14,17:49:14--1439567354.051964 - Board_3_Logger - INFO - Last NTP update secs,fracs: 3648555731,106317100, Counter3 last update count: 415799849, current Counter3: 458090454
+
+2015-08-14,17:49:14--1439567354.052155 - Board_3_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:14--1439567354.062437 - Board_3_Logger - INFO - Getting time update.
+2015-08-14,17:49:14--1439567354.062615 - Board_3_Logger - INFO - Getting time update.
+2015-08-14,17:49:14--1439567354.166045 - Board_3_Logger - INFO - ?tCurrent time (counter_3):	458101279, with 0 overflow
+
+2015-08-14,17:49:14--1439567354.166383 - Board_3_Logger - INFO - Time elapsed in microseconds (counter_3):	200
+
+2015-08-14,17:49:14--1439567354.166644 - Board_3_Logger - INFO - Counter 2 reads: 		4580 seconds,	631 ms,	582.667 us 
+
+2015-08-14,17:49:14--1439567354.166867 - Board_3_Logger - INFO - Originally received 56, rptr set to 56
+
+2015-08-14,17:49:14--1439567354.167084 - Board_3_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:14--1439567354.167429 - Board_3_Logger - INFO - Send time (time sent) seconds 3648556154 and microseconds 62810, Counter3: 458101356 
+
+2015-08-14,17:49:14--1439567354.167798 - Board_3_Logger - INFO - Sent time (time after sending) seconds 3648556154 and microseconds 64710, Counter3: 458101546  
+
+2015-08-14,17:49:14--1439567354.168158 - Board_3_Logger - INFO - Receive time (reply received) seconds 3648556154 and microseconds 67480, Counter3: 458101823 
+
+2015-08-14,17:49:14--1439567354.168444 - Board_3_Logger - INFO - Full transit and receive duration (subtract) is 4670.14 microseconds
+
+2015-08-14,17:49:14--1439567354.168704 - Board_3_Logger - INFO - Local process time microseconds 1900.2 (float, difference)
+
+2015-08-14,17:49:14--1439567354.168985 - Board_3_Logger - INFO - Remote processing time is 2769.95 microseconds (float, difference)
+
+2015-08-14,17:49:14--1439567354.169184 - Board_3_Logger - INFO - roundtrip delay (miliseconds): 4.69589
+
+2015-08-14,17:49:14--1439567354.169386 - Board_3_Logger - INFO - clock offset (seconds): 0	 and us: 2476
+
+2015-08-14,17:49:14--1439567354.169800 - Board_3_Logger - INFO - Received NTP time is secs,fracs: 3648556154,290486376, recv counter is: 458101823, and 1 seconds since last sync'd
+
+2015-08-14,17:49:14--1439567354.170223 - Board_3_Logger - INFO - Last NTP update secs,fracs: 3648556153,4080178898, Counter3 last update count: 458090074, current Counter3: 458102210
+
+2015-08-14,17:49:14--1439567354.170408 - Board_3_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:14--1439567354.170650 - Board_3_Logger - INFO - Current time (counter_3):	458102287, with 0 overflow
+
+2015-08-14,17:49:14--1439567354.180922 - Board_3_Logger - INFO - Board NTP originate time seconds (float): 3648556154.062809944
+2015-08-14,17:49:14--1439567354.181032 - Board_3_Logger - INFO - Board counter3 at originate: 458101356
+2015-08-14,17:49:14--1439567354.181126 - Board_3_Logger - INFO - Offset is (seconds): 0.002476
+2015-08-14,17:49:14--1439567354.181205 - Board_3_Logger - INFO - Received NTP time seconds (int): 3648556154, and fractional (int): 290486376
+2015-08-14,17:49:14--1439567354.181283 - Board_3_Logger - INFO - Received NTP time seconds (float): 3648556154.067634106
+2015-08-14,17:49:14--1439567354.181356 - Board_3_Logger - INFO - Counter3 value at received NTP time : 458101823
+2015-08-14,17:49:14--1439567354.181428 - Board_3_Logger - INFO - Last NTP sync time seconds (int): 3648556153, and fractional (int): 4080178898
+2015-08-14,17:49:14--1439567354.181502 - Board_3_Logger - INFO - Last NTP sync time seconds (float): 3648556153.949990749
+2015-08-14,17:49:14--1439567354.181572 - Board_3_Logger - INFO - Last NTP sync time, counter3 value: 458090074
+2015-08-14,17:49:14--1439567354.181644 - Board_3_Logger - INFO - Received NTP time seconds (float): 3648556154.067634106
+2015-08-14,17:49:14--1439567354.181718 - Board_3_Logger - INFO - Board NTP from Counter3 receive count: 3648556154.067480564
+2015-08-14,17:49:14--1439567354.181812 - Board_3_Logger - INFO - Host UTC time (includes offset) from NTP at <?t> was: 1439567354.065631866
+2015-08-14,17:49:14--1439567354.182536 - Board_3_Logger - INFO - Current UTC time from NTP is (includes offset): 1439567354.182485580
+2015-08-14,17:49:14--1439567354.182657 - Board_3_Logger - INFO - Received time from counter 3: 3648556154.067480564
+2015-08-14,17:49:14--1439567354.182741 - Board_3_Logger - INFO - Received time from board NTP: 3648556154.067634106
+2015-08-14,17:49:14--1439567354.182817 - Board_3_Logger - INFO - Initializing data stream socket on board
+2015-08-14,17:49:14--1439567354.186926 - Board_3_Logger - INFO - <NSt> command sent to board, initialized
+2015-08-14,17:49:14--1439567354.197099 - Board_3_Logger - INFO - Going to connect to socket on port: 9004 and IP: 192.168.1.3
+2015-08-14,17:49:14--1439567354.197777 - Board_3_Logger - INFO - NStSocket 3 opened for TCP streaming
+
+2015-08-14,17:49:14--1439567354.198049 - Board_3_Logger - INFO - Socket 3 does not show as TCP port, rather 19
+
+2015-08-14,17:49:14--1439567354.203123 - Board_3_Logger - INFO - ARM$ 3:Waiting for remote connection from TCP data stream. Listening on port [9004]3:Waiting for remote connection from TCP data stream. Listening on port [9004]3:Connected to host at - 192.168.1.128 : 41416
+
+2015-08-14,17:49:14--1439567354.203259 - Board_3_Logger - INFO - Data link established---will return first sample then wait 1 seconds. Expect buffer over-run, this is normal while waiting.
+2015-08-14,17:49:15--1439567355.205757 - Board_3_Logger - INFO - Initilization done on this board, ready to collect data!
+2015-08-14,17:49:15--1439567355.206443 - Main_Logger - INFO - Serial port/dev/ttyACM3 opened.
+2015-08-14,17:49:15--1439567355.215127 - Main_Logger - INFO - Serial Port /dev/ttyACM3 has board ID: 2
+2015-08-14,17:49:15--1439567355.219262 - Board_2_Logger - INFO - ARM$ Sa0Channel 0 has name 62
+
+2015-08-14,17:49:15--1439567355.220068 - Board_2_Logger - INFO - Board 2, Channel 0 has name 62
+
+2015-08-14,17:49:15--1439567355.224325 - Board_2_Logger - INFO - ARM$ Sa1Channel 1 has name 63
+
+2015-08-14,17:49:15--1439567355.225043 - Board_2_Logger - INFO - Board 2, Channel 1 has name 63
+
+2015-08-14,17:49:15--1439567355.229216 - Board_2_Logger - INFO - ARM$ Sa2Channel 2 has name 64
+
+2015-08-14,17:49:15--1439567355.230019 - Board_2_Logger - INFO - Board 2, Channel 2 has name 64
+
+2015-08-14,17:49:15--1439567355.234289 - Board_2_Logger - INFO - ARM$ Sa3Channel 3 has name 65
+
+2015-08-14,17:49:15--1439567355.235035 - Board_2_Logger - INFO - Board 2, Channel 3 has name 65
+
+2015-08-14,17:49:15--1439567355.238220 - Board_2_Logger - INFO - ARM$ kCKeyboard calibration disabled
+
+2015-08-14,17:49:15--1439567355.238337 - Board_2_Logger - WARNING - Channel thresholds not found on first pass: {} and {}
+2015-08-14,17:49:15--1439567355.238544 - Board_2_Logger - INFO - Channel 0 has min -2440 and max -1118
+
+2015-08-14,17:49:15--1439567355.238778 - Board_2_Logger - INFO - Channel 0 has low -2175 and high -1382 thresholds
+
+2015-08-14,17:49:15--1439567355.238975 - Board_2_Logger - INFO - Channel 1 has min -2299 and max -879
+
+2015-08-14,17:49:15--1439567355.239210 - Board_2_Logger - INFO - Channel 1 has low -2015 and high -1163 thresholds
+
+2015-08-14,17:49:15--1439567355.239418 - Board_2_Logger - INFO - Channel 2 has min -4036 and max -1650
+
+2015-08-14,17:49:15--1439567355.239655 - Board_2_Logger - INFO - Channel 2 has low -3558 and high -2127 thresholds
+
+2015-08-14,17:49:15--1439567355.239852 - Board_2_Logger - INFO - Channel 3 has min -1669 and max -765
+
+2015-08-14,17:49:15--1439567355.240083 - Board_2_Logger - INFO - Channel 3 has low -1488 and high -945 thresholds
+
+2015-08-14,17:49:15--1439567355.250345 - Board_2_Logger - INFO - Channel 3 off threshold: {0: -1382, 1: -1163, 2: -2127, 3: -945}
+2015-08-14,17:49:15--1439567355.250453 - Board_2_Logger - INFO - Channel 3 on threshold: {0: -2175, 1: -2015, 2: -3558, 3: -1488}
+2015-08-14,17:49:15--1439567355.250532 - Board_2_Logger - INFO - Channel 3 min value: {0: -2440, 1: -2299, 2: -4036, 3: -1669}
+2015-08-14,17:49:15--1439567355.250607 - Board_2_Logger - INFO - Channel 3 max value: {0: -1118, 1: -879, 2: -1650, 3: -765}
+2015-08-14,17:49:15--1439567355.250709 - Board_2_Logger - WARNING - Channel thresholds not found on first pass: {0: -1382, 1: -1163, 2: -2127, 3: -945} and {0: -2175, 1: -2015, 2: -3558, 3: -1488}
+2015-08-14,17:49:15--1439567355.354196 - Board_2_Logger - INFO - Ni
+
+2015-08-14,17:49:15--1439567355.354457 - Board_2_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:15--1439567355.354633 - Board_2_Logger - INFO -  MAC : 00:00:00:02:CD:EF
+
+2015-08-14,17:49:15--1439567355.354791 - Board_2_Logger - INFO -  IP : 192.168.1.2
+
+2015-08-14,17:49:15--1439567355.354941 - Board_2_Logger - INFO -  GW : 192.168.1.10
+
+2015-08-14,17:49:15--1439567355.355091 - Board_2_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:15--1439567355.355297 - Board_2_Logger - INFO - =======================================
+
+2015-08-14,17:49:15--1439567355.365538 - Board_2_Logger - INFO - IP address is: 192.168.1.2
+2015-08-14,17:49:15--1439567355.373161 - Board_2_Logger - INFO - ??File touched on: Thu Dec 04 14:31:21 2014 
+
+2015-08-14,17:49:15--1439567355.373388 - Board_2_Logger - INFO - File compiled on: Dec  4 2014 14:31:25 
+
+2015-08-14,17:49:15--1439567355.373557 - Board_2_Logger - INFO - Compiled File: .\main.c 
+
+2015-08-14,17:49:15--1439567355.373710 - Board_2_Logger - INFO - Compiled Line: 1923 
+
+2015-08-14,17:49:15--1439567355.373949 - Board_2_Logger - INFO - Master Clk Freq: 48000000, Bus Clk Freq: 48000000 
+
+2015-08-14,17:49:15--1439567355.374224 - Board_2_Logger - INFO - ARM$ ?cCurrent Configuration, printing contents:
+
+2015-08-14,17:49:15--1439567355.374459 - Board_2_Logger - INFO - EEPROM ID 0, Board ID 2, Board Name Fungible 2.1:
+
+2015-08-14,17:49:15--1439567355.374656 - Board_2_Logger - INFO - Analog Channel Names: 62,	63,	64,	65
+
+2015-08-14,17:49:15--1439567355.374817 - Board_2_Logger - INFO - Amp Gains: 7,	7,	7,	7
+
+2015-08-14,17:49:15--1439567355.374982 - Board_2_Logger - INFO - Amp Cutoff: 3,	3,	3,	3
+
+2015-08-14,17:49:15--1439567355.375196 - Board_2_Logger - INFO - Internal SAR Reference Dac value is: 128
+
+2015-08-14,17:49:15--1439567355.375405 - Board_2_Logger - INFO - Epot val 128 gives Vadj= 3.107303V
+
+2015-08-14,17:49:15--1439567355.375634 - Board_2_Logger - INFO - Epot val 4 gives max LED current 0.021334mA
+
+2015-08-14,17:49:15--1439567355.375900 - Board_2_Logger - INFO - Adjustable LDO Voltage: 3.107303, Max LED current 0.021334
+
+2015-08-14,17:49:15--1439567355.376149 - Board_2_Logger - INFO - For LED channel 0: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.376393 - Board_2_Logger - INFO - For LED channel 1: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:15--1439567355.376637 - Board_2_Logger - INFO - For LED channel 2: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.376879 - Board_2_Logger - INFO - For LED channel 3: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.377120 - Board_2_Logger - INFO - For LED channel 4: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.377360 - Board_2_Logger - INFO - For LED channel 5: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.377601 - Board_2_Logger - INFO - For LED channel 6: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.377844 - Board_2_Logger - INFO - For LED channel 7: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.378088 - Board_2_Logger - INFO - For LED channel 8: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:15--1439567355.378332 - Board_2_Logger - INFO - For LED channel 9: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:15--1439567355.378580 - Board_2_Logger - INFO - For LED channel 10: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:15--1439567355.378827 - Board_2_Logger - INFO - For LED channel 11: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:15--1439567355.379062 - Board_2_Logger - INFO - For LED channel 12: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.379295 - Board_2_Logger - INFO - For LED channel 13: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.379537 - Board_2_Logger - INFO - For LED channel 14: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.379774 - Board_2_Logger - INFO - For LED channel 15: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:15--1439567355.893309 - Board_2_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.893756 - Board_2_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.894134 - Board_2_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.894491 - Board_2_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.894843 - Board_2_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.895188 - Board_2_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.895541 - Board_2_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.895887 - Board_2_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.896230 - Board_2_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.896573 - Board_2_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.896916 - Board_2_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.897258 - Board_2_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.897599 - Board_2_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.897938 - Board_2_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.898280 - Board_2_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:15--1439567355.898621 - Board_2_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.257449 - Board_2_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.257888 - Board_2_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.258229 - Board_2_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.258559 - Board_2_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.258888 - Board_2_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.259225 - Board_2_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.259567 - Board_2_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.259904 - Board_2_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.260229 - Board_2_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.260554 - Board_2_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.260879 - Board_2_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.261208 - Board_2_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.261531 - Board_2_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.261856 - Board_2_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.262181 - Board_2_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.262519 - Board_2_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.455475 - Board_2_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.455958 - Board_2_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.456340 - Board_2_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.456717 - Board_2_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.457092 - Board_2_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.457462 - Board_2_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.457829 - Board_2_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.458196 - Board_2_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.458560 - Board_2_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.458925 - Board_2_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.459289 - Board_2_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.459662 - Board_2_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.460033 - Board_2_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.460399 - Board_2_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.460763 - Board_2_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.461129 - Board_2_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.526570 - Board_2_Logger - INFO - Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.527076 - Board_2_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.527468 - Board_2_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.527845 - Board_2_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.528215 - Board_2_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.528583 - Board_2_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.528953 - Board_2_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.529321 - Board_2_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:16--1439567356.539597 - Board_2_Logger - INFO - Enabling Networking
+2015-08-14,17:49:16--1439567356.542397 - Board_2_Logger - INFO - NEEthernet already initialized
+
+2015-08-14,17:49:16--1439567356.542532 - Board_2_Logger - INFO - Sending Ping to 192.168.1.2 confirm networking is enabled
+2015-08-14,17:49:16--1439567356.566490 - Board_2_Logger - INFO - Ping 192.168.1.2 successful, networking enabled!
+2015-08-14,17:49:16--1439567356.566746 - Board_2_Logger - INFO - Switching to local NTP IP: 192.168.1.128
+2015-08-14,17:49:16--1439567356.582400 - Board_2_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:16--1439567356.582658 - Board_2_Logger - INFO -  MAC : 00:00:00:02:CD:EF
+
+2015-08-14,17:49:16--1439567356.582835 - Board_2_Logger - INFO -  IP : 192.168.1.2
+
+2015-08-14,17:49:16--1439567356.583007 - Board_2_Logger - INFO -  GW : 192.168.1.10
+
+2015-08-14,17:49:16--1439567356.583180 - Board_2_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:16--1439567356.583422 - Board_2_Logger - INFO - =======================================
+
+2015-08-14,17:49:16--1439567356.583732 - Board_2_Logger - INFO - ARM$ Nn192.168.1.128NTP address is: 192.168.1.128
+
+2015-08-14,17:49:16--1439567356.594032 - Board_2_Logger - INFO - Querying local NTP server
+2015-08-14,17:49:16--1439567356.697528 - Board_2_Logger - INFO - NNOriginally received 56, rptr set to 56
+
+2015-08-14,17:49:16--1439567356.697842 - Board_2_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:16--1439567356.698204 - Board_2_Logger - INFO - Send time (time sent) seconds 3648556156 and microseconds 568867, Counter3: 458351712 
+
+2015-08-14,17:49:16--1439567356.698591 - Board_2_Logger - INFO - Sent time (time after sending) seconds 3648556156 and microseconds 570727, Counter3: 458351898  
+
+2015-08-14,17:49:16--1439567356.698965 - Board_2_Logger - INFO - Receive time (reply received) seconds 3648556156 and microseconds 573487, Counter3: 458352174 
+
+2015-08-14,17:49:16--1439567356.699255 - Board_2_Logger - INFO - Full transit and receive duration (subtract) is 4619.6 microseconds
+
+2015-08-14,17:49:16--1439567356.699533 - Board_2_Logger - INFO - Local process time microseconds 1859.66 (float, difference)
+
+2015-08-14,17:49:16--1439567356.699822 - Board_2_Logger - INFO - Remote processing time is 2759.93 microseconds (float, difference)
+
+2015-08-14,17:49:16--1439567356.700038 - Board_2_Logger - INFO - roundtrip delay (miliseconds): 4.65918
+
+2015-08-14,17:49:16--1439567356.700252 - Board_2_Logger - INFO - clock offset (seconds): 0	 and us: 27988
+
+2015-08-14,17:49:16--1439567356.700684 - Board_2_Logger - INFO - Received NTP time is secs,fracs: 3648556156,2573480102, recv counter is: 458352174, and 423 seconds since last sync'd
+
+2015-08-14,17:49:16--1439567356.701111 - Board_2_Logger - INFO - Last NTP update secs,fracs: 3648555733,2892605529, Counter3 last update count: 416062174, current Counter3: 458352559
+
+2015-08-14,17:49:16--1439567356.701295 - Board_2_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:16--1439567356.711534 - Board_2_Logger - INFO - Getting time update.
+2015-08-14,17:49:16--1439567356.711634 - Board_2_Logger - INFO - Getting time update.
+2015-08-14,17:49:16--1439567356.815356 - Board_2_Logger - INFO - ?tCurrent time (counter_3):	458363402, with 0 overflow
+
+2015-08-14,17:49:16--1439567356.815699 - Board_2_Logger - INFO - Time elapsed in microseconds (counter_3):	180
+
+2015-08-14,17:49:16--1439567356.815957 - Board_2_Logger - INFO - Counter 2 reads: 		4583 seconds,	252 ms,	586.833 us 
+
+2015-08-14,17:49:16--1439567356.816177 - Board_2_Logger - INFO - Originally received 56, rptr set to 56
+
+2015-08-14,17:49:16--1439567356.816394 - Board_2_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:16--1439567356.816728 - Board_2_Logger - INFO - Send time (time sent) seconds 3648556156 and microseconds 712255, Counter3: 458363481 
+
+2015-08-14,17:49:16--1439567356.817093 - Board_2_Logger - INFO - Sent time (time after sending) seconds 3648556156 and microseconds 714115, Counter3: 458363667  
+
+2015-08-14,17:49:16--1439567356.817450 - Board_2_Logger - INFO - Receive time (reply received) seconds 3648556156 and microseconds 716885, Counter3: 458363944 
+
+2015-08-14,17:49:16--1439567356.817734 - Board_2_Logger - INFO - Full transit and receive duration (subtract) is 4630.09 microseconds
+
+2015-08-14,17:49:16--1439567356.818000 - Board_2_Logger - INFO - Local process time microseconds 1860.14 (float, difference)
+
+2015-08-14,17:49:16--1439567356.818277 - Board_2_Logger - INFO - Remote processing time is 2769.95 microseconds (float, difference)
+
+2015-08-14,17:49:16--1439567356.818487 - Board_2_Logger - INFO - roundtrip delay (miliseconds): 4.65059
+
+2015-08-14,17:49:16--1439567356.818688 - Board_2_Logger - INFO - clock offset (seconds): 0	 and us: 2174
+
+2015-08-14,17:49:16--1439567356.819100 - Board_2_Logger - INFO - Received NTP time is secs,fracs: 3648556156,3078439625, recv counter is: 458363944, and 0 seconds since last sync'd
+
+2015-08-14,17:49:16--1439567356.819527 - Board_2_Logger - INFO - Last NTP update secs,fracs: 3648556156,2573480102, Counter3 last update count: 458352174, current Counter3: 458364344
+
+2015-08-14,17:49:16--1439567356.819714 - Board_2_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:16--1439567356.819952 - Board_2_Logger - INFO - Current time (counter_3):	458364411, with 0 overflow
+
+2015-08-14,17:49:16--1439567356.830302 - Board_2_Logger - INFO - Board NTP originate time seconds (float): 3648556156.712255001
+2015-08-14,17:49:16--1439567356.830480 - Board_2_Logger - INFO - Board counter3 at originate: 458363481
+2015-08-14,17:49:16--1439567356.830578 - Board_2_Logger - INFO - Offset is (seconds): 0.002174
+2015-08-14,17:49:16--1439567356.830659 - Board_2_Logger - INFO - Received NTP time seconds (int): 3648556156, and fractional (int): 3078439625
+2015-08-14,17:49:16--1439567356.830738 - Board_2_Logger - INFO - Received NTP time seconds (float): 3648556156.716754913
+2015-08-14,17:49:16--1439567356.830812 - Board_2_Logger - INFO - Counter3 value at received NTP time : 458363944
+2015-08-14,17:49:16--1439567356.830885 - Board_2_Logger - INFO - Last NTP sync time seconds (int): 3648556156, and fractional (int): 2573480102
+2015-08-14,17:49:16--1439567356.830960 - Board_2_Logger - INFO - Last NTP sync time seconds (float): 3648556156.599184990
+2015-08-14,17:49:16--1439567356.831030 - Board_2_Logger - INFO - Last NTP sync time, counter3 value: 458352174
+2015-08-14,17:49:16--1439567356.831105 - Board_2_Logger - INFO - Received NTP time seconds (float): 3648556156.716754913
+2015-08-14,17:49:16--1439567356.831181 - Board_2_Logger - INFO - Board NTP from Counter3 receive count: 3648556156.716885090
+2015-08-14,17:49:16--1439567356.831286 - Board_2_Logger - INFO - Host UTC time (includes offset) from NTP at <?t> was: 1439567356.714854240
+2015-08-14,17:49:16--1439567356.832072 - Board_2_Logger - INFO - Current UTC time from NTP is (includes offset): 1439567356.831989288
+2015-08-14,17:49:16--1439567356.832200 - Board_2_Logger - INFO - Received time from counter 3: 3648556156.716885090
+2015-08-14,17:49:16--1439567356.832289 - Board_2_Logger - INFO - Received time from board NTP: 3648556156.716754913
+2015-08-14,17:49:16--1439567356.832367 - Board_2_Logger - INFO - Initializing data stream socket on board
+2015-08-14,17:49:16--1439567356.836232 - Board_2_Logger - INFO - <NSt> command sent to board, initialized
+2015-08-14,17:49:16--1439567356.846422 - Board_2_Logger - INFO - Going to connect to socket on port: 9004 and IP: 192.168.1.2
+2015-08-14,17:49:16--1439567356.846939 - Board_2_Logger - INFO - NStSocket 3 opened for TCP streaming
+
+2015-08-14,17:49:16--1439567356.847216 - Board_2_Logger - INFO - Socket 3 does not show as TCP port, rather 19
+
+2015-08-14,17:49:16--1439567356.851156 - Board_2_Logger - INFO - ARM$ 3:Waiting for remote connection from TCP data stream. Listening on port [9004]3:Connected to host at - 192.168.1.128 : 34214
+
+2015-08-14,17:49:16--1439567356.851290 - Board_2_Logger - INFO - Data link established---will return first sample then wait 1 seconds. Expect buffer over-run, this is normal while waiting.
+2015-08-14,17:49:17--1439567357.853809 - Board_2_Logger - INFO - Initilization done on this board, ready to collect data!
+2015-08-14,17:49:17--1439567357.854310 - Main_Logger - INFO - Serial port/dev/ttyACM2 opened.
+2015-08-14,17:49:17--1439567357.874519 - Main_Logger - INFO - Serial Port /dev/ttyACM2 has board ID: 4
+2015-08-14,17:49:17--1439567357.878670 - Board_4_Logger - INFO - ARM$ Sa0Channel 0 has name 70
+
+2015-08-14,17:49:17--1439567357.879450 - Board_4_Logger - INFO - Board 4, Channel 0 has name 70
+
+2015-08-14,17:49:17--1439567357.883621 - Board_4_Logger - INFO - ARM$ Sa1Channel 1 has name 71
+
+2015-08-14,17:49:17--1439567357.884506 - Board_4_Logger - INFO - Board 4, Channel 1 has name 71
+
+2015-08-14,17:49:17--1439567357.888664 - Board_4_Logger - INFO - ARM$ Sa2Channel 2 has name 72
+
+2015-08-14,17:49:17--1439567357.889425 - Board_4_Logger - INFO - Board 4, Channel 2 has name 72
+
+2015-08-14,17:49:17--1439567357.893669 - Board_4_Logger - INFO - ARM$ Sa3Channel 3 has name 73
+
+2015-08-14,17:49:17--1439567357.894443 - Board_4_Logger - INFO - Board 4, Channel 3 has name 73
+
+2015-08-14,17:49:17--1439567357.897638 - Board_4_Logger - INFO - ARM$ kCKeyboard calibration disabled
+
+2015-08-14,17:49:17--1439567357.897899 - Board_4_Logger - INFO - Channel 0 has min -3615 and max -1976
+
+2015-08-14,17:49:17--1439567357.898146 - Board_4_Logger - INFO - Channel 0 has low -3287 and high -2303 thresholds
+
+2015-08-14,17:49:17--1439567357.898351 - Board_4_Logger - INFO - Channel 1 has min -3430 and max -1964
+
+2015-08-14,17:49:17--1439567357.898585 - Board_4_Logger - INFO - Channel 1 has low -3136 and high -2257 thresholds
+
+2015-08-14,17:49:17--1439567357.898786 - Board_4_Logger - INFO - Channel 2 has min -2744 and max -1705
+
+2015-08-14,17:49:17--1439567357.899026 - Board_4_Logger - INFO - Channel 2 has low -2536 and high -1912 thresholds
+
+2015-08-14,17:49:17--1439567357.899226 - Board_4_Logger - INFO - Channel 3 has min -3277 and max -1867
+
+2015-08-14,17:49:17--1439567357.899467 - Board_4_Logger - INFO - Channel 3 has low -2995 and high -2149 thresholds
+
+2015-08-14,17:49:17--1439567357.909764 - Board_4_Logger - INFO - Channel 3 off threshold: {0: -2303, 1: -2257, 2: -1912, 3: -2149}
+2015-08-14,17:49:17--1439567357.909883 - Board_4_Logger - INFO - Channel 3 on threshold: {0: -3287, 1: -3136, 2: -2536, 3: -2995}
+2015-08-14,17:49:17--1439567357.909967 - Board_4_Logger - INFO - Channel 3 min value: {0: -3615, 1: -3430, 2: -2744, 3: -3277}
+2015-08-14,17:49:17--1439567357.910042 - Board_4_Logger - INFO - Channel 3 max value: {0: -1976, 1: -1964, 2: -1705, 3: -1867}
+2015-08-14,17:49:18--1439567358.012631 - Board_4_Logger - INFO - Ni
+
+2015-08-14,17:49:18--1439567358.012897 - Board_4_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:18--1439567358.013071 - Board_4_Logger - INFO -  MAC : 00:00:00:04:CD:EF
+
+2015-08-14,17:49:18--1439567358.013216 - Board_4_Logger - INFO -  IP : 192.168.1.4
+
+2015-08-14,17:49:18--1439567358.013358 - Board_4_Logger - INFO -  GW : 192.168.1.1
+
+2015-08-14,17:49:18--1439567358.013505 - Board_4_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:18--1439567358.013706 - Board_4_Logger - INFO - =======================================
+
+2015-08-14,17:49:18--1439567358.023947 - Board_4_Logger - INFO - IP address is: 192.168.1.4
+2015-08-14,17:49:18--1439567358.030618 - Board_4_Logger - INFO - ??File touched on: Thu Dec 04 14:31:21 2014 
+
+2015-08-14,17:49:18--1439567358.030859 - Board_4_Logger - INFO - File compiled on: Dec  4 2014 14:31:25 
+
+2015-08-14,17:49:18--1439567358.031032 - Board_4_Logger - INFO - Compiled File: .\main.c 
+
+2015-08-14,17:49:18--1439567358.031188 - Board_4_Logger - INFO - Compiled Line: 1923 
+
+2015-08-14,17:49:18--1439567358.031434 - Board_4_Logger - INFO - Master Clk Freq: 48000000, Bus Clk Freq: 48000000 
+
+2015-08-14,17:49:18--1439567358.031713 - Board_4_Logger - INFO - ARM$ ?cCurrent Configuration, printing contents:
+
+2015-08-14,17:49:18--1439567358.031947 - Board_4_Logger - INFO - EEPROM ID 0, Board ID 4, Board Name Fungible 2.1:
+
+2015-08-14,17:49:18--1439567358.032145 - Board_4_Logger - INFO - Analog Channel Names: 70,	71,	72,	73
+
+2015-08-14,17:49:18--1439567358.032307 - Board_4_Logger - INFO - Amp Gains: 7,	7,	7,	7
+
+2015-08-14,17:49:18--1439567358.032472 - Board_4_Logger - INFO - Amp Cutoff: 3,	3,	3,	3
+
+2015-08-14,17:49:18--1439567358.032684 - Board_4_Logger - INFO - Internal SAR Reference Dac value is: 128
+
+2015-08-14,17:49:18--1439567358.032880 - Board_4_Logger - INFO - Epot val 128 gives Vadj= 3.107303V
+
+2015-08-14,17:49:18--1439567358.033111 - Board_4_Logger - INFO - Epot val 4 gives max LED current 0.021334mA
+
+2015-08-14,17:49:18--1439567358.033366 - Board_4_Logger - INFO - Adjustable LDO Voltage: 3.107303, Max LED current 0.021334
+
+2015-08-14,17:49:18--1439567358.033605 - Board_4_Logger - INFO - For LED channel 0: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.033851 - Board_4_Logger - INFO - For LED channel 1: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.034094 - Board_4_Logger - INFO - For LED channel 2: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:18--1439567358.034338 - Board_4_Logger - INFO - For LED channel 3: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.034579 - Board_4_Logger - INFO - For LED channel 4: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.034819 - Board_4_Logger - INFO - For LED channel 5: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.035061 - Board_4_Logger - INFO - For LED channel 6: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.035300 - Board_4_Logger - INFO - For LED channel 7: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.035552 - Board_4_Logger - INFO - For LED channel 8: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:18--1439567358.035796 - Board_4_Logger - INFO - For LED channel 9: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:18--1439567358.036040 - Board_4_Logger - INFO - For LED channel 10: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:18--1439567358.036285 - Board_4_Logger - INFO - For LED channel 11: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:18--1439567358.036518 - Board_4_Logger - INFO - For LED channel 12: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.036752 - Board_4_Logger - INFO - For LED channel 13: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.036986 - Board_4_Logger - INFO - For LED channel 14: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.037216 - Board_4_Logger - INFO - For LED channel 15: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:18--1439567358.550784 - Board_4_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.551238 - Board_4_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.551611 - Board_4_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.551968 - Board_4_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.552319 - Board_4_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.552664 - Board_4_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.553007 - Board_4_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.553350 - Board_4_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.553692 - Board_4_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.554030 - Board_4_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.554371 - Board_4_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.554710 - Board_4_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.555050 - Board_4_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.555390 - Board_4_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.555770 - Board_4_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.556118 - Board_4_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.909944 - Board_4_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.910406 - Board_4_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.910763 - Board_4_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.911144 - Board_4_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.911507 - Board_4_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.911854 - Board_4_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.912195 - Board_4_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.912534 - Board_4_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.912875 - Board_4_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.913217 - Board_4_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.913557 - Board_4_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.913895 - Board_4_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.914233 - Board_4_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.914573 - Board_4_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.914912 - Board_4_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:18--1439567358.915257 - Board_4_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.108971 - Board_4_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.109433 - Board_4_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.109786 - Board_4_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.110129 - Board_4_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.110472 - Board_4_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.110812 - Board_4_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.111149 - Board_4_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.111499 - Board_4_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.111846 - Board_4_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.112184 - Board_4_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.112531 - Board_4_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.112871 - Board_4_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.113212 - Board_4_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.113551 - Board_4_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.113920 - Board_4_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.114273 - Board_4_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.179901 - Board_4_Logger - INFO - Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.180355 - Board_4_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.180712 - Board_4_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.181058 - Board_4_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.181402 - Board_4_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.181745 - Board_4_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.182089 - Board_4_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.182434 - Board_4_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:19--1439567359.192713 - Board_4_Logger - INFO - Enabling Networking
+2015-08-14,17:49:19--1439567359.195815 - Board_4_Logger - INFO - NEEthernet already initialized
+
+2015-08-14,17:49:19--1439567359.195938 - Board_4_Logger - INFO - Sending Ping to 192.168.1.4 confirm networking is enabled
+2015-08-14,17:49:19--1439567359.220361 - Board_4_Logger - INFO - Ping 192.168.1.4 successful, networking enabled!
+2015-08-14,17:49:19--1439567359.220614 - Board_4_Logger - INFO - Switching to local NTP IP: 192.168.1.128
+2015-08-14,17:49:19--1439567359.236818 - Board_4_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:19--1439567359.237055 - Board_4_Logger - INFO -  MAC : 00:00:00:04:CD:EF
+
+2015-08-14,17:49:19--1439567359.237210 - Board_4_Logger - INFO -  IP : 192.168.1.4
+
+2015-08-14,17:49:19--1439567359.237358 - Board_4_Logger - INFO -  GW : 192.168.1.1
+
+2015-08-14,17:49:19--1439567359.237510 - Board_4_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:19--1439567359.237715 - Board_4_Logger - INFO - =======================================
+
+2015-08-14,17:49:19--1439567359.237993 - Board_4_Logger - INFO - ARM$ Nn192.168.1.128NTP address is: 192.168.1.128
+
+2015-08-14,17:49:19--1439567359.248261 - Board_4_Logger - INFO - Querying local NTP server
+2015-08-14,17:49:19--1439567359.350962 - Board_4_Logger - INFO - NNOriginally received 56, rptr set to 56
+
+2015-08-14,17:49:19--1439567359.351250 - Board_4_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:19--1439567359.351610 - Board_4_Logger - INFO - Send time (time sent) seconds 3648556159 and microseconds 223847, Counter3: 458618830 
+
+2015-08-14,17:49:19--1439567359.351990 - Board_4_Logger - INFO - Sent time (time after sending) seconds 3648556159 and microseconds 225747, Counter3: 458619020  
+
+2015-08-14,17:49:19--1439567359.352356 - Board_4_Logger - INFO - Receive time (reply received) seconds 3648556159 and microseconds 228707, Counter3: 458619316 
+
+2015-08-14,17:49:19--1439567359.352644 - Board_4_Logger - INFO - Full transit and receive duration (subtract) is 4859.92 microseconds
+
+2015-08-14,17:49:19--1439567359.352913 - Board_4_Logger - INFO - Local process time microseconds 1900.2 (float, difference)
+
+2015-08-14,17:49:19--1439567359.353197 - Board_4_Logger - INFO - Remote processing time is 2959.73 microseconds (float, difference)
+
+2015-08-14,17:49:19--1439567359.353398 - Board_4_Logger - INFO - roundtrip delay (miliseconds): 4.9057
+
+2015-08-14,17:49:19--1439567359.353607 - Board_4_Logger - INFO - clock offset (seconds): 0	 and us: 26350
+
+2015-08-14,17:49:19--1439567359.354031 - Board_4_Logger - INFO - Received NTP time is secs,fracs: 3648556159,1085123144, recv counter is: 458619316, and 423 seconds since last sync'd
+
+2015-08-14,17:49:19--1439567359.354455 - Board_4_Logger - INFO - Last NTP update secs,fracs: 3648555736,1560953262, Counter3 last update count: 416332789, current Counter3: 458619716
+
+2015-08-14,17:49:19--1439567359.354642 - Board_4_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:19--1439567359.364908 - Board_4_Logger - INFO - Getting time update.
+2015-08-14,17:49:19--1439567359.365026 - Board_4_Logger - INFO - Getting time update.
+2015-08-14,17:49:19--1439567359.468759 - Board_4_Logger - INFO - ?tCurrent time (counter_3):	458630528, with 0 overflow
+
+2015-08-14,17:49:19--1439567359.469054 - Board_4_Logger - INFO - Time elapsed in microseconds (counter_3):	170
+
+2015-08-14,17:49:19--1439567359.469307 - Board_4_Logger - INFO - Counter 2 reads: 		4585 seconds,	923 ms,	520.5 us 
+
+2015-08-14,17:49:19--1439567359.469530 - Board_4_Logger - INFO - Originally received 56, rptr set to 56
+
+2015-08-14,17:49:19--1439567359.469743 - Board_4_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:19--1439567359.470078 - Board_4_Logger - INFO - Send time (time sent) seconds 3648556159 and microseconds 365569, Counter3: 458630608 
+
+2015-08-14,17:49:19--1439567359.470444 - Board_4_Logger - INFO - Sent time (time after sending) seconds 3648556159 and microseconds 367439, Counter3: 458630795  
+
+2015-08-14,17:49:19--1439567359.470799 - Board_4_Logger - INFO - Receive time (reply received) seconds 3648556159 and microseconds 370389, Counter3: 458631090 
+
+2015-08-14,17:49:19--1439567359.471082 - Board_4_Logger - INFO - Full transit and receive duration (subtract) is 4819.87 microseconds
+
+2015-08-14,17:49:19--1439567359.471353 - Board_4_Logger - INFO - Local process time microseconds 1869.68 (float, difference)
+
+2015-08-14,17:49:19--1439567359.471637 - Board_4_Logger - INFO - Remote processing time is 2950.19 microseconds (float, difference)
+
+2015-08-14,17:49:19--1439567359.471838 - Board_4_Logger - INFO - roundtrip delay (miliseconds): 4.84514
+
+2015-08-14,17:49:19--1439567359.472042 - Board_4_Logger - INFO - clock offset (seconds): 0	 and us: 2412
+
+2015-08-14,17:49:19--1439567359.472455 - Board_4_Logger - INFO - Received NTP time is secs,fracs: 3648556159,1590874197, recv counter is: 458631090, and 0 seconds since last sync'd
+
+2015-08-14,17:49:19--1439567359.472876 - Board_4_Logger - INFO - Last NTP update secs,fracs: 3648556159,1085123144, Counter3 last update count: 458619316, current Counter3: 458631480
+
+2015-08-14,17:49:19--1439567359.473062 - Board_4_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:19--1439567359.473301 - Board_4_Logger - INFO - Current time (counter_3):	458631558, with 0 overflow
+
+2015-08-14,17:49:19--1439567359.483595 - Board_4_Logger - INFO - Board NTP originate time seconds (float): 3648556159.365569115
+2015-08-14,17:49:19--1439567359.483711 - Board_4_Logger - INFO - Board counter3 at originate: 458630608
+2015-08-14,17:49:19--1439567359.483804 - Board_4_Logger - INFO - Offset is (seconds): 0.002412
+2015-08-14,17:49:19--1439567359.483884 - Board_4_Logger - INFO - Received NTP time seconds (int): 3648556159, and fractional (int): 1590874197
+2015-08-14,17:49:19--1439567359.483961 - Board_4_Logger - INFO - Received NTP time seconds (float): 3648556159.370404243
+2015-08-14,17:49:19--1439567359.484035 - Board_4_Logger - INFO - Counter3 value at received NTP time : 458631090
+2015-08-14,17:49:19--1439567359.484108 - Board_4_Logger - INFO - Last NTP sync time seconds (int): 3648556159, and fractional (int): 1085123144
+2015-08-14,17:49:19--1439567359.484190 - Board_4_Logger - INFO - Last NTP sync time seconds (float): 3648556159.252649784
+2015-08-14,17:49:19--1439567359.484261 - Board_4_Logger - INFO - Last NTP sync time, counter3 value: 458619316
+2015-08-14,17:49:19--1439567359.484332 - Board_4_Logger - INFO - Received NTP time seconds (float): 3648556159.370404243
+2015-08-14,17:49:19--1439567359.484405 - Board_4_Logger - INFO - Board NTP from Counter3 receive count: 3648556159.370389938
+2015-08-14,17:49:19--1439567359.484495 - Board_4_Logger - INFO - Host UTC time (includes offset) from NTP at <?t> was: 1439567359.368325710
+2015-08-14,17:49:19--1439567359.485236 - Board_4_Logger - INFO - Current UTC time from NTP is (includes offset): 1439567359.485155106
+2015-08-14,17:49:19--1439567359.485364 - Board_4_Logger - INFO - Received time from counter 3: 3648556159.370389938
+2015-08-14,17:49:19--1439567359.485451 - Board_4_Logger - INFO - Received time from board NTP: 3648556159.370404243
+2015-08-14,17:49:19--1439567359.485528 - Board_4_Logger - INFO - Initializing data stream socket on board
+2015-08-14,17:49:19--1439567359.489657 - Board_4_Logger - INFO - <NSt> command sent to board, initialized
+2015-08-14,17:49:19--1439567359.499884 - Board_4_Logger - INFO - Going to connect to socket on port: 9004 and IP: 192.168.1.4
+2015-08-14,17:49:19--1439567359.500521 - Board_4_Logger - INFO - NStSocket 3 opened for TCP streaming
+
+2015-08-14,17:49:19--1439567359.500778 - Board_4_Logger - INFO - Socket 3 does not show as TCP port, rather 19
+
+2015-08-14,17:49:19--1439567359.503433 - Board_4_Logger - INFO - ARM$ 3:Waiting for remote connection from TCP data stream. Listening on port [9004]3:Connected to host at - 192.168.1.128 : 56858
+
+2015-08-14,17:49:19--1439567359.503577 - Board_4_Logger - INFO - Data link established---will return first sample then wait 1 seconds. Expect buffer over-run, this is normal while waiting.
+2015-08-14,17:49:20--1439567360.505953 - Board_4_Logger - INFO - Initilization done on this board, ready to collect data!
+2015-08-14,17:49:20--1439567360.506483 - Main_Logger - INFO - Serial port/dev/ttyACM1 opened.
+2015-08-14,17:49:20--1439567360.514384 - Main_Logger - INFO - Serial Port /dev/ttyACM1 has board ID: 7
+2015-08-14,17:49:20--1439567360.519494 - Board_7_Logger - INFO - ARM$ Sa0Channel 0 has name 82
+
+2015-08-14,17:49:20--1439567360.520218 - Board_7_Logger - INFO - Board 7, Channel 0 has name 82
+
+2015-08-14,17:49:20--1439567360.524437 - Board_7_Logger - INFO - ARM$ Sa1Channel 1 has name 83
+
+2015-08-14,17:49:20--1439567360.525200 - Board_7_Logger - INFO - Board 7, Channel 1 has name 83
+
+2015-08-14,17:49:20--1439567360.529423 - Board_7_Logger - INFO - ARM$ Sa2Channel 2 has name 84
+
+2015-08-14,17:49:20--1439567360.530187 - Board_7_Logger - INFO - Board 7, Channel 2 has name 84
+
+2015-08-14,17:49:20--1439567360.534368 - Board_7_Logger - INFO - ARM$ Sa3Channel 3 has name 0
+
+2015-08-14,17:49:20--1439567360.535120 - Board_7_Logger - INFO - Board 7, Channel 3 has name 0
+
+2015-08-14,17:49:20--1439567360.538311 - Board_7_Logger - INFO - ARM$ kCKeyboard calibration disabled
+
+2015-08-14,17:49:20--1439567360.538437 - Board_7_Logger - WARNING - Channel thresholds not found on first pass: {} and {}
+2015-08-14,17:49:20--1439567360.538643 - Board_7_Logger - INFO - Channel 0 has min -2261 and max -832
+
+2015-08-14,17:49:20--1439567360.538884 - Board_7_Logger - INFO - Channel 0 has low -1975 and high -1117 thresholds
+
+2015-08-14,17:49:20--1439567360.539084 - Board_7_Logger - INFO - Channel 1 has min -2111 and max -827
+
+2015-08-14,17:49:20--1439567360.539320 - Board_7_Logger - INFO - Channel 1 has low -1854 and high -1083 thresholds
+
+2015-08-14,17:49:20--1439567360.539534 - Board_7_Logger - INFO - Channel 2 has min -2353 and max -890
+
+2015-08-14,17:49:20--1439567360.539768 - Board_7_Logger - INFO - Channel 2 has low -2060 and high -1182 thresholds
+
+2015-08-14,17:49:20--1439567360.539962 - Board_7_Logger - INFO - Channel 3 has min -1109 and max -477
+
+2015-08-14,17:49:20--1439567360.540200 - Board_7_Logger - INFO - Channel 3 has low -982 and high -603 thresholds
+
+2015-08-14,17:49:20--1439567360.540349 - Board_7_Logger - INFO - Channel 3 off threshold: {0: -1117, 1: -1083, 2: -1182, 3: -603}
+2015-08-14,17:49:20--1439567360.540435 - Board_7_Logger - INFO - Channel 3 on threshold: {0: -1975, 1: -1854, 2: -2060, 3: -982}
+2015-08-14,17:49:20--1439567360.540509 - Board_7_Logger - INFO - Channel 3 min value: {0: -2261, 1: -2111, 2: -2353, 3: -1109}
+2015-08-14,17:49:20--1439567360.540581 - Board_7_Logger - INFO - Channel 3 max value: {0: -832, 1: -827, 2: -890, 3: -477}
+2015-08-14,17:49:20--1439567360.540684 - Board_7_Logger - WARNING - Channel thresholds not found on first pass: {0: -1117, 1: -1083, 2: -1182, 3: -603} and {0: -1975, 1: -1854, 2: -2060, 3: -982}
+2015-08-14,17:49:20--1439567360.643413 - Board_7_Logger - INFO - ARM$ Ni
+
+2015-08-14,17:49:20--1439567360.643678 - Board_7_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:20--1439567360.643854 - Board_7_Logger - INFO -  MAC : 00:00:00:07:CD:EF
+
+2015-08-14,17:49:20--1439567360.644003 - Board_7_Logger - INFO -  IP : 192.168.1.7
+
+2015-08-14,17:49:20--1439567360.644148 - Board_7_Logger - INFO -  GW : 192.168.1.1
+
+2015-08-14,17:49:20--1439567360.644295 - Board_7_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:20--1439567360.644499 - Board_7_Logger - INFO - =======================================
+
+2015-08-14,17:49:20--1439567360.654738 - Board_7_Logger - INFO - IP address is: 192.168.1.7
+2015-08-14,17:49:20--1439567360.662282 - Board_7_Logger - INFO - ??File touched on: Thu Dec 04 14:31:21 2014 
+
+2015-08-14,17:49:20--1439567360.662524 - Board_7_Logger - INFO - File compiled on: Dec  4 2014 14:31:25 
+
+2015-08-14,17:49:20--1439567360.662698 - Board_7_Logger - INFO - Compiled File: .\main.c 
+
+2015-08-14,17:49:20--1439567360.662854 - Board_7_Logger - INFO - Compiled Line: 1923 
+
+2015-08-14,17:49:20--1439567360.663092 - Board_7_Logger - INFO - Master Clk Freq: 48000000, Bus Clk Freq: 48000000 
+
+2015-08-14,17:49:20--1439567360.663377 - Board_7_Logger - INFO - ARM$ ?cCurrent Configuration, printing contents:
+
+2015-08-14,17:49:20--1439567360.663616 - Board_7_Logger - INFO - EEPROM ID 0, Board ID 7, Board Name Fungible 2.1:
+
+2015-08-14,17:49:20--1439567360.663810 - Board_7_Logger - INFO - Analog Channel Names: 82,	83,	84,	0
+
+2015-08-14,17:49:20--1439567360.663973 - Board_7_Logger - INFO - Amp Gains: 7,	7,	7,	7
+
+2015-08-14,17:49:20--1439567360.664137 - Board_7_Logger - INFO - Amp Cutoff: 3,	3,	3,	3
+
+2015-08-14,17:49:20--1439567360.664349 - Board_7_Logger - INFO - Internal SAR Reference Dac value is: 128
+
+2015-08-14,17:49:20--1439567360.664553 - Board_7_Logger - INFO - Epot val 128 gives Vadj= 3.107303V
+
+2015-08-14,17:49:20--1439567360.664779 - Board_7_Logger - INFO - Epot val 4 gives max LED current 0.021334mA
+
+2015-08-14,17:49:20--1439567360.665035 - Board_7_Logger - INFO - Adjustable LDO Voltage: 3.107303, Max LED current 0.021334
+
+2015-08-14,17:49:20--1439567360.665277 - Board_7_Logger - INFO - For LED channel 0: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:20--1439567360.665517 - Board_7_Logger - INFO - For LED channel 1: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:20--1439567360.665761 - Board_7_Logger - INFO - For LED channel 2: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:20--1439567360.666003 - Board_7_Logger - INFO - For LED channel 3: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:20--1439567360.666244 - Board_7_Logger - INFO - For LED channel 4: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:20--1439567360.666490 - Board_7_Logger - INFO - For LED channel 5: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:20--1439567360.666732 - Board_7_Logger - INFO - For LED channel 6: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:20--1439567360.667018 - Board_7_Logger - INFO - For LED channel 7: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:20--1439567360.667279 - Board_7_Logger - INFO - For LED channel 8: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:20--1439567360.667544 - Board_7_Logger - INFO - For LED channel 9: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:20--1439567360.667795 - Board_7_Logger - INFO - For LED channel 10: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:20--1439567360.668042 - Board_7_Logger - INFO - For LED channel 11: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:20--1439567360.668282 - Board_7_Logger - INFO - For LED channel 12: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:20--1439567360.668519 - Board_7_Logger - INFO - For LED channel 13: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:20--1439567360.668755 - Board_7_Logger - INFO - For LED channel 14: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:20--1439567360.668990 - Board_7_Logger - INFO - For LED channel 15: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:21--1439567361.182577 - Board_7_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.183065 - Board_7_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.183463 - Board_7_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.183840 - Board_7_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.184208 - Board_7_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.184577 - Board_7_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.184942 - Board_7_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.185308 - Board_7_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.185674 - Board_7_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.186038 - Board_7_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.186404 - Board_7_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.186762 - Board_7_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.187124 - Board_7_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.187494 - Board_7_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.187862 - Board_7_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.188226 - Board_7_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.541683 - Board_7_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.542177 - Board_7_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.542557 - Board_7_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.542931 - Board_7_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.543300 - Board_7_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.543688 - Board_7_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.544058 - Board_7_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.544434 - Board_7_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.544798 - Board_7_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.545162 - Board_7_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.545528 - Board_7_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.545891 - Board_7_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.546254 - Board_7_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.546617 - Board_7_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.546978 - Board_7_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.547345 - Board_7_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.740601 - Board_7_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.741061 - Board_7_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.741414 - Board_7_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.741760 - Board_7_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.742102 - Board_7_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.742443 - Board_7_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.742784 - Board_7_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.743121 - Board_7_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.743466 - Board_7_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.743810 - Board_7_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.744149 - Board_7_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.744484 - Board_7_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.744818 - Board_7_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.745152 - Board_7_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.745489 - Board_7_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.745828 - Board_7_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.810555 - Board_7_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.810988 - Board_7_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.811347 - Board_7_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.811695 - Board_7_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.812046 - Board_7_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.812395 - Board_7_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.812734 - Board_7_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.813076 - Board_7_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:21--1439567361.823327 - Board_7_Logger - INFO - Enabling Networking
+2015-08-14,17:49:21--1439567361.826534 - Board_7_Logger - INFO - NEEthernet already initialized
+
+2015-08-14,17:49:21--1439567361.826655 - Board_7_Logger - INFO - Sending Ping to 192.168.1.7 confirm networking is enabled
+2015-08-14,17:49:21--1439567361.853595 - Board_7_Logger - INFO - Ping 192.168.1.7 successful, networking enabled!
+2015-08-14,17:49:21--1439567361.853866 - Board_7_Logger - INFO - Switching to local NTP IP: 192.168.1.128
+2015-08-14,17:49:21--1439567361.869532 - Board_7_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:21--1439567361.869793 - Board_7_Logger - INFO -  MAC : 00:00:00:07:CD:EF
+
+2015-08-14,17:49:21--1439567361.869949 - Board_7_Logger - INFO -  IP : 192.168.1.7
+
+2015-08-14,17:49:21--1439567361.870100 - Board_7_Logger - INFO -  GW : 192.168.1.1
+
+2015-08-14,17:49:21--1439567361.870254 - Board_7_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:21--1439567361.870458 - Board_7_Logger - INFO - =======================================
+
+2015-08-14,17:49:21--1439567361.870739 - Board_7_Logger - INFO - ARM$ Nn192.168.1.128NTP address is: 192.168.1.128
+
+2015-08-14,17:49:21--1439567361.880960 - Board_7_Logger - INFO - Querying local NTP server
+2015-08-14,17:49:21--1439567361.983668 - Board_7_Logger - INFO - NNOriginally received 56, rptr set to 56
+
+2015-08-14,17:49:21--1439567361.983989 - Board_7_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:21--1439567361.984351 - Board_7_Logger - INFO - Send time (time sent) seconds 3648556161 and microseconds 855876, Counter3: 458881355 
+
+2015-08-14,17:49:21--1439567361.984734 - Board_7_Logger - INFO - Sent time (time after sending) seconds 3648556161 and microseconds 857746, Counter3: 458881542  
+
+2015-08-14,17:49:21--1439567361.985106 - Board_7_Logger - INFO - Receive time (reply received) seconds 3648556161 and microseconds 860716, Counter3: 458881839 
+
+2015-08-14,17:49:21--1439567361.985395 - Board_7_Logger - INFO - Full transit and receive duration (subtract) is 4839.9 microseconds
+
+2015-08-14,17:49:21--1439567361.985659 - Board_7_Logger - INFO - Local process time microseconds 1870.16 (float, difference)
+
+2015-08-14,17:49:21--1439567361.985941 - Board_7_Logger - INFO - Remote processing time is 2969.74 microseconds (float, difference)
+
+2015-08-14,17:49:21--1439567361.986142 - Board_7_Logger - INFO - roundtrip delay (miliseconds): 4.88567
+
+2015-08-14,17:49:21--1439567361.986350 - Board_7_Logger - INFO - clock offset (seconds): 0	 and us: 27065
+
+2015-08-14,17:49:21--1439567361.986774 - Board_7_Logger - INFO - Received NTP time is secs,fracs: 3648556161,3802696176, recv counter is: 458881839, and 422 seconds since last sync'd
+
+2015-08-14,17:49:21--1439567361.987193 - Board_7_Logger - INFO - Last NTP update secs,fracs: 3648555739,57795237, Counter3 last update count: 416597113, current Counter3: 458882232
+
+2015-08-14,17:49:21--1439567361.987389 - Board_7_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:21--1439567361.997611 - Board_7_Logger - INFO - Getting time update.
+2015-08-14,17:49:21--1439567361.997709 - Board_7_Logger - INFO - Getting time update.
+2015-08-14,17:49:22--1439567362.101413 - Board_7_Logger - INFO - ?tCurrent time (counter_3):	458893046, with 0 overflow
+
+2015-08-14,17:49:22--1439567362.101726 - Board_7_Logger - INFO - Time elapsed in microseconds (counter_3):	180
+
+2015-08-14,17:49:22--1439567362.102001 - Board_7_Logger - INFO - Counter 2 reads: 		4588 seconds,	548 ms,	588.167 us 
+
+2015-08-14,17:49:22--1439567362.102223 - Board_7_Logger - INFO - Originally received 56, rptr set to 56
+
+2015-08-14,17:49:22--1439567362.102441 - Board_7_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:22--1439567362.102781 - Board_7_Logger - INFO - Send time (time sent) seconds 3648556161 and microseconds 998234, Counter3: 458893124 
+
+2015-08-14,17:49:22--1439567362.103141 - Board_7_Logger - INFO - Sent time (time after sending) seconds 3648556162 and microseconds 114, Counter3: 458893312  
+
+2015-08-14,17:49:22--1439567362.103502 - Board_7_Logger - INFO - Receive time (reply received) seconds 3648556162 and microseconds 3074, Counter3: 458893608 
+
+2015-08-14,17:49:22--1439567362.103790 - Board_7_Logger - INFO - Full transit and receive duration (subtract) is 4840.37 microseconds
+
+2015-08-14,17:49:22--1439567362.104049 - Board_7_Logger - INFO - Local process time microseconds 1880.17 (float, difference)
+
+2015-08-14,17:49:22--1439567362.104327 - Board_7_Logger - INFO - Remote processing time is 2960.21 microseconds (float, difference)
+
+2015-08-14,17:49:22--1439567362.104527 - Board_7_Logger - INFO - roundtrip delay (miliseconds): 4.85897
+
+2015-08-14,17:49:22--1439567362.104729 - Board_7_Logger - INFO - clock offset (seconds): 0	 and us: 2396
+
+2015-08-14,17:49:22--1439567362.105138 - Board_7_Logger - INFO - Received NTP time is secs,fracs: 3648556162,13142059, recv counter is: 458893608, and 1 seconds since last sync'd
+
+2015-08-14,17:49:22--1439567362.105557 - Board_7_Logger - INFO - Last NTP update secs,fracs: 3648556161,3802696176, Counter3 last update count: 458881839, current Counter3: 458894009
+
+2015-08-14,17:49:22--1439567362.105741 - Board_7_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:22--1439567362.105980 - Board_7_Logger - INFO - Current time (counter_3):	458894081, with 0 overflow
+
+2015-08-14,17:49:22--1439567362.116228 - Board_7_Logger - INFO - Board NTP originate time seconds (float): 3648556161.998233795
+2015-08-14,17:49:22--1439567362.116326 - Board_7_Logger - INFO - Board counter3 at originate: 458893124
+2015-08-14,17:49:22--1439567362.116412 - Board_7_Logger - INFO - Offset is (seconds): 0.002396
+2015-08-14,17:49:22--1439567362.116489 - Board_7_Logger - INFO - Received NTP time seconds (int): 3648556162, and fractional (int): 13142059
+2015-08-14,17:49:22--1439567362.116568 - Board_7_Logger - INFO - Received NTP time seconds (float): 3648556162.003059864
+2015-08-14,17:49:22--1439567362.116641 - Board_7_Logger - INFO - Counter3 value at received NTP time : 458893608
+2015-08-14,17:49:22--1439567362.116713 - Board_7_Logger - INFO - Last NTP sync time seconds (int): 3648556161, and fractional (int): 3802696176
+2015-08-14,17:49:22--1439567362.116788 - Board_7_Logger - INFO - Last NTP sync time seconds (float): 3648556161.885384083
+2015-08-14,17:49:22--1439567362.116858 - Board_7_Logger - INFO - Last NTP sync time, counter3 value: 458881839
+2015-08-14,17:49:22--1439567362.116929 - Board_7_Logger - INFO - Received NTP time seconds (float): 3648556162.003059864
+2015-08-14,17:49:22--1439567362.117002 - Board_7_Logger - INFO - Board NTP from Counter3 receive count: 3648556162.003074169
+2015-08-14,17:49:22--1439567362.117094 - Board_7_Logger - INFO - Host UTC time (includes offset) from NTP at <?t> was: 1439567362.001040459
+2015-08-14,17:49:22--1439567362.117818 - Board_7_Logger - INFO - Current UTC time from NTP is (includes offset): 1439567362.117761135
+2015-08-14,17:49:22--1439567362.117941 - Board_7_Logger - INFO - Received time from counter 3: 3648556162.003074169
+2015-08-14,17:49:22--1439567362.118025 - Board_7_Logger - INFO - Received time from board NTP: 3648556162.003059864
+2015-08-14,17:49:22--1439567362.118102 - Board_7_Logger - INFO - Initializing data stream socket on board
+2015-08-14,17:49:22--1439567362.121378 - Board_7_Logger - INFO - <NSt> command sent to board, initialized
+2015-08-14,17:49:22--1439567362.131581 - Board_7_Logger - INFO - Going to connect to socket on port: 9004 and IP: 192.168.1.7
+2015-08-14,17:49:22--1439567362.132317 - Board_7_Logger - INFO - NStSocket 3 opened for TCP streaming
+
+2015-08-14,17:49:22--1439567362.132604 - Board_7_Logger - INFO - Socket 3 does not show as TCP port, rather 19
+
+2015-08-14,17:49:22--1439567362.135849 - Board_7_Logger - INFO - ARM$ 3:Waiting for remote connection from TCP data stream. Listening on port [9004]3:Connected to host at - 192.168.1.128 : 59219
+
+2015-08-14,17:49:22--1439567362.136006 - Board_7_Logger - INFO - Data link established---will return first sample then wait 1 seconds. Expect buffer over-run, this is normal while waiting.
+2015-08-14,17:49:23--1439567363.138482 - Board_7_Logger - INFO - Initilization done on this board, ready to collect data!
+2015-08-14,17:49:23--1439567363.139174 - Main_Logger - INFO - Serial port/dev/ttyACM0 opened.
+2015-08-14,17:49:23--1439567363.157578 - Main_Logger - INFO - Serial Port /dev/ttyACM0 has board ID: 1
+2015-08-14,17:49:23--1439567363.162681 - Board_1_Logger - INFO - ARM$ Sa0Channel 0 has name 58
+
+2015-08-14,17:49:23--1439567363.163397 - Board_1_Logger - INFO - Board 1, Channel 0 has name 58
+
+2015-08-14,17:49:23--1439567363.167615 - Board_1_Logger - INFO - ARM$ Sa1Channel 1 has name 59
+
+2015-08-14,17:49:23--1439567363.168323 - Board_1_Logger - INFO - Board 1, Channel 1 has name 59
+
+2015-08-14,17:49:23--1439567363.172597 - Board_1_Logger - INFO - ARM$ Sa2Channel 2 has name 60
+
+2015-08-14,17:49:23--1439567363.173340 - Board_1_Logger - INFO - Board 1, Channel 2 has name 60
+
+2015-08-14,17:49:23--1439567363.177684 - Board_1_Logger - INFO - ARM$ Sa3Channel 3 has name 61
+
+2015-08-14,17:49:23--1439567363.178309 - Board_1_Logger - INFO - Board 1, Channel 3 has name 61
+
+2015-08-14,17:49:23--1439567363.181507 - Board_1_Logger - INFO - ARM$ kCKeyboard calibration disabled
+
+2015-08-14,17:49:23--1439567363.181768 - Board_1_Logger - INFO - Channel 0 has min -1998 and max -948
+
+2015-08-14,17:49:23--1439567363.182015 - Board_1_Logger - INFO - Channel 0 has low -1788 and high -1158 thresholds
+
+2015-08-14,17:49:23--1439567363.182219 - Board_1_Logger - INFO - Channel 1 has min -1674 and max -933
+
+2015-08-14,17:49:23--1439567363.182456 - Board_1_Logger - INFO - Channel 1 has low -1525 and high -1081 thresholds
+
+2015-08-14,17:49:23--1439567363.182659 - Board_1_Logger - INFO - Channel 2 has min -3191 and max -1579
+
+2015-08-14,17:49:23--1439567363.182894 - Board_1_Logger - INFO - Channel 2 has low -2868 and high -1901 thresholds
+
+2015-08-14,17:49:23--1439567363.183096 - Board_1_Logger - INFO - Channel 3 has min -3092 and max -1373
+
+2015-08-14,17:49:23--1439567363.183328 - Board_1_Logger - INFO - Channel 3 has low -2748 and high -1716 thresholds
+
+2015-08-14,17:49:23--1439567363.193596 - Board_1_Logger - INFO - Channel 3 off threshold: {0: -1158, 1: -1081, 2: -1901, 3: -1716}
+2015-08-14,17:49:23--1439567363.193692 - Board_1_Logger - INFO - Channel 3 on threshold: {0: -1788, 1: -1525, 2: -2868, 3: -2748}
+2015-08-14,17:49:23--1439567363.193771 - Board_1_Logger - INFO - Channel 3 min value: {0: -1998, 1: -1674, 2: -3191, 3: -3092}
+2015-08-14,17:49:23--1439567363.193846 - Board_1_Logger - INFO - Channel 3 max value: {0: -948, 1: -933, 2: -1579, 3: -1373}
+2015-08-14,17:49:23--1439567363.296593 - Board_1_Logger - INFO - Ni
+
+2015-08-14,17:49:23--1439567363.296879 - Board_1_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:23--1439567363.297055 - Board_1_Logger - INFO -  MAC : 00:00:00:01:CD:EF
+
+2015-08-14,17:49:23--1439567363.297206 - Board_1_Logger - INFO -  IP : 192.168.1.1
+
+2015-08-14,17:49:23--1439567363.297355 - Board_1_Logger - INFO -  GW : 192.168.1.10
+
+2015-08-14,17:49:23--1439567363.297506 - Board_1_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:23--1439567363.297710 - Board_1_Logger - INFO - =======================================
+
+2015-08-14,17:49:23--1439567363.307956 - Board_1_Logger - INFO - IP address is: 192.168.1.1
+2015-08-14,17:49:23--1439567363.315549 - Board_1_Logger - INFO - ??File touched on: Thu Dec 04 14:31:21 2014 
+
+2015-08-14,17:49:23--1439567363.315820 - Board_1_Logger - INFO - File compiled on: Dec  4 2014 14:31:25 
+
+2015-08-14,17:49:23--1439567363.316021 - Board_1_Logger - INFO - Compiled File: .\main.c 
+
+2015-08-14,17:49:23--1439567363.316199 - Board_1_Logger - INFO - Compiled Line: 1923 
+
+2015-08-14,17:49:23--1439567363.316461 - Board_1_Logger - INFO - Master Clk Freq: 48000000, Bus Clk Freq: 48000000 
+
+2015-08-14,17:49:23--1439567363.316761 - Board_1_Logger - INFO - ARM$ ?cCurrent Configuration, printing contents:
+
+2015-08-14,17:49:23--1439567363.317019 - Board_1_Logger - INFO - EEPROM ID 0, Board ID 1, Board Name Fungible 2.1:
+
+2015-08-14,17:49:23--1439567363.317240 - Board_1_Logger - INFO - Analog Channel Names: 58,	59,	60,	61
+
+2015-08-14,17:49:23--1439567363.317428 - Board_1_Logger - INFO - Amp Gains: 7,	7,	7,	7
+
+2015-08-14,17:49:23--1439567363.317615 - Board_1_Logger - INFO - Amp Cutoff: 3,	3,	3,	3
+
+2015-08-14,17:49:23--1439567363.317848 - Board_1_Logger - INFO - Internal SAR Reference Dac value is: 128
+
+2015-08-14,17:49:23--1439567363.318071 - Board_1_Logger - INFO - Epot val 128 gives Vadj= 3.107303V
+
+2015-08-14,17:49:23--1439567363.318321 - Board_1_Logger - INFO - Epot val 4 gives max LED current 0.021334mA
+
+2015-08-14,17:49:23--1439567363.318603 - Board_1_Logger - INFO - Adjustable LDO Voltage: 3.107303, Max LED current 0.021334
+
+2015-08-14,17:49:23--1439567363.318865 - Board_1_Logger - INFO - For LED channel 0: Grayscale: 4095, Dot Correction: 1
+
+2015-08-14,17:49:23--1439567363.319127 - Board_1_Logger - INFO - For LED channel 1: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.319400 - Board_1_Logger - INFO - For LED channel 2: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.319667 - Board_1_Logger - INFO - For LED channel 3: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.319930 - Board_1_Logger - INFO - For LED channel 4: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.320191 - Board_1_Logger - INFO - For LED channel 5: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.320453 - Board_1_Logger - INFO - For LED channel 6: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.320715 - Board_1_Logger - INFO - For LED channel 7: Grayscale: 4095, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.320982 - Board_1_Logger - INFO - For LED channel 8: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:23--1439567363.321245 - Board_1_Logger - INFO - For LED channel 9: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:23--1439567363.321512 - Board_1_Logger - INFO - For LED channel 10: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:23--1439567363.321778 - Board_1_Logger - INFO - For LED channel 11: Grayscale: 4095, Dot Correction: 63
+
+2015-08-14,17:49:23--1439567363.322032 - Board_1_Logger - INFO - For LED channel 12: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.322402 - Board_1_Logger - INFO - For LED channel 13: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.322800 - Board_1_Logger - INFO - For LED channel 14: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.323215 - Board_1_Logger - INFO - For LED channel 15: Grayscale: 0, Dot Correction: 0
+
+2015-08-14,17:49:23--1439567363.836709 - Board_1_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.837186 - Board_1_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.837568 - Board_1_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.837942 - Board_1_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.838313 - Board_1_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.838679 - Board_1_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.839053 - Board_1_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.839431 - Board_1_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.839801 - Board_1_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.840161 - Board_1_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.840525 - Board_1_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.840886 - Board_1_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.841245 - Board_1_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.841606 - Board_1_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.841967 - Board_1_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:23--1439567363.842331 - Board_1_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.195750 - Board_1_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.196215 - Board_1_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.196586 - Board_1_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.196940 - Board_1_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.197286 - Board_1_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.197635 - Board_1_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.197975 - Board_1_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.198319 - Board_1_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.198661 - Board_1_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.199000 - Board_1_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.199351 - Board_1_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.199696 - Board_1_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.200035 - Board_1_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.200417 - Board_1_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.200766 - Board_1_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.201109 - Board_1_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.394801 - Board_1_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.395254 - Board_1_Logger - INFO - ARM$ Sl0,0LED channel 0 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.395640 - Board_1_Logger - INFO - ARM$ Sl1,1LED channel 1 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.395994 - Board_1_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.396338 - Board_1_Logger - INFO - ARM$ Sl2,1LED channel 2 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.396683 - Board_1_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.397025 - Board_1_Logger - INFO - ARM$ Sl3,1LED channel 3 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.397364 - Board_1_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.397703 - Board_1_Logger - INFO - ARM$ Sl4,1LED channel 4 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.398038 - Board_1_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.398374 - Board_1_Logger - INFO - ARM$ Sl5,1LED channel 5 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.398711 - Board_1_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.399048 - Board_1_Logger - INFO - ARM$ Sl6,1LED channel 6 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.399391 - Board_1_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.399735 - Board_1_Logger - INFO - ARM$ Sl7,1LED channel 7 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.400076 - Board_1_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.465790 - Board_1_Logger - INFO - Sl0,1LED channel 0 has GS: 4095, DC 1, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.466213 - Board_1_Logger - INFO - ARM$ Sl1,0LED channel 1 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.466569 - Board_1_Logger - INFO - ARM$ Sl2,0LED channel 2 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.466959 - Board_1_Logger - INFO - ARM$ Sl3,0LED channel 3 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.467316 - Board_1_Logger - INFO - ARM$ Sl4,0LED channel 4 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.467677 - Board_1_Logger - INFO - ARM$ Sl5,0LED channel 5 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.468026 - Board_1_Logger - INFO - ARM$ Sl6,0LED channel 6 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.468370 - Board_1_Logger - INFO - ARM$ Sl7,0LED channel 7 has GS: 4095, DC 0, modulation (s,ms,cntrl):0,0,0
+
+2015-08-14,17:49:24--1439567364.478652 - Board_1_Logger - INFO - Enabling Networking
+2015-08-14,17:49:24--1439567364.481716 - Board_1_Logger - INFO - NEEthernet already initialized
+
+2015-08-14,17:49:24--1439567364.481840 - Board_1_Logger - INFO - Sending Ping to 192.168.1.1 confirm networking is enabled
+2015-08-14,17:49:24--1439567364.505765 - Board_1_Logger - INFO - Ping 192.168.1.1 successful, networking enabled!
+2015-08-14,17:49:24--1439567364.506047 - Board_1_Logger - INFO - Switching to local NTP IP: 192.168.1.128
+2015-08-14,17:49:24--1439567364.521707 - Board_1_Logger - INFO - ===== W5500 NET CONF : DHCP =====
+
+2015-08-14,17:49:24--1439567364.521955 - Board_1_Logger - INFO -  MAC : 00:00:00:01:CD:EF
+
+2015-08-14,17:49:24--1439567364.522118 - Board_1_Logger - INFO -  IP : 192.168.1.1
+
+2015-08-14,17:49:24--1439567364.522271 - Board_1_Logger - INFO -  GW : 192.168.1.10
+
+2015-08-14,17:49:24--1439567364.522426 - Board_1_Logger - INFO -  SN : 255.255.255.0
+
+2015-08-14,17:49:24--1439567364.522649 - Board_1_Logger - INFO - =======================================
+
+2015-08-14,17:49:24--1439567364.522933 - Board_1_Logger - INFO - ARM$ Nn192.168.1.128NTP address is: 192.168.1.128
+
+2015-08-14,17:49:24--1439567364.533207 - Board_1_Logger - INFO - Querying local NTP server
+2015-08-14,17:49:24--1439567364.637027 - Board_1_Logger - INFO - NNOriginally received 56, rptr set to 56
+
+2015-08-14,17:49:24--1439567364.637354 - Board_1_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:24--1439567364.637702 - Board_1_Logger - INFO - Send time (time sent) seconds 3648556164 and microseconds 501371, Counter3: 459138179 
+
+2015-08-14,17:49:24--1439567364.638077 - Board_1_Logger - INFO - Sent time (time after sending) seconds 3648556164 and microseconds 503261, Counter3: 459138368  
+
+2015-08-14,17:49:24--1439567364.638445 - Board_1_Logger - INFO - Receive time (reply received) seconds 3648556164 and microseconds 506221, Counter3: 459138664 
+
+2015-08-14,17:49:24--1439567364.638732 - Board_1_Logger - INFO - Full transit and receive duration (subtract) is 4849.91 microseconds
+
+2015-08-14,17:49:24--1439567364.638993 - Board_1_Logger - INFO - Local process time microseconds 1890.18 (float, difference)
+
+2015-08-14,17:49:24--1439567364.639277 - Board_1_Logger - INFO - Remote processing time is 2959.73 microseconds (float, difference)
+
+2015-08-14,17:49:24--1439567364.639494 - Board_1_Logger - INFO - roundtrip delay (miliseconds): 4.89569
+
+2015-08-14,17:49:24--1439567364.639705 - Board_1_Logger - INFO - clock offset (seconds): 0	 and us: 34821
+
+2015-08-14,17:49:24--1439567364.640126 - Board_1_Logger - INFO - Received NTP time is secs,fracs: 3648556164,2313442638, recv counter is: 459138664, and 423 seconds since last sync'd
+
+2015-08-14,17:49:24--1439567364.640550 - Board_1_Logger - INFO - Last NTP update secs,fracs: 3648555741,2872866496, Counter3 last update count: 416854931, current Counter3: 459139074
+
+2015-08-14,17:49:24--1439567364.640736 - Board_1_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:24--1439567364.651019 - Board_1_Logger - INFO - Getting time update.
+2015-08-14,17:49:24--1439567364.651204 - Board_1_Logger - INFO - Getting time update.
+2015-08-14,17:49:24--1439567364.754641 - Board_1_Logger - INFO - ?tCurrent time (counter_3):	459149866, with 0 overflow
+
+2015-08-14,17:49:24--1439567364.754938 - Board_1_Logger - INFO - Time elapsed in microseconds (counter_3):	200
+
+2015-08-14,17:49:24--1439567364.755197 - Board_1_Logger - INFO - Counter 2 reads: 		4591 seconds,	116 ms,	477.833 us 
+
+2015-08-14,17:49:24--1439567364.755428 - Board_1_Logger - INFO - Originally received 56, rptr set to 56
+
+2015-08-14,17:49:24--1439567364.755650 - Board_1_Logger - INFO - NTP Packet received. Now to parse them...
+
+2015-08-14,17:49:24--1439567364.755992 - Board_1_Logger - INFO - Send time (time sent) seconds 3648556164 and microseconds 651540, Counter3: 459149954 
+
+2015-08-14,17:49:24--1439567364.756359 - Board_1_Logger - INFO - Sent time (time after sending) seconds 3648556164 and microseconds 653410, Counter3: 459150141  
+
+2015-08-14,17:49:24--1439567364.756719 - Board_1_Logger - INFO - Receive time (reply received) seconds 3648556164 and microseconds 656370, Counter3: 459150437 
+
+2015-08-14,17:49:24--1439567364.757005 - Board_1_Logger - INFO - Full transit and receive duration (subtract) is 4830.36 microseconds
+
+2015-08-14,17:49:24--1439567364.757266 - Board_1_Logger - INFO - Local process time microseconds 1870.16 (float, difference)
+
+2015-08-14,17:49:24--1439567364.757544 - Board_1_Logger - INFO - Remote processing time is 2960.21 microseconds (float, difference)
+
+2015-08-14,17:49:24--1439567364.757740 - Board_1_Logger - INFO - roundtrip delay (miliseconds): 4.848
+
+2015-08-14,17:49:24--1439567364.757944 - Board_1_Logger - INFO - clock offset (seconds): 0	 and us: 2395
+
+2015-08-14,17:49:24--1439567364.758363 - Board_1_Logger - INFO - Received NTP time is secs,fracs: 3648556164,2819043371, recv counter is: 459150437, and 0 seconds since last sync'd
+
+2015-08-14,17:49:24--1439567364.758800 - Board_1_Logger - INFO - Last NTP update secs,fracs: 3648556164,2313442638, Counter3 last update count: 459138664, current Counter3: 459150828
+
+2015-08-14,17:49:24--1439567364.758989 - Board_1_Logger - INFO - Calling ntp get time, returned 1
+
+2015-08-14,17:49:24--1439567364.759229 - Board_1_Logger - INFO - Current time (counter_3):	459150914, with 0 overflow
+
+2015-08-14,17:49:24--1439567364.769483 - Board_1_Logger - INFO - Board NTP originate time seconds (float): 3648556164.651539803
+2015-08-14,17:49:24--1439567364.769582 - Board_1_Logger - INFO - Board counter3 at originate: 459149954
+2015-08-14,17:49:24--1439567364.769669 - Board_1_Logger - INFO - Offset is (seconds): 0.002395
+2015-08-14,17:49:24--1439567364.769746 - Board_1_Logger - INFO - Received NTP time seconds (int): 3648556164, and fractional (int): 2819043371
+2015-08-14,17:49:24--1439567364.769823 - Board_1_Logger - INFO - Received NTP time seconds (float): 3648556164.656359673
+2015-08-14,17:49:24--1439567364.769895 - Board_1_Logger - INFO - Counter3 value at received NTP time : 459150437
+2015-08-14,17:49:24--1439567364.769966 - Board_1_Logger - INFO - Last NTP sync time seconds (int): 3648556164, and fractional (int): 2313442638
+2015-08-14,17:49:24--1439567364.770040 - Board_1_Logger - INFO - Last NTP sync time seconds (float): 3648556164.538640499
+2015-08-14,17:49:24--1439567364.770109 - Board_1_Logger - INFO - Last NTP sync time, counter3 value: 459138664
+2015-08-14,17:49:24--1439567364.770180 - Board_1_Logger - INFO - Received NTP time seconds (float): 3648556164.656359673
+2015-08-14,17:49:24--1439567364.770255 - Board_1_Logger - INFO - Board NTP from Counter3 receive count: 3648556164.656370640
+2015-08-14,17:49:24--1439567364.770348 - Board_1_Logger - INFO - Host UTC time (includes offset) from NTP at <?t> was: 1439567364.654232025
+2015-08-14,17:49:24--1439567364.771063 - Board_1_Logger - INFO - Current UTC time from NTP is (includes offset): 1439567364.771016121
+2015-08-14,17:49:24--1439567364.771183 - Board_1_Logger - INFO - Received time from counter 3: 3648556164.656370640
+2015-08-14,17:49:24--1439567364.771268 - Board_1_Logger - INFO - Received time from board NTP: 3648556164.656359673
+2015-08-14,17:49:24--1439567364.771351 - Board_1_Logger - INFO - Initializing data stream socket on board
+2015-08-14,17:49:24--1439567364.775557 - Board_1_Logger - INFO - <NSt> command sent to board, initialized
+2015-08-14,17:49:24--1439567364.785763 - Board_1_Logger - INFO - Going to connect to socket on port: 9004 and IP: 192.168.1.1
+2015-08-14,17:49:24--1439567364.786409 - Board_1_Logger - INFO - NStSocket 3 opened for TCP streaming
+
+2015-08-14,17:49:24--1439567364.786679 - Board_1_Logger - INFO - Socket 3 does not show as TCP port, rather 19
+
+2015-08-14,17:49:24--1439567364.790850 - Board_1_Logger - INFO - ARM$ 3:Waiting for remote connection from TCP data stream. Listening on port [9004]3:Connected to host at - 192.168.1.128 : 55539
+
+2015-08-14,17:49:24--1439567364.791009 - Board_1_Logger - INFO - Data link established---will return first sample then wait 1 seconds. Expect buffer over-run, this is normal while waiting.
+2015-08-14,17:49:25--1439567365.793473 - Board_1_Logger - INFO - Initilization done on this board, ready to collect data!
+2015-08-14,17:49:25--1439567365.793787 - Main_Logger - INFO - [u'Bluethner Digital Piano MIDI 1', u'Midi Through Port-0']
+2015-08-14,17:49:25--1439567365.793898 - Main_Logger - INFO - Using MIDI port: Bluethner Digital Piano MIDI 1
+2015-08-14,17:49:25--1439567365.794241 - Board_2_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:25--1439567365.805135 - Board_2_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 4294963320, 'midiID': 63, 'ChannelVal': 420658160, 'transition_to_on': True, 'NewOnset': [253, 2, 420658160, 150.53071229115372, 0, 4294963320, 1439605722.712819], 'velocity': 150.53071229115372, 'BoardUTC': 1439605722.712819, 'chan': 2}
+2015-08-14,17:49:26--1439567366.057676 - Board_2_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 4294964899, 'midiID': 63, 'ChannelVal': -3969, 'transition_to_on': False, 'NewOnset': [253, -2, -3969, 133.89586531145008, 0, 4294964899, 1439605722.728609], 'velocity': 133.89586531145008, 'BoardUTC': 1439605722.728609, 'chan': 2}
+2015-08-14,17:49:26--1439567366.061466 - Board_2_Logger - INFO - Channel: 3 is now ON: {'BoardCounter': 4294964868, 'midiID': 64, 'ChannelVal': -1626, 'transition_to_on': True, 'NewOnset': [253, 3, -1626, 94.135558842963931, 0, 4294964868, 1439605722.7282987], 'velocity': 94.135558842963931, 'BoardUTC': 1439605722.7282987, 'chan': 3}
+2015-08-14,17:49:26--1439567366.280112 - Board_2_Logger - INFO - Channel: 3 is now OFF: {'BoardCounter': 458377498, 'midiID': 64, 'ChannelVal': -3975, 'transition_to_on': False, 'NewOnset': [253, -3, -3975, 73.254784241361094, 0, 458377498, 1439567356.854599], 'velocity': 73.254784241361094, 'BoardUTC': 1439567356.854599, 'chan': 3}
+2015-08-14,17:49:26--1439567366.283966 - Board_2_Logger - INFO - Channel: 4 is now ON: {'BoardCounter': 4294964868, 'midiID': 65, 'ChannelVal': 420654379, 'transition_to_on': True, 'NewOnset': [253, 4, 420654379, 285.40767367898047, 0, 4294964868, 1439605722.7282987], 'velocity': 285.40767367898047, 'BoardUTC': 1439605722.7282987, 'chan': 4}
+2015-08-14,17:49:26--1439567366.504212 - Board_2_Logger - INFO - Channel: 4 is now OFF: {'BoardCounter': 458377498, 'midiID': 65, 'ChannelVal': -1630, 'transition_to_on': False, 'NewOnset': [253, -4, -1630, 281.5699183969719, 0, 458377498, 1439567356.854599], 'velocity': 281.5699183969719, 'BoardUTC': 1439567356.854599, 'chan': 4}
+2015-08-14,17:49:26--1439567366.505507 - Board_4_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:26--1439567366.517105 - Board_7_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:26--1439567366.526790 - Board_1_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:26--1439567366.537202 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 459163747, 'midiID': 59, 'ChannelVal': 0, 'transition_to_on': True, 'NewOnset': [254, 2, 0, 123.979542632612, 0, 459163747, 1439567364.7918658], 'velocity': 123.979542632612, 'BoardUTC': 1439567364.7918658, 'chan': 2}
+2015-08-14,17:49:26--1439567366.746327 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 459163802, 'midiID': 59, 'ChannelVal': -1602, 'transition_to_on': False, 'NewOnset': [254, -2, -1602, 152.39827263538615, 0, 459163802, 1439567364.7924156], 'velocity': 152.39827263538615, 'BoardUTC': 1439567364.7924156, 'chan': 2}
+2015-08-14,17:49:26--1439567366.750199 - Board_1_Logger - INFO - Channel: 3 is now ON: {'BoardCounter': 459163747, 'midiID': 60, 'ChannelVal': 0, 'transition_to_on': True, 'NewOnset': [254, 3, 0, 136.00363523415959, 0, 459163747, 1439567364.7918658], 'velocity': 136.00363523415959, 'BoardUTC': 1439567364.7918658, 'chan': 3}
+2015-08-14,17:49:28--1439567368.733155 - Board_1_Logger - INFO - Channel: 3 is now OFF: {'BoardCounter': 459163802, 'midiID': 60, 'ChannelVal': -3105, 'transition_to_on': False, 'NewOnset': [254, -3, -3105, 104.88348149181191, 0, 459163802, 1439567364.7924156], 'velocity': 104.88348149181191, 'BoardUTC': 1439567364.7924156, 'chan': 3}
+2015-08-14,17:49:28--1439567368.735361 - Board_6_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:28--1439567368.746821 - Board_5_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:28--1439567368.757148 - Board_5_Logger - INFO - Channel: 3 is now ON: {'BoardCounter': 457846259, 'midiID': 76, 'ChannelVal': 0, 'transition_to_on': True, 'NewOnset': [250, 3, 0, 138.60380362254702, 0, 457846259, 1439567351.5702124], 'velocity': 138.60380362254702, 'BoardUTC': 1439567351.5702124, 'chan': 3}
+2015-08-14,17:49:28--1439567368.966571 - Board_5_Logger - INFO - Channel: 3 is now OFF: {'BoardCounter': 457846314, 'midiID': 76, 'ChannelVal': -3131, 'transition_to_on': False, 'NewOnset': [250, -3, -3131, 94.12866506094899, 0, 457846314, 1439567351.5707622], 'velocity': 94.12866506094899, 'BoardUTC': 1439567351.5707622, 'chan': 3}
+2015-08-14,17:49:28--1439567368.968823 - Board_3_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:28--1439567368.979604 - Board_3_Logger - INFO - Channel: 3 is now ON: {'BoardCounter': 420683051, 'midiID': 68, 'ChannelVal': 0, 'transition_to_on': True, 'NewOnset': [252, 3, 0, 135.50960507166758, 0, 420683051, 1439566979.882237], 'velocity': 135.50960507166758, 'BoardUTC': 1439566979.882237, 'chan': 3}
+2015-08-14,17:49:29--1439567369.184330 - Board_3_Logger - INFO - Channel: 3 is now OFF: {'BoardCounter': 458115290, 'midiID': 68, 'ChannelVal': -2507, 'transition_to_on': False, 'NewOnset': [252, -3, -2507, 116.51625643054005, 0, 458115290, 1439567354.204627], 'velocity': 116.51625643054005, 'BoardUTC': 1439567354.204627, 'chan': 3}
+2015-08-14,17:49:29--1439567369.186570 - Main_Logger - INFO - Received message from control socket: [255, 1, 1, 0, 0, 1, 1439567366.795235]
+2015-08-14,17:49:29--1439567369.186691 - Main_Logger - INFO - Received Packet from control socket:{{u'Count': 1, u'FeedbackID': u'MIDI', u'StimNum': 0, u'StreamDat': [255, 1, 1, 0, 0, 1, 1439567366.795235], u'FeedbackNum': 0, u'BlockID': u'PLAY', u'TrialNum': 1, u'SubjectID': u'IMPRS_5min', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1439567366.795235, u'date': u'Fri Aug 14 17:49:26 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_1', u'BlockNum': 1}}
+2015-08-14,17:49:29--1439567369.186784 - Main_Logger - INFO - New block tirggered, Saving Block: SETUP
+2015-08-14,17:49:29--1439567369.201875 - Main_Logger - INFO - Closed file for block: SETUP
+2015-08-14,17:49:29--1439567369.202104 - Main_Logger - INFO - Opened file for saving new block: PLAY
+2015-08-14,17:49:29--1439567369.202262 - Board_2_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.212380 - Board_4_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.222248 - Board_7_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.233463 - Board_1_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.243347 - Board_6_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.253230 - Board_5_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.263915 - Board_3_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.273747 - Board_2_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.284221 - Board_4_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.294165 - Board_7_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.304016 - Board_1_Logger - WARNING - Message length is high (data corruption possible): 44560
+2015-08-14,17:49:29--1439567369.312009 - Board_6_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.321948 - Board_5_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.331827 - Board_3_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.342386 - Board_2_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.352375 - Board_4_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.362282 - Board_7_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.373241 - Board_6_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.383231 - Board_5_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.393121 - Board_3_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.403651 - Board_2_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.413644 - Board_4_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.423495 - Board_7_Logger - WARNING - Message length is high (data corruption possible): 26020
+2015-08-14,17:49:29--1439567369.428728 - Board_6_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.438711 - Board_5_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.448624 - Board_3_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.459090 - Board_2_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.469024 - Board_4_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.479651 - Board_6_Logger - WARNING - Message length is high (data corruption possible): 46000
+2015-08-14,17:49:29--1439567369.488790 - Board_6_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 4294961251, 'midiID': 79, 'ChannelVal': 458473106, 'transition_to_on': True, 'NewOnset': [249, 2, 458473106, 50.997039134996612, 0, 4294961251, 1439605722.6774745], 'velocity': 50.997039134996612, 'BoardUTC': 1439605722.6774745, 'chan': 2}
+2015-08-14,17:49:29--1439567369.489084 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=79 velocity=2 time=0
+2015-08-14,17:49:29--1439567369.694596 - Board_6_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 459587519, 'midiID': 79, 'ChannelVal': -6139, 'transition_to_on': False, 'NewOnset': [249, -2, -6139, 45.836569462436202, 0, 459587519, 1439567368.9401546], 'velocity': 45.836569462436202, 'BoardUTC': 1439567368.9401546, 'chan': 2}
+2015-08-14,17:49:29--1439567369.694902 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=79 velocity=4 time=0
+2015-08-14,17:49:29--1439567369.696895 - Board_5_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:29--1439567369.708820 - Board_5_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 4294964160, 'midiID': 75, 'ChannelVal': 458761380, 'transition_to_on': True, 'NewOnset': [250, 2, 458761380, 127.4301500783244, 0, 4294964160, 1439605722.7492223], 'velocity': 127.4301500783244, 'BoardUTC': 1439605722.7492223, 'chan': 2}
+2015-08-14,17:49:29--1439567369.709089 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=75 velocity=17 time=0
+2015-08-14,17:49:29--1439567369.927310 - Board_5_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 459584519, 'midiID': 75, 'ChannelVal': -3623, 'transition_to_on': False, 'NewOnset': [250, -2, -3623, 63.376603898452778, 0, 459584519, 1439567368.9528122], 'velocity': 63.376603898452778, 'BoardUTC': 1439567368.9528122, 'chan': 2}
+2015-08-14,17:49:29--1439567369.927627 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=75 velocity=7 time=0
+2015-08-14,17:49:29--1439567369.930169 - Board_3_Logger - WARNING - Message length is high (data corruption possible): 53440
+2015-08-14,17:49:29--1439567369.941275 - Board_3_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 4294964832, 'midiID': 67, 'ChannelVal': 459002633, 'transition_to_on': True, 'NewOnset': [252, 2, 459002633, 127.95653958417994, 0, 4294964832, 1439605722.700047], 'velocity': 127.95653958417994, 'BoardUTC': 1439605722.700047, 'chan': 2}
+2015-08-14,17:49:29--1439567369.941544 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=67 velocity=17 time=0
+2015-08-14,17:49:30--1439567370.156109 - Board_3_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 459612500, 'midiID': 67, 'ChannelVal': -3630, 'transition_to_on': False, 'NewOnset': [252, -2, -3630, 76.695180754006458, 0, 459612500, 1439567369.1767268], 'velocity': 76.695180754006458, 'BoardUTC': 1439567369.1767268, 'chan': 2}
+2015-08-14,17:49:30--1439567370.156426 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=67 velocity=10 time=0
+2015-08-14,17:49:30--1439567370.158863 - Board_2_Logger - WARNING - Message length is high (data corruption possible): 60000
+2015-08-14,17:49:30--1439567370.170907 - Board_2_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 4294963352, 'midiID': 63, 'ChannelVal': 459462045, 'transition_to_on': True, 'NewOnset': [253, 2, 459462045, 155.84761295743687, 0, 4294963352, 1439605722.713139], 'velocity': 155.84761295743687, 'BoardUTC': 1439605722.713139, 'chan': 2}
+2015-08-14,17:49:30--1439567370.171177 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=63 velocity=20 time=0
+2015-08-14,17:49:30--1439567370.372955 - Board_2_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 459632999, 'midiID': 63, 'ChannelVal': -2263, 'transition_to_on': False, 'NewOnset': [253, -2, -2263, 75.473499972886273, 0, 459632999, 1439567369.4096088], 'velocity': 75.473499972886273, 'BoardUTC': 1439567369.4096088, 'chan': 2}
+2015-08-14,17:49:30--1439567370.373263 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=63 velocity=10 time=0
+2015-08-14,17:49:30--1439567370.375854 - Board_4_Logger - WARNING - Message length is high (data corruption possible): 36560
+2015-08-14,17:49:30--1439567370.383637 - Board_7_Logger - WARNING - Message length is high (data corruption possible): 32840
+2015-08-14,17:49:30--1439567370.389185 - Board_1_Logger - WARNING - Message length is high (data corruption possible): 33220
+2015-08-14,17:49:30--1439567370.394690 - Board_6_Logger - WARNING - Message length is high (data corruption possible): 33400
+2015-08-14,17:49:30--1439567370.400241 - Board_5_Logger - WARNING - Message length is high (data corruption possible): 29220
+2015-08-14,17:49:33--1439567373.011658 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 459984510, 'midiID': 59, 'ChannelVal': -1078, 'transition_to_on': True, 'NewOnset': [254, 2, -1078, 1809.2157043724651, 0, 459984510, 1439567372.9994955], 'velocity': 1809.2157043724651, 'BoardUTC': 1439567372.9994955, 'chan': 2}
+2015-08-14,17:49:33--1439567373.011955 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=84 time=0
+2015-08-14,17:49:34--1439567374.503197 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 460112619, 'midiID': 59, 'ChannelVal': -1537, 'transition_to_on': False, 'NewOnset': [254, -2, -1537, 2867.5664000977513, 0, 460112619, 1439567374.2805858], 'velocity': 2867.5664000977513, 'BoardUTC': 1439567374.2805858, 'chan': 2}
+2015-08-14,17:49:34--1439567374.503531 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=107 time=0
+2015-08-14,17:49:36--1439567376.427746 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 460326374, 'midiID': 59, 'ChannelVal': -1073, 'transition_to_on': True, 'NewOnset': [254, 2, -1073, 558.12866713389928, 0, 460326374, 1439567376.4181356], 'velocity': 558.12866713389928, 'BoardUTC': 1439567376.4181356, 'chan': 2}
+2015-08-14,17:49:36--1439567376.428052 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=45 time=0
+2015-08-14,17:49:37--1439567377.104197 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 460371360, 'midiID': 59, 'ChannelVal': -1531, 'transition_to_on': False, 'NewOnset': [254, -2, -1531, 1597.2892072316904, 0, 460371360, 1439567376.8679957], 'velocity': 1597.2892072316904, 'BoardUTC': 1439567376.8679957, 'chan': 2}
+2015-08-14,17:49:37--1439567377.104538 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=79 time=0
+2015-08-14,17:49:37--1439567377.512601 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 460434921, 'midiID': 59, 'ChannelVal': -1054, 'transition_to_on': True, 'NewOnset': [254, 2, -1054, 1903.0427658072526, 0, 460434921, 1439567377.5036058], 'velocity': 1903.0427658072526, 'BoardUTC': 1439567377.5036058, 'chan': 2}
+2015-08-14,17:49:37--1439567377.512904 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=86 time=0
+2015-08-14,17:49:38--1439567378.009769 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 460462537, 'midiID': 59, 'ChannelVal': -1527, 'transition_to_on': False, 'NewOnset': [254, -2, -1527, 2127.5087247994293, 0, 460462537, 1439567377.7797656], 'velocity': 2127.5087247994293, 'BoardUTC': 1439567377.7797656, 'chan': 2}
+2015-08-14,17:49:38--1439567378.010087 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=92 time=0
+2015-08-14,17:49:50--1439567390.052798 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 461688947, 'midiID': 59, 'ChannelVal': -1078, 'transition_to_on': True, 'NewOnset': [254, 2, -1078, 1768.2184883447014, 0, 461688947, 1439567390.0438657], 'velocity': 1768.2184883447014, 'BoardUTC': 1439567390.0438657, 'chan': 2}
+2015-08-14,17:49:50--1439567390.053099 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=83 time=0
+2015-08-14,17:49:51--1439567391.023216 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 461765168, 'midiID': 59, 'ChannelVal': -1542, 'transition_to_on': False, 'NewOnset': [254, -2, -1542, 2382.4171234113373, 0, 461765168, 1439567390.8060756], 'velocity': 2382.4171234113373, 'BoardUTC': 1439567390.8060756, 'chan': 2}
+2015-08-14,17:49:51--1439567391.023580 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=97 time=0
+2015-08-14,17:49:52--1439567392.372975 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 461920675, 'midiID': 59, 'ChannelVal': -1069, 'transition_to_on': True, 'NewOnset': [254, 2, -1069, 366.29298508240424, 0, 461920675, 1439567392.3611455], 'velocity': 366.29298508240424, 'BoardUTC': 1439567392.3611455, 'chan': 2}
+2015-08-14,17:49:52--1439567392.373272 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=35 time=0
+2015-08-14,17:49:52--1439567392.910010 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 461953169, 'midiID': 59, 'ChannelVal': -1556, 'transition_to_on': False, 'NewOnset': [254, -2, -1556, 1318.2776517051334, 0, 461953169, 1439567392.6860857], 'velocity': 1318.2776517051334, 'BoardUTC': 1439567392.6860857, 'chan': 2}
+2015-08-14,17:49:52--1439567392.910345 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=71 time=0
+2015-08-14,17:49:53--1439567393.574543 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 462040675, 'midiID': 59, 'ChannelVal': -1014, 'transition_to_on': True, 'NewOnset': [254, 2, -1014, 1799.4034673009621, 0, 462040675, 1439567393.5611458], 'velocity': 1799.4034673009621, 'BoardUTC': 1439567393.5611458, 'chan': 2}
+2015-08-14,17:49:53--1439567393.574832 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=84 time=0
+2015-08-14,17:49:53--1439567393.955158 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 462057169, 'midiID': 59, 'ChannelVal': -1540, 'transition_to_on': False, 'NewOnset': [254, -2, -1540, 2228.9033881767609, 0, 462057169, 1439567393.7260857], 'velocity': 2228.9033881767609, 'BoardUTC': 1439567393.7260857, 'chan': 2}
+2015-08-14,17:49:53--1439567393.955502 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=94 time=0
+2015-08-14,17:49:54--1439567394.553081 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 462138592, 'midiID': 59, 'ChannelVal': -1048, 'transition_to_on': True, 'NewOnset': [254, 2, -1048, 1793.5778212722471, 0, 462138592, 1439567394.5403156], 'velocity': 1793.5778212722471, 'BoardUTC': 1439567394.5403156, 'chan': 2}
+2015-08-14,17:49:54--1439567394.553375 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=84 time=0
+2015-08-14,17:49:55--1439567395.662792 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 462227633, 'midiID': 59, 'ChannelVal': -1528, 'transition_to_on': False, 'NewOnset': [254, -2, -1528, 650.02249796045476, 0, 462227633, 1439567395.4307256], 'velocity': 650.02249796045476, 'BoardUTC': 1439567395.4307256, 'chan': 2}
+2015-08-14,17:49:55--1439567395.663129 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=49 time=0
+2015-08-14,17:49:56--1439567396.903791 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 462373715, 'midiID': 59, 'ChannelVal': -1078, 'transition_to_on': True, 'NewOnset': [254, 2, -1078, 1131.55251120257, 0, 462373715, 1439567396.8915458], 'velocity': 1131.55251120257, 'BoardUTC': 1439567396.8915458, 'chan': 2}
+2015-08-14,17:49:56--1439567396.904083 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=66 time=0
+2015-08-14,17:49:57--1439567397.853918 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 462447086, 'midiID': 59, 'ChannelVal': -1529, 'transition_to_on': False, 'NewOnset': [254, -2, -1529, 2078.7622814254205, 0, 462447086, 1439567397.6252556], 'velocity': 2078.7622814254205, 'BoardUTC': 1439567397.6252556, 'chan': 2}
+2015-08-14,17:49:57--1439567397.854239 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=91 time=0
+2015-08-14,17:49:58--1439567398.558418 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 462539141, 'midiID': 59, 'ChannelVal': -1080, 'transition_to_on': True, 'NewOnset': [254, 2, -1080, 1279.3170197721665, 0, 462539141, 1439567398.5458055], 'velocity': 1279.3170197721665, 'BoardUTC': 1439567398.5458055, 'chan': 2}
+2015-08-14,17:49:58--1439567398.558707 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=70 time=0
+2015-08-14,17:49:59--1439567399.546698 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 462615086, 'midiID': 59, 'ChannelVal': -1528, 'transition_to_on': False, 'NewOnset': [254, -2, -1528, 1648.4571627309406, 0, 462615086, 1439567399.305256], 'velocity': 1648.4571627309406, 'BoardUTC': 1439567399.305256, 'chan': 2}
+2015-08-14,17:49:59--1439567399.547021 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=80 time=0
+2015-08-14,17:50:00--1439567400.423714 - Board_1_Logger - INFO - Channel: 2 is now ON: {'BoardCounter': 462725551, 'midiID': 59, 'ChannelVal': -1071, 'transition_to_on': True, 'NewOnset': [254, 2, -1071, 1384.2947467760655, 0, 462725551, 1439567400.4099054], 'velocity': 1384.2947467760655, 'BoardUTC': 1439567400.4099054, 'chan': 2}
+2015-08-14,17:50:00--1439567400.424008 - Main_Logger - INFO - MIDI message sent: note_on channel=0 note=59 velocity=73 time=0
+2015-08-14,17:50:01--1439567401.382949 - Board_1_Logger - INFO - Channel: 2 is now OFF: {'BoardCounter': 462800127, 'midiID': 59, 'ChannelVal': -1526, 'transition_to_on': False, 'NewOnset': [254, -2, -1526, 2194.1756493840185, 0, 462800127, 1439567401.1556659], 'velocity': 2194.1756493840185, 'BoardUTC': 1439567401.1556659, 'chan': 2}
+2015-08-14,17:50:01--1439567401.383277 - Main_Logger - INFO - MIDI message sent: note_off channel=0 note=59 velocity=93 time=0
+2015-08-14,17:50:04--1439567404.770309 - Main_Logger - INFO - Saving Block (exception): PLAY
+2015-08-14,17:50:05--1439567405.145864 - Main_Logger - INFO - Closed file for block: PLAY
+2015-08-14,17:50:05--1439567405.146046 - Main_Logger - WARNING - Finished collecting, will now close
+2015-08-14,17:50:05--1439567405.180569 - Board_2_Logger - WARNING - Removing handler for logger: <logging.FileHandler object at 0x7f7eda5b4cd0>
+2015-08-14,17:50:05--1439567405.215316 - Board_4_Logger - WARNING - Removing handler for logger: <logging.FileHandler object at 0x7f7eda5b4cd0>
+2015-08-14,17:50:05--1439567405.249934 - Board_7_Logger - WARNING - Removing handler for logger: <logging.FileHandler object at 0x7f7eda5b4cd0>
+2015-08-14,17:50:05--1439567405.282523 - Board_1_Logger - WARNING - Removing handler for logger: <logging.FileHandler object at 0x7f7eda5b4cd0>
+2015-08-14,17:50:05--1439567405.316870 - Board_6_Logger - WARNING - Removing handler for logger: <logging.FileHandler object at 0x7f7eda5b4cd0>
+2015-08-14,17:50:05--1439567405.351217 - Board_5_Logger - WARNING - Removing handler for logger: <logging.FileHandler object at 0x7f7eda5b4cd0>
+2015-08-14,17:50:05--1439567405.385638 - Board_3_Logger - WARNING - Removing handler for logger: <logging.FileHandler object at 0x7f7eda5b4cd0>
+2015-08-14,17:50:05--1439567405.386628 - Main_Logger - WARNING - Closed MIDI port
+2015-08-14,17:50:05--1439567405.386774 - Main_Logger - WARNING - Closing Logger handler: <logging.FileHandler object at 0x7f7eda5b4cd0>
