@@ -1,0 +1,30 @@
+2015-09-29,20:56:26--1443552986.585265 - LogWriter - INFO - LogWriter created successfully
+2015-09-29,20:56:26--1443552986.585536 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-09-29,20:56:26--1443552986.585710 - LogWriter - INFO - Broker created successfully
+2015-09-29,20:56:26--1443552986.585774 - LogWriter - INFO - NTP Client created successfully
+2015-09-29,20:56:26--1443552986.585873 - LogWriter - INFO - Experiment Handler created successfully
+2015-09-29,20:56:26--1443552986.585939 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
+2015-09-29,20:56:26--1443552986.586237 - LogWriter - ERROR - could not find any boards -> ABORT!
+2015-09-29,21:07:58--1443553678.660398 - LogWriter - INFO - LogWriter created successfully
+2015-09-29,21:07:58--1443553678.660607 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-09-29,21:07:58--1443553678.660783 - LogWriter - INFO - Broker created successfully
+2015-09-29,21:07:58--1443553678.660846 - LogWriter - INFO - NTP Client created successfully
+2015-09-29,21:07:58--1443553678.660928 - LogWriter - INFO - Experiment Handler created successfully
+2015-09-29,21:07:58--1443553678.660980 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
+2015-09-29,21:07:58--1443553678.661219 - LogWriter - ERROR - could not find any boards -> ABORT!
+2015-09-29,21:10:16--1443553816.960072 - LogWriter - INFO - LogWriter created successfully
+2015-09-29,21:10:16--1443553816.960388 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-09-29,21:10:16--1443553816.960565 - LogWriter - INFO - Broker created successfully
+2015-09-29,21:10:16--1443553816.960627 - LogWriter - INFO - NTP Client created successfully
+2015-09-29,21:10:16--1443553816.960712 - LogWriter - INFO - Experiment Handler created successfully
+2015-09-29,21:10:16--1443553816.960770 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
+2015-09-29,21:10:16--1443553816.961022 - LogWriter - ERROR - could not find any boards -> ABORT!
+2015-09-29,21:10:18--1443553818.991082 - LogWriter - INFO - user wants to kill the control host
+2015-09-29,21:21:43--1443554503.828193 - LogWriter - INFO - LogWriter created successfully
+2015-09-29,21:21:43--1443554503.828473 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-09-29,21:21:43--1443554503.828631 - LogWriter - INFO - Broker created successfully
+2015-09-29,21:21:43--1443554503.828698 - LogWriter - INFO - NTP Client created successfully
+2015-09-29,21:21:43--1443554503.828789 - LogWriter - INFO - Experiment Handler created successfully
+2015-09-29,21:21:43--1443554503.828847 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
+2015-09-29,21:21:43--1443554503.829118 - LogWriter - ERROR - could not find any boards -> ABORT!
+2015-09-29,21:21:43--1443554503.829211 - LogWriter - INFO - user wants to kill the control host
