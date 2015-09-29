@@ -1,4 +1,6 @@
 libblas-dev 
 liblapack-dev 
 libatlas-base-dev 
-gfortran 
+gfortran
+libjpeg8-dev 
+python-dev libjpeg-dev libfreetype6-dev zlib1g-dev
