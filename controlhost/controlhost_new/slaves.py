@@ -10,6 +10,59 @@ import serial
 import subprocess
 import time
 
+class ExperimentHandler(threading.Thread):
+    def __init__(self,
+                 experiment_port = settings.experiment_port,
+                 publish_port = settings.experiment_publish_log_port,
+                 push_port = settings.experiment_push_port):
+
+        threading.Thread.__init__(self)
+        self.experiment_port = experiment_port
+        self.publish_port = publish_port
+        self.push_port = push_port
+
+        self.experiment_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.experiment_socket.bind(("", self.experiment_port))
+
+        self.end = False # kill switch for the run method
+        self.lock = threading.RLock()
+
+        context = zmq.Context()
+        self.log_socket = context.socket(zmq.PUB)
+        self.push_socket = context.socket(zmq.PUSH)
+        self.log_socket.bind("tcp://*:"+str(self.publish_port))
+        self.push_socket.bind("tcp://*:"+str(self.push_port))
+
+    def run(self):
+        time.sleep(1)
+        self.experiment_socket.listen(1)
+        self.create_log_entry("Experiment Handler is ready and waiting for the experiment")
+        conn, addr = self.experiment_socket.accept()
+        while not self.end:
+            try:
+                jDat= conn.recv(1024)
+                dDat=json.loads(jDat)
+                self.create_log_entry("Received message from control socket: " + str(dDat['StreamDat']))
+                self.create_log_entry("Received Packet from control socket:{" + str(dDat) + "}")
+            except Exception as e:
+                self.create_log_entry(str(e),"error")
+
+
+    def create_log_entry(self,msg,type="info"):
+        message = {'sender':'experiment', 'receiver':'log', 'message':msg, 'type':'info'}
+        self.log_socket.send_json(message)
+
+    def shutdown(self):
+        self.create_log_entry("Experiment Handler is shutting down")
+        time.sleep(0.2)
+
+        with self.lock:
+            self.end = True
+        self.experiment_socket.close()
+        self.push_socket.close()
+        self.log_socket.close()
+
+
 class LogWriter(threading.Thread):
     """
     This class is responsible for the creation of the *.log files
@@ -56,6 +109,8 @@ class LogWriter(threading.Thread):
         self.logger.addHandler(self.sh)
         self.logger.propagate = False
 
+        self.end = False # kill switch for the run method
+
         context = zmq.Context()
         self.socket = context.socket(zmq.SUB)
         self.publisher_ports = [] # array of port numbers for reception of data
@@ -77,9 +132,48 @@ class LogWriter(threading.Thread):
         with self.lock:
             self.logger.error(msg)
 
-        
+    def subscribe(self, publisher):
+        for line in publisher:
+            self.create_info_log_entry("LogWriter subscribes to: "+str(line[0])+":"+str(line[1]))
+            self.socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
+            self.publisher_ports.append(line[1])
+        self.socket.setsockopt(zmq.SUBSCRIBE, '')
+
+
     def run(self):
-        pass
+        #self.socket.setsockopt(zmq.SUBSCRIBE, "12")
+        self.create_info_log_entry("LogWriter Thread started")
+        while not self.end:
+            try:
+                msg = self.socket.recv_json()
+                if self.is_msg_valid(msg):
+                    if msg['type'] == "info":
+                        self.create_info_log_entry(str(msg['sender']+": "+str(msg['message'])))
+                    elif msg['type'] == "error":
+                        self.create_error_log_entry(str(msg['sender']+": "+str(msg['message'])))
+                else:
+                    self.create_error_log_entry("received invalid message ... I throw it away")
+
+            except Exception as e:
+                print(str(e))
+
+
+    def is_msg_valid(self,msg):
+        if "sender" in msg and "receiver" in msg and "type" in msg and "message" in msg and msg['receiver'] is not "log":
+            return True
+        else:
+            return False
+
+
+    def shutdown(self):
+        with self.lock:
+            self.end = True
+
+        self.create_info_log_entry("LogWriter is shutting down")
+        self.socket.close()
+
+        for hand in list(self.logger.handlers):
+            hand.close()
 
 
 class NumpyDataWriter(threading.Thread):
@@ -91,16 +185,22 @@ class NumpyDataWriter(threading.Thread):
         threading.Thread.__init__(self)
         self.filename = filename
         self.publisher_ports = []  # array of port numbers for reception of data
+        self.end = False # kill switch for the run method
 
         #create target directory if neccessary
         target_dir = os.getcwd()+"/"+settings.log_subdirectory
         if not os.path.exists(target_dir):
             os.mkdir(target_dir)
 
-
         context = zmq.Context()
         self.socket = context.socket(zmq.SUB)
 
+
+    def subscribe(self, publisher):
+        for line in publisher:
+            self.socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
+            self.publisher_ports.append(line[1])
+        self.socket.setsockopt(zmq.SUBSCRIBE, '')
 
     def run(self):
         pass
@@ -111,6 +211,19 @@ class OptoBoardCommunicationThread(threading.Thread):
     This class communicates with the OptoBoards and sends the data from the boards to broker via ZMQ for further
     information processing
     """
+
+    class Channel():
+        """
+        sub class for the physical channels of the board
+        """
+        def __init__(self,min, max, low,high,midi):
+            self.min = min
+            self.max = max
+            self.low_threshold = low
+            self.high_threshold = high
+            self.midiID = midi
+
+
     def __init__(self,
                  device,
                  log_port=settings.opto_board_log_start_port,
@@ -130,13 +243,14 @@ class OptoBoardCommunicationThread(threading.Thread):
         self.log_socket.bind("tcp://*:%s" % self.log_port)
         self.data_socket = context.socket(zmq.PUB)   # for messages from the board to the data writer
         self.data_socket.bind("tcp://*:%s" % self.data_port)
-        self.control_socket = context.socket(zmq.PULL)  # for messages from the host to the board
+        self.pull_socket = context.socket(zmq.PULL)  # for messages from the host to the board
         self.push_socket = context.socket(zmq.PUSH)   # for messages from the board to the host
         self.push_socket.bind("tcp://127.0.0.1:"+str(push_port))
 
 
         # normal socket for TCP based communication with the board
         self.board_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.board_port_active = False
 
         # serial interface for the configuration stuff
         self.serial_port=serial.Serial(self.device, writeTimeout=1, timeout=settings.serial_timeout)
@@ -144,7 +258,7 @@ class OptoBoardCommunicationThread(threading.Thread):
             self.serial_port.open()
 
         self.ID = 0
-        self.midi_channels = {}
+        self.channels ={}
         self.boardIP = ""
         self.ntpIP = ""
 
@@ -181,15 +295,39 @@ class OptoBoardCommunicationThread(threading.Thread):
                 return id
         raise Exception("could not determine ID of the board")
 
-    def determine_midi_channels(self):
+    def determine_channels(self):
         channels = {}
+
+        midiID = []
         for i in range(0,4):
             response = self.send_and_receive("Sa"+ str(i))
             for line in response:
                 if "Channel "+str(i)+" has name" in line:
-                    channels[i] = int(line.split("Channel "+str(i)+" has name")[1])
+                    midiID.append(int(line.split("Channel "+str(i)+" has name")[1]))
 
-        self.midi_channels = channels
+        response = self.send_and_receive("kC")
+        for i in range(0,4):
+            min = 0
+            max = 0
+            low = 0
+            high = 0
+            for line in response:
+                if "Channel "+str(i)+" has min" in line:
+                    line = line.replace("Channel "+str(i)+" has min","").rstrip()
+                    values = line.split(" and max ")
+                    min = values[0]
+                    max = values[1]
+
+                if "Channel "+str(i)+" has low" in line:
+                    line = line.replace("Channel "+str(i)+" has low","").rstrip()
+                    line = line.replace("thresholds","")
+                    values = line.split(" and high ")
+                    low = values[0]
+                    high = values[1]
+
+            channels[i] = OptoBoardCommunicationThread.Channel(min,max,low,high,midiID[i])
+
+        self.channels = channels
         return channels
 
 
@@ -238,6 +376,29 @@ class OptoBoardCommunicationThread(threading.Thread):
         if es < 1:
             return True
 
+    def update_ntp_time(self):
+        response = self.send_and_receive("NN")
+        for line in response:
+            if "Calling ntp get time, returned 1" in line:
+                return True
+        return False
+
+    def get_ntp_time(self):
+        return self.send_and_receive("?t")
+
+    def activate_board_port(self):
+        self.serial_port.flushInput()
+
+        self.serial_port.writelines("NSt\r\n")
+        i=0
+        while i < 100:
+            line = ''.join(self.serial_port.readlines(1))
+            if "opened for TCP streaming" in line:
+                self.board_port_active = True
+                return True
+            i += 1
+
+        return False
 
 
     def run(self):

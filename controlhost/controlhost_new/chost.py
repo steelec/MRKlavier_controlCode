@@ -19,7 +19,11 @@ class ControlHost(object):
 
         print "[+] create slaves"
         self.logger = slaves.LogWriter(experiment)
+        self.logger.setDaemon(True)
         self.logger.create_info_log_entry("LogWriter created successfully")
+        self.experiment_handler = slaves.ExperimentHandler()
+        self.experiment_handler.setDaemon(True)
+        self.logger.create_info_log_entry("ExperimentHandler created successfully")
         self.npy_writer = slaves.NumpyDataWriter(experiment)
         self.logger.create_info_log_entry("NumpyDataWriter created successfully")
         self.ntp_client = slaves.NTPClient(ntp_server)
@@ -82,8 +86,16 @@ class ControlHost(object):
                 board.determine_ID()
                 self.logger.create_info_log_entry("board "+interface+" has ID "+str(board.ID))
 
-                board.determine_midi_channels()
-                self.logger.create_info_log_entry("channels of board "+interface+": "+str(board.midi_channels))
+                board.determine_channels()
+                self.logger.create_info_log_entry("channels of board "+interface+": ")
+                for c in board.channels:
+                    self.logger.create_info_log_entry("channel "+str(c)+" has name "+str(board.channels[c].midiID))
+                    self.logger.create_info_log_entry("channel "+str(c)+" has min value "+str(board.channels[c].min))
+                    self.logger.create_info_log_entry("channel "+str(c)+" has max value "+str(board.channels[c].max))
+                    self.logger.create_info_log_entry("channel "+str(c)+" has low threshold "+
+                                                      str(board.channels[c].low_threshold))
+                    self.logger.create_info_log_entry("channel "+str(c)+" has high threshold "+
+                                                      str(board.channels[c].high_threshold))
 
                 board.determine_ip_address()
                 self.logger.create_info_log_entry("IP of board "+interface+": "+board.boardIP)
@@ -96,6 +108,24 @@ class ControlHost(object):
                     raise Exception("could activate the network interface")
                 self.logger.create_info_log_entry("network interface of board "+interface+" is ready")
 
+                time.sleep(0.5)
+
+                if not board.update_ntp_time():
+                    raise Exception("could not synchronize time with the ntp server")
+                self.logger.create_info_log_entry("board "+interface+" is synchronized")
+
+                time_settings = board.get_ntp_time()
+                for line in time_settings:
+                    if "Current time" in line:
+                        self.logger.create_info_log_entry("Current time "+line.split("Current time")[1].rstrip())
+                    else:
+                        self.logger.create_info_log_entry(line.rstrip())
+
+                #if not board.activate_board_port():
+                #    raise Exception("could not activate TCP port")
+                #self.logger.create_info_log_entry("TCP port of the board "+interface+" is ready")
+                time.sleep(0.5)
+                self.logger.create_info_log_entry("Initialization done on "+interface+", ready to collect data!")
 
             except Exception as e:
                 print(traceback.format_exc())
@@ -107,15 +137,49 @@ class ControlHost(object):
     def start_experiment(self):
         self.status = "busy"
         self.logger.create_info_log_entry("start experiment environment")
+
+        # create subscriptions for LogWriter
+        log_publisher = []
+        for i in range(0,len(self.obct)):
+            log_publisher.append(["127.0.0.1", settings.opto_board_log_start_port + i])
+        log_publisher.append(["127.0.0.1", settings.experiment_publish_log_port])
+        log_publisher.append(["127.0.0.1", settings.control_host_publish_port])
+        self.logger.subscribe(log_publisher)
+
+        # create subscriptions for NumpyDataWriter
+        data_publisher = []
+        for i in range(0,len(self.obct)):
+            data_publisher.append(["127.0.0.1", settings.opto_board_data_start_port + i])
+        data_publisher.append(["127.0.0.1", settings.experiment_publish_data_port])
+        self.npy_writer.subscribe(log_publisher)
+
+        self.logger.start()
+        #self.npy_writer.start()
+
+        self.experiment_handler.start()
+
         while True:
-            time.sleep(1)
+            try:
+                time.sleep(1)
+            except KeyboardInterrupt:
+                self.shutdown()
 
 
     def shutdown(self):
+        print "[+] Shutting down"
         self.logger.create_info_log_entry("control host is shutting down")
         for interface in self.obct:
             board = self.obct[interface]
+            if board.serial_port.isOpen():
+                board.serial_port.close()
+            if board.board_port_active:
+                board.board_socket.connect((board.boardIP,settings.board_tcp_port))
+                time.sleep(0.5)
+                board.board_socket.close()
 
+        self.experiment_handler.shutdown()
+        self.logger.shutdown()
+        exit(0)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='control and logging application for the MR Piano')
@@ -143,5 +207,5 @@ if __name__ == "__main__":
     if control_host.find_boards(settings.board_interface_pattern) < 1 or not control_host.configure_boards():
         exit(-1)
 
-    #control_host.start_experiment()
+    control_host.start_experiment()
 
