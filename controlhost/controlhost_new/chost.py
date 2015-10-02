@@ -19,10 +19,8 @@ class ControlHost(object):
 
         print "[+] create slaves"
         self.logger = slaves.LogWriter(experiment)
-        self.logger.setDaemon(True)
         self.logger.create_info_log_entry("LogWriter created successfully")
         self.experiment_handler = slaves.ExperimentHandler()
-        self.experiment_handler.setDaemon(True)
         self.logger.create_info_log_entry("ExperimentHandler created successfully")
         self.npy_writer = slaves.NumpyDataWriter(experiment)
         self.logger.create_info_log_entry("NumpyDataWriter created successfully")
@@ -134,16 +132,14 @@ class ControlHost(object):
         return True
 
 
-    def start_experiment(self):
-        self.status = "busy"
-        self.logger.create_info_log_entry("start experiment environment")
-
+    def create_slave_subscriptions(self):
         # create subscriptions for LogWriter
         log_publisher = []
         for i in range(0,len(self.obct)):
             log_publisher.append(["127.0.0.1", settings.opto_board_log_start_port + i])
         log_publisher.append(["127.0.0.1", settings.experiment_publish_log_port])
         log_publisher.append(["127.0.0.1", settings.control_host_publish_port])
+        log_publisher.append(["127.0.0.1", settings.numpy_writer_publish_port])
         self.logger.subscribe(log_publisher)
 
         # create subscriptions for NumpyDataWriter
@@ -151,23 +147,57 @@ class ControlHost(object):
         for i in range(0,len(self.obct)):
             data_publisher.append(["127.0.0.1", settings.opto_board_data_start_port + i])
         data_publisher.append(["127.0.0.1", settings.experiment_publish_data_port])
-        self.npy_writer.subscribe(log_publisher)
+        self.npy_writer.subscribe(data_publisher)
+
+        # create subscriptions / targets to pull from
+        hosts_to_pull_from = []
+        for i in range(0,len(self.obct)):
+            hosts_to_pull_from.append(["127.0.0.1",settings.opto_board_push_port + i])
+        hosts_to_pull_from.append(["127.0.0.1",settings.experiment_push_port])
+        self.subscribe(hosts_to_pull_from)
+
+
+    def subscribe(self, publisher):
+        for line in publisher:
+            self.logger.create_info_log_entry("Control Host subscribes to: "+str(line[0])+":"+str(line[1]))
+            self.pull_socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
+
+
+    def start_experiment(self):
+        self.status = "busy"
+        self.logger.create_info_log_entry("start experiment environment")
+
+        self.create_slave_subscriptions()
 
         self.logger.start()
-        #self.npy_writer.start()
-
+        self.npy_writer.start()
         self.experiment_handler.start()
 
-        while True:
+        while self.status == "busy":
             try:
-                time.sleep(1)
+                msg = self.pull_socket.recv_json()
+                if slaves.is_msg_valid(msg):
+                    print "configuration host received a message"
+                    if msg['message'] == "kill":
+                        print("received kill message")
+                        self.shutdown()
+
+                else:
+                    self.create_log_entry("received invalid message... I throw it away","error")
+
             except KeyboardInterrupt:
                 self.shutdown()
+            except Exception as e:
+                self.create_log_entry(str(e))
+
+    def create_log_entry(self,msg, type="info"):
+        message = {'sender':'control host', 'receiver':'log', 'message':msg, 'type':type}
+        self.publish_socket.send_json(message)
 
 
     def shutdown(self):
         print "[+] Shutting down"
-        self.logger.create_info_log_entry("control host is shutting down")
+        self.logger.create_info_log_entry("Control Host is shutting down")
         for interface in self.obct:
             board = self.obct[interface]
             if board.serial_port.isOpen():
@@ -178,6 +208,7 @@ class ControlHost(object):
                 board.board_socket.close()
 
         self.experiment_handler.shutdown()
+        self.npy_writer.shutdown()
         self.logger.shutdown()
         exit(0)
 

@@ -9,16 +9,28 @@ import ntplib
 import serial
 import subprocess
 import time
+import json
+import numpy as np
+
+def is_msg_valid(msg):
+    if "sender" in msg and "receiver" in msg and "type" in msg and "message" in msg:
+        return True
+    else:
+        return False
+
 
 class ExperimentHandler(threading.Thread):
     def __init__(self,
                  experiment_port = settings.experiment_port,
-                 publish_port = settings.experiment_publish_log_port,
+                 log_publish_port = settings.experiment_publish_log_port,
+                 data_publish_port = settings.experiment_publish_data_port,
                  push_port = settings.experiment_push_port):
 
         threading.Thread.__init__(self)
+        self.setDaemon(True)
         self.experiment_port = experiment_port
-        self.publish_port = publish_port
+        self.log_publish_port = log_publish_port
+        self.data_publish_port = data_publish_port
         self.push_port = push_port
 
         self.experiment_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -29,38 +41,87 @@ class ExperimentHandler(threading.Thread):
 
         context = zmq.Context()
         self.log_socket = context.socket(zmq.PUB)
+        self.data_socket = context.socket(zmq.PUB)
         self.push_socket = context.socket(zmq.PUSH)
-        self.log_socket.bind("tcp://*:"+str(self.publish_port))
+        self.log_socket.bind("tcp://*:"+str(self.log_publish_port))
+        self.data_socket.bind("tcp://*:"+str(self.data_publish_port))
         self.push_socket.bind("tcp://*:"+str(self.push_port))
+
+        self.blockNum=0
+        self.blockID=0
+        self.DataStream= None
+        self.newBlock=False
+
 
     def run(self):
         time.sleep(1)
         self.experiment_socket.listen(1)
         self.create_log_entry("Experiment Handler is ready and waiting for the experiment")
         conn, addr = self.experiment_socket.accept()
+        self.create_log_entry("Connection received from: " + str(addr))
+
+        MESSAGE = "Peanut is so ready to start initialization!"
+        print("Sending TCP message: " + MESSAGE+ " to IP: " + str(addr) + " on port " + str(self.experiment_port))
+        conn.send(MESSAGE)
+
+        recvMsg = conn.recv(1024) # <- "Ready Peanut!"
+        print("Received message from control socket: " + recvMsg)
+
+
         while not self.end:
             try:
                 jDat= conn.recv(1024)
                 dDat=json.loads(jDat)
                 self.create_log_entry("Received message from control socket: " + str(dDat['StreamDat']))
-                self.create_log_entry("Received Packet from control socket:{" + str(dDat) + "}")
+                self.create_log_entry("Received Packet from control socket:" + str(dDat) )
+                #oldBlockNum = self.blockNum
+                self.blockNum= dDat['BlockNum']
+                self.blockID= dDat['BlockID']
+                self.DataStream = dDat['StreamDat']
+
+                if "StreamDat" in dDat:
+                    data = np.array(dDat["StreamDat"])
+                    self.send_data_msg(data.tolist())
+
+                if self.blockID == "SETUP":
+                    conn.send("hello experiment") #confirm the reception of the message block
+
+                if self.blockID == "END":
+                    self.create_log_entry("received end of experiment message")
+                    self.send_push_message("kill")
+                    break
+
+
+
             except Exception as e:
                 self.create_log_entry(str(e),"error")
 
 
     def create_log_entry(self,msg,type="info"):
-        message = {'sender':'experiment', 'receiver':'log', 'message':msg, 'type':'info'}
+        message = {'sender':'experiment', 'receiver':'log', 'message':msg, 'type':type}
         self.log_socket.send_json(message)
 
-    def shutdown(self):
-        self.create_log_entry("Experiment Handler is shutting down")
-        time.sleep(0.2)
 
-        with self.lock:
-            self.end = True
-        self.experiment_socket.close()
-        self.push_socket.close()
-        self.log_socket.close()
+    def send_push_message(self,msg, type='info'):
+        message = {'sender':'experiment', 'receiver':'control host', 'message':msg, 'type':type}
+        self.push_socket.send_json(message)
+
+    def send_data_msg(self,msg):
+        message = {'sender':'experiment', 'receiver':'control host', 'message':msg, 'type':'data'}
+        self.data_socket.send_json(message)
+
+    def shutdown(self):
+        try:
+            self.create_log_entry("Experiment Handler is shutting down")
+            time.sleep(0.2)
+
+            with self.lock:
+                self.end = True
+            self.experiment_socket.close()
+            self.push_socket.close()
+            self.log_socket.close()
+        except Exception as e:
+            pass
 
 
 class LogWriter(threading.Thread):
@@ -86,7 +147,7 @@ class LogWriter(threading.Thread):
 
     def __init__(self, filename):
         threading.Thread.__init__(self)
-
+        self.setDaemon(True)
         #create log directory and file if neccessary
         target_dir = os.getcwd()+"/"+settings.log_subdirectory
         if not os.path.exists(target_dir):
@@ -113,7 +174,7 @@ class LogWriter(threading.Thread):
 
         context = zmq.Context()
         self.socket = context.socket(zmq.SUB)
-        self.publisher_ports = [] # array of port numbers for reception of data
+        self.subscribed_ports = [] # array of port numbers for reception of data
 
         self.lock = threading.RLock()
 
@@ -136,7 +197,7 @@ class LogWriter(threading.Thread):
         for line in publisher:
             self.create_info_log_entry("LogWriter subscribes to: "+str(line[0])+":"+str(line[1]))
             self.socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
-            self.publisher_ports.append(line[1])
+            self.subscribed_ports.append(line[1])
         self.socket.setsockopt(zmq.SUBSCRIBE, '')
 
 
@@ -146,7 +207,7 @@ class LogWriter(threading.Thread):
         while not self.end:
             try:
                 msg = self.socket.recv_json()
-                if self.is_msg_valid(msg):
+                if is_msg_valid(msg):
                     if msg['type'] == "info":
                         self.create_info_log_entry(str(msg['sender']+": "+str(msg['message'])))
                     elif msg['type'] == "error":
@@ -156,13 +217,6 @@ class LogWriter(threading.Thread):
 
             except Exception as e:
                 print(str(e))
-
-
-    def is_msg_valid(self,msg):
-        if "sender" in msg and "receiver" in msg and "type" in msg and "message" in msg and msg['receiver'] is not "log":
-            return True
-        else:
-            return False
 
 
     def shutdown(self):
@@ -181,11 +235,13 @@ class NumpyDataWriter(threading.Thread):
     This class is responsible for the creation of the *.npy files
     It uses ZMQ based subscribe socket writes the incoming data in npy file
     """
-    def __init__(self, filename):
+    def __init__(self, filename, publish_port = settings.numpy_writer_publish_port):
         threading.Thread.__init__(self)
+        self.setDaemon(True)
         self.filename = filename
-        self.publisher_ports = []  # array of port numbers for reception of data
+        self.subscribed_ports = []  # array of port numbers for reception of data
         self.end = False # kill switch for the run method
+        self.publish_port = publish_port
 
         #create target directory if neccessary
         target_dir = os.getcwd()+"/"+settings.log_subdirectory
@@ -193,17 +249,39 @@ class NumpyDataWriter(threading.Thread):
             os.mkdir(target_dir)
 
         context = zmq.Context()
-        self.socket = context.socket(zmq.SUB)
+        self.data_socket = context.socket(zmq.SUB)
+        self.log_socket = context.socket(zmq.PUB)
+        self.log_socket.bind("tcp://*:"+str(self.publish_port))
 
 
     def subscribe(self, publisher):
         for line in publisher:
-            self.socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
-            self.publisher_ports.append(line[1])
-        self.socket.setsockopt(zmq.SUBSCRIBE, '')
+            self.data_socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
+            self.subscribed_ports.append(line[1])
+        self.data_socket.setsockopt(zmq.SUBSCRIBE, '')
 
     def run(self):
-        pass
+        self.create_log_entry("NumpyDataWriter is ready")
+
+        while not self.end:
+            try:
+                message = self.data_socket.recv_json()
+                if is_msg_valid(message):
+                    print("got numpy data")
+                    print(message)
+                else:
+                    self.create_log_entry("received invalid message ... I throw it away")
+
+            except Exception as e:
+                self.create_log_entry(str(e),"error")
+
+    def create_log_entry(self,msg,type="info"):
+        message = {'sender':'numpy data writer', 'receiver':'log', 'message':msg, 'type':type}
+        self.log_socket.send_json(message)
+
+    def shutdown(self):
+        self.end = True
+
 
 
 class OptoBoardCommunicationThread(threading.Thread):

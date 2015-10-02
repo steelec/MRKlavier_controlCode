@@ -1,1227 +1,459 @@
-2015-09-30,14:23:39--1443615819.150169 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:23:39--1443615819.150764 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:23:39--1443615819.151020 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:23:39--1443615819.151815 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,14:23:39--1443615819.152696 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,14:23:39--1443615819.157337 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM0 -> ABORT!
-2015-09-30,14:23:39--1443615819.160637 - LogWriter - INFO - control host is shutting down
-2015-09-30,14:24:07--1443615847.966684 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:24:07--1443615847.967235 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:24:07--1443615847.967430 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:24:07--1443615847.968133 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,14:24:07--1443615847.968793 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,14:24:07--1443615847.975019 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM0 -> ABORT!
-2015-09-30,14:24:07--1443615847.975722 - LogWriter - INFO - control host is shutting down
-2015-09-30,14:24:23--1443615863.425302 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:24:23--1443615863.425799 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:24:23--1443615863.425994 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:24:23--1443615863.426705 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,14:24:23--1443615863.427465 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,14:24:23--1443615863.432285 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM0 -> ABORT!
-2015-09-30,14:24:23--1443615863.432931 - LogWriter - INFO - control host is shutting down
-2015-09-30,14:26:17--1443615977.015994 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:26:17--1443615977.016496 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:26:17--1443615977.016689 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:26:17--1443615977.017387 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,14:26:17--1443615977.018035 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,14:26:17--1443615977.023396 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM0 -> ABORT!
-2015-09-30,14:26:17--1443615977.024131 - LogWriter - INFO - control host is shutting down
-2015-09-30,14:26:40--1443616000.710431 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:26:40--1443616000.711024 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:26:40--1443616000.711225 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:26:40--1443616000.711935 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,14:26:40--1443616000.712164 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,14:26:40--1443616000.713109 - LogWriter - INFO - start board configuration
-2015-09-30,14:26:40--1443616000.715649 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM1 -> ABORT!
-2015-09-30,14:26:40--1443616000.716755 - LogWriter - INFO - board /dev/ttyACM1 has ID None
-2015-09-30,14:26:40--1443616000.717018 - LogWriter - INFO - control host is shutting down
-2015-09-30,14:28:00--1443616080.061679 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:28:00--1443616080.062579 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:28:00--1443616080.062805 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:28:00--1443616080.063975 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,14:28:00--1443616080.064285 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,14:28:00--1443616080.065263 - LogWriter - INFO - start board configuration
-2015-09-30,14:28:00--1443616080.169932 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM1 -> ABORT!
-2015-09-30,14:28:00--1443616080.170329 - LogWriter - INFO - board /dev/ttyACM1 has ID None
-2015-09-30,14:28:00--1443616080.170609 - LogWriter - INFO - control host is shutting down
-2015-09-30,14:28:36--1443616116.462708 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:28:36--1443616116.463263 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:28:36--1443616116.463458 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:28:36--1443616116.464160 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,14:28:36--1443616116.464821 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,14:28:36--1443616116.496117 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM0 -> ABORT!
-2015-09-30,14:28:36--1443616116.496887 - LogWriter - INFO - control host is shutting down
-2015-09-30,14:30:55--1443616255.668494 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:30:55--1443616255.675322 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:30:55--1443616255.675643 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:30:55--1443616255.676381 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,14:30:55--1443616255.677106 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,14:30:55--1443616255.695581 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM0 -> ABORT!
-2015-09-30,14:30:55--1443616255.699450 - LogWriter - INFO - control host is shutting down
-2015-09-30,14:56:33--1443617793.624193 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,14:56:33--1443617793.624956 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,14:56:33--1443617793.625167 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,14:56:33--1443617793.625959 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,14:56:33--1443617793.626837 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,14:56:33--1443617793.634489 - LogWriter - INFO - start board configuration
-2015-09-30,14:56:33--1443617793.638779 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM3 -> ABORT!
-2015-09-30,14:56:33--1443617793.639108 - LogWriter - INFO - board /dev/ttyACM3 has ID None
-2015-09-30,14:56:33--1443617793.642523 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM2 -> ABORT!
-2015-09-30,14:56:33--1443617793.642852 - LogWriter - INFO - board /dev/ttyACM2 has ID None
-2015-09-30,14:56:33--1443617793.645896 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM1 -> ABORT!
-2015-09-30,14:56:33--1443617793.646162 - LogWriter - INFO - board /dev/ttyACM1 has ID None
-2015-09-30,14:56:33--1443617793.648864 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM0 -> ABORT!
-2015-09-30,14:56:33--1443617793.649140 - LogWriter - INFO - board /dev/ttyACM0 has ID None
-2015-09-30,14:56:33--1443617793.764168 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM6 -> ABORT!
-2015-09-30,14:56:33--1443617793.764526 - LogWriter - INFO - board /dev/ttyACM6 has ID None
-2015-09-30,14:56:33--1443617793.868725 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM5 -> ABORT!
-2015-09-30,14:56:33--1443617793.869090 - LogWriter - INFO - board /dev/ttyACM5 has ID None
-2015-09-30,14:56:33--1443617793.873147 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM4 -> ABORT!
-2015-09-30,14:56:33--1443617793.873489 - LogWriter - INFO - board /dev/ttyACM4 has ID None
-2015-09-30,14:56:33--1443617793.873800 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:15:32--1443618932.021356 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:15:32--1443618932.021895 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:15:32--1443618932.022096 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:15:32--1443618932.022864 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:15:32--1443618932.024396 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:15:32--1443618932.037424 - LogWriter - INFO - start board configuration
-2015-09-30,15:15:32--1443618932.041329 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM3 -> ABORT!
-2015-09-30,15:15:32--1443618932.041797 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:16:40--1443619000.853317 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:16:40--1443619000.853835 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:16:40--1443619000.854086 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:16:40--1443619000.854847 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:16:40--1443619000.855586 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:16:40--1443619000.863807 - LogWriter - INFO - start board configuration
-2015-09-30,15:16:40--1443619000.867932 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM3 -> ABORT!
-2015-09-30,15:16:40--1443619000.868425 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:17:07--1443619027.513347 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:17:07--1443619027.514034 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:17:07--1443619027.514240 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:17:07--1443619027.515102 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:17:07--1443619027.516526 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:17:07--1443619027.523234 - LogWriter - INFO - start board configuration
-2015-09-30,15:17:07--1443619027.527184 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM3 -> ABORT!
-2015-09-30,15:17:07--1443619027.527589 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:18:59--1443619139.678220 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:18:59--1443619139.678759 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:18:59--1443619139.678959 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:18:59--1443619139.679665 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:18:59--1443619139.680330 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:18:59--1443619139.685937 - LogWriter - INFO - start board configuration
-2015-09-30,15:18:59--1443619139.790245 - LogWriter - ERROR - could not determine ID on the interface /dev/ttyACM3 -> ABORT!
-2015-09-30,15:18:59--1443619139.791132 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:22:57--1443619377.707110 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:22:57--1443619377.707959 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:22:57--1443619377.708170 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:22:57--1443619377.708893 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:22:57--1443619377.709590 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:22:57--1443619377.715010 - LogWriter - INFO - start board configuration
-2015-09-30,15:22:57--1443619377.719454 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,15:22:57--1443619377.824277 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,15:22:57--1443619377.929315 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,15:22:58--1443619378.034097 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,15:22:58--1443619378.139248 - LogWriter - INFO - board /dev/ttyACM6 has ID 6
-2015-09-30,15:22:58--1443619378.243991 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
-2015-09-30,15:22:58--1443619378.348370 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,15:22:58--1443619378.348853 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:23:18--1443619398.047607 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:23:18--1443619398.048126 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:23:18--1443619398.048322 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:23:18--1443619398.049077 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:23:18--1443619398.049820 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:23:18--1443619398.056835 - LogWriter - INFO - start board configuration
-2015-09-30,15:23:18--1443619398.061264 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,15:23:18--1443619398.065515 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,15:23:18--1443619398.069312 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,15:23:18--1443619398.174152 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,15:23:18--1443619398.279085 - LogWriter - INFO - board /dev/ttyACM6 has ID 6
-2015-09-30,15:23:18--1443619398.283391 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
-2015-09-30,15:23:18--1443619398.388125 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,15:23:18--1443619398.388856 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:41:00--1443620460.200595 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:41:00--1443620460.201088 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:41:00--1443620460.201283 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:41:00--1443620460.201995 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:41:00--1443620460.202671 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:41:00--1443620460.205561 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM3 -> ABORT!
-2015-09-30,15:41:00--1443620460.206317 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:42:01--1443620521.691715 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:42:01--1443620521.692299 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:42:01--1443620521.692500 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:42:01--1443620521.693246 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:42:01--1443620521.694075 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:42:01--1443620521.698749 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM3 -> ABORT!
-2015-09-30,15:42:01--1443620521.699718 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:42:16--1443620536.031219 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:42:16--1443620536.031771 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:42:16--1443620536.031970 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:42:16--1443620536.032747 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:42:16--1443620536.033659 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:42:16--1443620536.034334 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM6 -> ABORT!
-2015-09-30,15:42:16--1443620536.034982 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:43:18--1443620598.687203 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:43:18--1443620598.687711 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:43:18--1443620598.687913 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:43:18--1443620598.688642 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM*
-2015-09-30,15:43:18--1443620598.689384 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6', '/dev/ttyACM5', '/dev/ttyACM4', '/dev/ttyACM3', '/dev/ttyACM2', '/dev/ttyACM1', '/dev/ttyACM0']
-2015-09-30,15:43:18--1443620598.690027 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM6 -> ABORT!
-2015-09-30,15:43:18--1443620598.690565 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:43:54--1443620634.646334 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:43:54--1443620634.646885 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:43:54--1443620634.647091 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:43:54--1443620634.647817 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,15:43:54--1443620634.648064 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,15:43:54--1443620634.649385 - LogWriter - INFO - start board configuration
-2015-09-30,15:43:54--1443620634.754315 - LogWriter - ERROR - failed to configure board /dev/ttyACM2
-2015-09-30,15:43:54--1443620634.755050 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:44:18--1443620658.675598 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:44:18--1443620658.676256 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:44:18--1443620658.676550 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:44:18--1443620658.677860 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,15:44:18--1443620658.678283 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,15:44:18--1443620658.679238 - LogWriter - INFO - start board configuration
-2015-09-30,15:44:18--1443620658.783859 - LogWriter - INFO - board /dev/ttyACM2 has ID 0
-2015-09-30,15:44:18--1443620658.784557 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:53:10--1443621190.033832 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:53:10--1443621190.034337 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:53:10--1443621190.034534 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:53:10--1443621190.035634 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,15:53:10--1443621190.035903 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,15:53:10--1443621190.036942 - LogWriter - INFO - start board configuration
-2015-09-30,15:53:10--1443621190.141283 - LogWriter - INFO - board /dev/ttyACM2 has ID 0
-2015-09-30,15:53:10--1443621190.141642 - LogWriter - ERROR - failed to configure board /dev/ttyACM2: global name 'chan' is not defined
-2015-09-30,15:53:10--1443621190.141986 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:54:15--1443621255.459641 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:54:15--1443621255.460498 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:54:15--1443621255.460713 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:54:15--1443621255.461478 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,15:54:15--1443621255.461729 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,15:54:15--1443621255.462561 - LogWriter - INFO - start board configuration
-2015-09-30,15:54:15--1443621255.567340 - LogWriter - INFO - board /dev/ttyACM2 has ID 0
-2015-09-30,15:54:15--1443621255.988494 - LogWriter - INFO - channels of board /dev/ttyACM2: {}
-2015-09-30,15:54:15--1443621255.989421 - LogWriter - INFO - control host is shutting down
-2015-09-30,15:58:10--1443621490.491715 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,15:58:10--1443621490.492247 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,15:58:10--1443621490.492445 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,15:58:10--1443621490.493153 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,15:58:10--1443621490.493376 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,15:58:10--1443621490.494276 - LogWriter - INFO - start board configuration
-2015-09-30,15:58:10--1443621490.598540 - LogWriter - INFO - board /dev/ttyACM2 has ID 0
-2015-09-30,15:58:11--1443621491.019735 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,15:58:11--1443621491.020653 - LogWriter - INFO - control host is shutting down
-2015-09-30,16:22:46--1443622966.282236 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,16:22:46--1443622966.282764 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,16:22:46--1443622966.282963 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,16:22:46--1443622966.283685 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,16:22:46--1443622966.284716 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,16:22:46--1443622966.285868 - LogWriter - INFO - start board configuration
-2015-09-30,16:22:46--1443622966.289624 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,16:22:46--1443622966.395213 - LogWriter - ERROR - failed to configure board /dev/ttyACM2: list index out of range
-2015-09-30,16:22:46--1443622966.395678 - LogWriter - INFO - control host is shutting down
-2015-09-30,16:23:12--1443622992.592388 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,16:23:12--1443622992.592883 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,16:23:12--1443622992.593077 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,16:23:12--1443622992.593796 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,16:23:12--1443622992.594032 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,16:23:12--1443622992.595033 - LogWriter - INFO - start board configuration
-2015-09-30,16:23:12--1443622992.699724 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,16:23:13--1443622993.120911 - LogWriter - ERROR - failed to configure board /dev/ttyACM2: 'OptoBoardCommunicationThread' object has no attribute 'channels'
-2015-09-30,16:23:13--1443622993.121610 - LogWriter - INFO - control host is shutting down
-2015-09-30,16:23:29--1443623009.445193 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,16:23:29--1443623009.445794 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,16:23:29--1443623009.446197 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,16:23:29--1443623009.447423 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,16:23:29--1443623009.447737 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,16:23:29--1443623009.448705 - LogWriter - INFO - start board configuration
-2015-09-30,16:23:29--1443623009.452542 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,16:23:29--1443623009.457589 - LogWriter - ERROR - failed to configure board /dev/ttyACM2: list index out of range
-2015-09-30,16:23:29--1443623009.458019 - LogWriter - INFO - control host is shutting down
-2015-09-30,16:24:31--1443623071.753889 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,16:24:31--1443623071.754392 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,16:24:31--1443623071.754588 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,16:24:31--1443623071.755344 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,16:24:31--1443623071.755589 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,16:24:31--1443623071.756493 - LogWriter - INFO - start board configuration
-2015-09-30,16:24:31--1443623071.860598 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,16:24:32--1443623072.281771 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,16:24:32--1443623072.282462 - LogWriter - INFO - control host is shutting down
-2015-09-30,16:25:54--1443623154.794389 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,16:25:54--1443623154.794911 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,16:25:54--1443623154.795107 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,16:25:54--1443623154.795871 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,16:25:54--1443623154.796101 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,16:25:54--1443623154.797542 - LogWriter - INFO - start board configuration
-2015-09-30,16:25:54--1443623154.901913 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,16:25:55--1443623155.321957 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,16:25:55--1443623155.322631 - LogWriter - INFO - control host is shutting down
-2015-09-30,16:26:04--1443623164.000490 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,16:26:04--1443623164.001041 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,16:26:04--1443623164.001240 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,16:26:04--1443623164.001970 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,16:26:04--1443623164.002223 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,16:26:04--1443623164.003152 - LogWriter - INFO - start board configuration
-2015-09-30,16:26:04--1443623164.108242 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,16:26:04--1443623164.529239 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,16:26:04--1443623164.634429 - LogWriter - INFO - IP of board /dev/ttyACM2:  192.168.1.4
-2015-09-30,16:26:04--1443623164.635123 - LogWriter - INFO - control host is shutting down
-2015-09-30,16:39:42--1443623982.377825 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,16:39:42--1443623982.378354 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,16:39:42--1443623982.378550 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,16:39:42--1443623982.379369 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,16:39:42--1443623982.379602 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,16:39:42--1443623982.380486 - LogWriter - INFO - start board configuration
-2015-09-30,16:39:42--1443623982.485104 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,16:39:42--1443623982.917577 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,16:39:43--1443623983.022554 - LogWriter - INFO - IP of board /dev/ttyACM2:  192.168.1.4
-2015-09-30,16:39:43--1443623983.137704 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:12:11--1443625931.021259 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:12:11--1443625931.021748 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:12:11--1443625931.021944 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:12:11--1443625931.022679 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:12:11--1443625931.022921 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:12:11--1443625931.025308 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM2: Address already in use
-2015-09-30,17:12:11--1443625931.026441 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:18:40--1443626320.744516 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:18:40--1443626320.745009 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:18:40--1443626320.745211 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:18:40--1443626320.746008 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:18:40--1443626320.746272 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:18:40--1443626320.750360 - LogWriter - INFO - start board configuration
-2015-09-30,17:18:40--1443626320.855290 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,17:18:41--1443626321.276272 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,17:18:41--1443626321.381473 - LogWriter - INFO - IP of board /dev/ttyACM2:  192.168.1.4
-2015-09-30,17:18:41--1443626321.395917 - LogWriter - INFO - IP of board /dev/ttyACM2:  192.168.1.4
-2015-09-30,17:18:41--1443626321.400000 - LogWriter - ERROR - failed to configure board /dev/ttyACM2: global name 'time' is not defined
-2015-09-30,17:18:41--1443626321.400546 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:19:19--1443626359.489438 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:19:19--1443626359.489989 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:19:19--1443626359.490194 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:19:19--1443626359.490947 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:19:19--1443626359.491192 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:19:19--1443626359.494335 - LogWriter - INFO - start board configuration
-2015-09-30,17:19:19--1443626359.600960 - LogWriter - ERROR - failed to configure board /dev/ttyACM2: list index out of range
-2015-09-30,17:19:19--1443626359.601679 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:20:13--1443626413.241239 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:20:13--1443626413.241781 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:20:13--1443626413.241983 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:20:13--1443626413.242757 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:20:13--1443626413.243019 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:20:13--1443626413.243981 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM2: [Errno 16] Device or resource busy: '/dev/ttyACM2'
-2015-09-30,17:20:13--1443626413.244604 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:20:49--1443626449.550482 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:20:49--1443626449.550995 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:20:49--1443626449.551190 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:20:49--1443626449.552134 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:20:49--1443626449.552402 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:20:49--1443626449.553336 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM2: [Errno 16] Device or resource busy: '/dev/ttyACM2'
-2015-09-30,17:20:49--1443626449.553999 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:21:17--1443626477.338417 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:21:17--1443626477.339136 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:21:17--1443626477.339336 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:21:17--1443626477.340084 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,17:21:17--1443626477.340317 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,17:21:17--1443626477.341804 - LogWriter - INFO - start board configuration
-2015-09-30,17:21:18--1443626478.343372 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: 'NoneType' object has no attribute '__getitem__'
-2015-09-30,17:21:18--1443626478.344029 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:22:14--1443626534.170449 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:22:14--1443626534.171113 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:22:14--1443626534.171352 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:22:14--1443626534.172111 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,17:22:14--1443626534.172395 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,17:22:14--1443626534.174124 - LogWriter - INFO - start board configuration
-2015-09-30,17:22:14--1443626534.279515 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,17:22:14--1443626534.699983 - LogWriter - INFO - channels of board /dev/ttyACM4: {0: 66, 1: 67, 2: 68, 3: 69}
-2015-09-30,17:22:14--1443626534.805128 - LogWriter - INFO - IP of board /dev/ttyACM4:  192.168.1.3
-2015-09-30,17:22:14--1443626534.920067 - LogWriter - INFO - IP of board /dev/ttyACM4:  192.168.1.3
-2015-09-30,17:22:15--1443626535.425239 - LogWriter - ERROR - failed to configure board /dev/ttyACM4: 'OptoBoardCommunicationThread' object has no attribute 'IPaddr'
-2015-09-30,17:22:15--1443626535.425897 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:23:01--1443626581.805614 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:23:01--1443626581.806110 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:23:01--1443626581.806306 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:23:01--1443626581.807452 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,17:23:01--1443626581.807730 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,17:23:01--1443626581.808789 - LogWriter - INFO - start board configuration
-2015-09-30,17:23:01--1443626581.914880 - LogWriter - ERROR - failed to configure board /dev/ttyACM4: list index out of range
-2015-09-30,17:23:01--1443626581.915541 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:23:40--1443626620.728746 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:23:40--1443626620.729222 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:23:40--1443626620.729416 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:23:40--1443626620.730163 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
-2015-09-30,17:23:40--1443626620.730407 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
-2015-09-30,17:23:40--1443626620.731783 - LogWriter - INFO - start board configuration
-2015-09-30,17:23:40--1443626620.735588 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
-2015-09-30,17:23:41--1443626621.156135 - LogWriter - INFO - channels of board /dev/ttyACM5: {0: 74, 1: 75, 2: 76, 3: 77}
-2015-09-30,17:23:41--1443626621.160746 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
-2015-09-30,17:23:41--1443626621.275155 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
-2015-09-30,17:23:44--1443626624.784110 - LogWriter - ERROR - failed to configure board /dev/ttyACM5: could activate the network interface
-2015-09-30,17:23:44--1443626624.784972 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:24:04--1443626644.371085 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:24:04--1443626644.371635 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:24:04--1443626644.371839 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:24:04--1443626644.372664 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
-2015-09-30,17:24:04--1443626644.372919 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
-2015-09-30,17:24:04--1443626644.373981 - LogWriter - INFO - start board configuration
-2015-09-30,17:24:04--1443626644.480558 - LogWriter - ERROR - failed to configure board /dev/ttyACM5: list index out of range
-2015-09-30,17:24:04--1443626644.481219 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:24:27--1443626667.474122 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:24:27--1443626667.474608 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:24:27--1443626667.475171 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:24:27--1443626667.475972 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:24:27--1443626667.476215 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:24:27--1443626667.477718 - LogWriter - INFO - start board configuration
-2015-09-30,17:24:27--1443626667.581783 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:24:28--1443626668.002854 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:24:28--1443626668.108057 - LogWriter - INFO - IP of board /dev/ttyACM1:  192.168.1.7
-2015-09-30,17:24:28--1443626668.222863 - LogWriter - INFO - IP of board /dev/ttyACM1:  192.168.1.7
-2015-09-30,17:24:28--1443626668.733224 - LogWriter - INFO - network interface of board /dev/ttyACM1 is ready
-2015-09-30,17:24:28--1443626668.734107 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:26:00--1443626760.808116 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:26:00--1443626760.808674 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:26:00--1443626760.808878 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:26:00--1443626760.809620 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:26:00--1443626760.809861 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:26:00--1443626760.813293 - LogWriter - INFO - start board configuration
-2015-09-30,17:26:00--1443626760.919980 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: list index out of range
-2015-09-30,17:26:00--1443626760.920597 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:26:36--1443626796.384401 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:26:36--1443626796.384897 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:26:36--1443626796.385091 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:26:36--1443626796.385840 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:26:36--1443626796.386077 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:26:36--1443626796.387471 - LogWriter - INFO - start board configuration
-2015-09-30,17:26:36--1443626796.491696 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:26:36--1443626796.912717 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:26:37--1443626797.020746 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: list index out of range
-2015-09-30,17:26:37--1443626797.023801 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:27:50--1443626870.432092 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:27:50--1443626870.432589 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:27:50--1443626870.432788 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:27:50--1443626870.433516 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:27:50--1443626870.433756 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:27:50--1443626870.435336 - LogWriter - INFO - start board configuration
-2015-09-30,17:27:50--1443626870.540447 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: 'list' object has no attribute 'split'
-2015-09-30,17:27:50--1443626870.540876 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:29:28--1443626968.020715 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:29:28--1443626968.021206 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:29:28--1443626968.021409 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:29:28--1443626968.022167 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:29:28--1443626968.022399 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:29:28--1443626968.028391 - LogWriter - INFO - start board configuration
-2015-09-30,17:29:28--1443626968.133070 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: 'list' object has no attribute 'join'
-2015-09-30,17:29:28--1443626968.133707 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:32:32--1443627152.355375 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:32:32--1443627152.359012 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:32:32--1443627152.359285 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:32:32--1443627152.360264 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:32:32--1443627152.360573 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:32:32--1443627152.361800 - LogWriter - INFO - start board configuration
-2015-09-30,17:32:32--1443627152.467660 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:32:32--1443627152.888242 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:32:32--1443627152.995928 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: list index out of range
-2015-09-30,17:32:32--1443627152.996614 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:33:08--1443627188.908051 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:33:08--1443627188.908555 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:33:08--1443627188.908752 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:33:08--1443627188.909508 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:33:08--1443627188.909743 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:33:08--1443627188.910958 - LogWriter - INFO - start board configuration
-2015-09-30,17:33:09--1443627189.015286 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:33:09--1443627189.436309 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:33:09--1443627189.544578 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: list index out of range
-2015-09-30,17:33:09--1443627189.545268 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:33:35--1443627215.686373 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:33:35--1443627215.686917 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:33:35--1443627215.687117 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:33:35--1443627215.688139 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:33:35--1443627215.688664 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:33:35--1443627215.690305 - LogWriter - INFO - start board configuration
-2015-09-30,17:33:35--1443627215.795128 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:33:36--1443627216.216014 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:33:36--1443627216.324391 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: list index out of range
-2015-09-30,17:33:36--1443627216.325017 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:34:35--1443627275.941728 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:34:35--1443627275.942221 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:34:35--1443627275.942424 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:34:35--1443627275.943216 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:34:35--1443627275.943456 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:34:35--1443627275.944579 - LogWriter - INFO - start board configuration
-2015-09-30,17:34:36--1443627276.049346 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:34:36--1443627276.369502 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:34:36--1443627276.477265 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: list index out of range
-2015-09-30,17:34:36--1443627276.477900 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:35:26--1443627326.919400 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:35:26--1443627326.919899 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:35:26--1443627326.920096 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:35:26--1443627326.920838 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:35:26--1443627326.921071 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:35:26--1443627326.922260 - LogWriter - INFO - start board configuration
-2015-09-30,17:35:26--1443627326.929040 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:35:27--1443627327.049081 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:35:27--1443627327.155030 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: list index out of range
-2015-09-30,17:35:27--1443627327.155702 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:35:52--1443627352.451965 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:35:52--1443627352.452460 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:35:52--1443627352.452656 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:35:52--1443627352.453413 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:35:52--1443627352.453645 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:35:52--1443627352.454888 - LogWriter - INFO - start board configuration
-2015-09-30,17:35:52--1443627352.559020 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:35:52--1443627352.980074 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:35:53--1443627353.088188 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: list index out of range
-2015-09-30,17:35:53--1443627353.088807 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:36:18--1443627378.407412 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:36:18--1443627378.407899 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:36:18--1443627378.408095 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:36:18--1443627378.408838 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:36:18--1443627378.409073 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:36:18--1443627378.410352 - LogWriter - INFO - start board configuration
-2015-09-30,17:36:18--1443627378.514562 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:36:18--1443627378.938753 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:36:19--1443627379.046262 - LogWriter - INFO - IP of board /dev/ttyACM1: 
-2015-09-30,17:36:19--1443627379.160706 - LogWriter - INFO - NTP server for board /dev/ttyACM1: 127.0.0.1
-2015-09-30,17:36:19--1443627379.165253 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: could activate the network interface
-2015-09-30,17:36:19--1443627379.165934 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:36:33--1443627393.739317 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:36:33--1443627393.743297 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:36:33--1443627393.743508 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:36:33--1443627393.744429 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:36:33--1443627393.744679 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:36:33--1443627393.745812 - LogWriter - INFO - start board configuration
-2015-09-30,17:36:33--1443627393.850686 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:36:34--1443627394.271752 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:36:34--1443627394.379852 - LogWriter - ERROR - failed to configure board /dev/ttyACM1: sequence item 0: expected string, list found
-2015-09-30,17:36:34--1443627394.380500 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:37:05--1443627425.868678 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:37:05--1443627425.869181 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:37:05--1443627425.869378 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:37:05--1443627425.870175 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:37:05--1443627425.870434 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:37:05--1443627425.872437 - LogWriter - INFO - start board configuration
-2015-09-30,17:37:05--1443627425.977299 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:37:06--1443627426.088961 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,17:37:06--1443627426.089632 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:38:26--1443627506.233774 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:38:26--1443627506.234271 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:38:26--1443627506.234466 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:38:26--1443627506.235256 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:38:26--1443627506.235499 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:38:26--1443627506.236627 - LogWriter - INFO - start board configuration
-2015-09-30,17:38:26--1443627506.243405 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:38:26--1443627506.249002 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,17:38:26--1443627506.249604 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:38:47--1443627527.208848 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:38:47--1443627527.209341 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:38:47--1443627527.209536 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:38:47--1443627527.210294 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:38:47--1443627527.210527 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:38:47--1443627527.211750 - LogWriter - INFO - start board configuration
-2015-09-30,17:38:47--1443627527.316217 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:38:47--1443627527.637012 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:38:47--1443627527.741990 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: sequence item 0: expected string, list found
-2015-09-30,17:38:47--1443627527.742511 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:39:35--1443627575.367759 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:39:35--1443627575.368858 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:39:35--1443627575.369114 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:39:35--1443627575.369992 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:39:35--1443627575.370260 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:39:35--1443627575.371623 - LogWriter - INFO - start board configuration
-2015-09-30,17:39:35--1443627575.475750 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:39:35--1443627575.896890 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:39:36--1443627576.002706 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: sequence item 0: expected string, list found
-2015-09-30,17:39:36--1443627576.003380 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:42:09--1443627729.314453 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:42:09--1443627729.321107 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:42:09--1443627729.321333 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:42:09--1443627729.322149 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:42:09--1443627729.322434 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:42:09--1443627729.324209 - LogWriter - INFO - start board configuration
-2015-09-30,17:42:09--1443627729.428659 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:42:09--1443627729.429342 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:42:24--1443627744.408952 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:42:24--1443627744.409483 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:42:24--1443627744.409686 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:42:24--1443627744.410478 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:42:24--1443627744.410764 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:42:24--1443627744.412206 - LogWriter - INFO - start board configuration
-2015-09-30,17:42:24--1443627744.517810 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,17:42:24--1443627744.518496 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:43:00--1443627780.135508 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:43:00--1443627780.136004 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:43:00--1443627780.136199 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:43:00--1443627780.136927 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:43:00--1443627780.137159 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:43:00--1443627780.138458 - LogWriter - INFO - start board configuration
-2015-09-30,17:43:00--1443627780.242613 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,17:43:00--1443627780.663765 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,17:43:00--1443627780.664442 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:43:07--1443627787.565318 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:43:07--1443627787.565814 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:43:07--1443627787.566346 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:43:07--1443627787.567309 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:43:07--1443627787.567560 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:43:07--1443627787.568646 - LogWriter - INFO - start board configuration
-2015-09-30,17:43:07--1443627787.672650 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,17:43:08--1443627788.092787 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,17:43:08--1443627788.093460 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:43:09--1443627789.532174 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:43:09--1443627789.532690 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:43:09--1443627789.532893 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:43:09--1443627789.533612 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:43:09--1443627789.533846 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:43:09--1443627789.534959 - LogWriter - INFO - start board configuration
-2015-09-30,17:43:09--1443627789.638951 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,17:43:09--1443627789.860020 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,17:43:09--1443627789.860740 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:43:17--1443627797.911760 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:43:17--1443627797.912241 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:43:17--1443627797.912436 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:43:17--1443627797.913166 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,17:43:17--1443627797.913400 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,17:43:17--1443627797.914859 - LogWriter - INFO - start board configuration
-2015-09-30,17:43:18--1443627798.019005 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,17:43:18--1443627798.340526 - LogWriter - ERROR - failed to configure board /dev/ttyACM4: list index out of range
-2015-09-30,17:43:18--1443627798.341189 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:43:41--1443627821.649447 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:43:41--1443627821.650332 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:43:41--1443627821.650533 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:43:41--1443627821.651303 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,17:43:41--1443627821.651545 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,17:43:41--1443627821.653183 - LogWriter - INFO - start board configuration
-2015-09-30,17:43:41--1443627821.757998 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,17:43:42--1443627822.179342 - LogWriter - INFO - channels of board /dev/ttyACM4: {0: 66, 1: 67, 2: 68, 3: 69}
-2015-09-30,17:43:42--1443627822.180018 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:43:54--1443627834.511195 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:43:54--1443627834.511676 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:43:54--1443627834.511876 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:43:54--1443627834.512672 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
-2015-09-30,17:43:54--1443627834.512945 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
-2015-09-30,17:43:54--1443627834.514904 - LogWriter - INFO - start board configuration
-2015-09-30,17:43:54--1443627834.619592 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
-2015-09-30,17:43:54--1443627834.941191 - LogWriter - INFO - channels of board /dev/ttyACM5: {0: 74, 1: 75, 2: 76, 3: 77}
-2015-09-30,17:43:54--1443627834.941651 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:44:16--1443627856.733458 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:44:16--1443627856.734136 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:44:16--1443627856.734374 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:44:16--1443627856.735194 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:44:16--1443627856.735472 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:44:16--1443627856.736962 - LogWriter - INFO - start board configuration
-2015-09-30,17:44:16--1443627856.841621 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:44:17--1443627857.162860 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:44:17--1443627857.163405 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:45:05--1443627905.696766 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:45:05--1443627905.697261 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:45:05--1443627905.697465 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:45:05--1443627905.698281 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:45:05--1443627905.698552 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:45:05--1443627905.699763 - LogWriter - INFO - start board configuration
-2015-09-30,17:45:05--1443627905.804415 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:45:06--1443627906.125123 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:45:06--1443627906.229950 - LogWriter - INFO - IP of board /dev/ttyACM0: 
-2015-09-30,17:45:06--1443627906.230485 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:46:54--1443628014.454140 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:46:54--1443628014.454730 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:46:54--1443628014.454937 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:46:54--1443628014.455679 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:46:54--1443628014.455930 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:46:54--1443628014.457072 - LogWriter - INFO - start board configuration
-2015-09-30,17:46:54--1443628014.563083 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:46:54--1443628014.983664 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:46:55--1443628015.088985 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:46:55--1443628015.089575 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:47:10--1443628030.032998 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:47:10--1443628030.033500 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:47:10--1443628030.033698 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:47:10--1443628030.034424 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:47:10--1443628030.034684 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:47:10--1443628030.035921 - LogWriter - INFO - start board configuration
-2015-09-30,17:47:10--1443628030.140223 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:47:10--1443628030.561067 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:47:10--1443628030.666348 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:47:10--1443628030.667023 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:47:16--1443628036.749791 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:47:16--1443628036.750278 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:47:16--1443628036.750473 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:47:16--1443628036.751276 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM6
-2015-09-30,17:47:16--1443628036.751618 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6']
-2015-09-30,17:47:16--1443628036.753208 - LogWriter - INFO - start board configuration
-2015-09-30,17:47:16--1443628036.857272 - LogWriter - INFO - board /dev/ttyACM6 has ID 6
-2015-09-30,17:47:17--1443628037.278282 - LogWriter - INFO - channels of board /dev/ttyACM6: {0: 78, 1: 79, 2: 80, 3: 81}
-2015-09-30,17:47:17--1443628037.383387 - LogWriter - INFO - IP of board /dev/ttyACM6:  192.168.1.6
-2015-09-30,17:47:17--1443628037.384034 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:47:27--1443628047.835230 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:47:27--1443628047.836206 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:47:27--1443628047.836418 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:47:27--1443628047.837174 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM6
-2015-09-30,17:47:27--1443628047.837440 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6']
-2015-09-30,17:47:27--1443628047.838935 - LogWriter - INFO - start board configuration
-2015-09-30,17:47:27--1443628047.943530 - LogWriter - INFO - board /dev/ttyACM6 has ID 6
-2015-09-30,17:47:28--1443628048.063354 - LogWriter - INFO - channels of board /dev/ttyACM6: {0: 78, 1: 79, 2: 80, 3: 81}
-2015-09-30,17:47:28--1443628048.067330 - LogWriter - INFO - IP of board /dev/ttyACM6:  192.168.1.6
-2015-09-30,17:47:28--1443628048.067769 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:47:31--1443628051.029979 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:47:31--1443628051.030564 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:47:31--1443628051.030788 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:47:31--1443628051.031561 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM6
-2015-09-30,17:47:31--1443628051.031798 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6']
-2015-09-30,17:47:31--1443628051.032986 - LogWriter - INFO - start board configuration
-2015-09-30,17:47:31--1443628051.137179 - LogWriter - INFO - board /dev/ttyACM6 has ID 6
-2015-09-30,17:47:31--1443628051.558254 - LogWriter - INFO - channels of board /dev/ttyACM6: {0: 78, 1: 79, 2: 80, 3: 81}
-2015-09-30,17:47:31--1443628051.663430 - LogWriter - INFO - IP of board /dev/ttyACM6:  192.168.1.6
-2015-09-30,17:47:31--1443628051.664014 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:47:35--1443628055.264203 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:47:35--1443628055.264691 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:47:35--1443628055.264885 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:47:35--1443628055.265644 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:47:35--1443628055.265877 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:47:35--1443628055.267060 - LogWriter - INFO - start board configuration
-2015-09-30,17:47:35--1443628055.371977 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:47:35--1443628055.693162 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:47:35--1443628055.798199 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:47:35--1443628055.798811 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:47:54--1443628074.433197 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:47:54--1443628074.433693 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:47:54--1443628074.433888 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:47:54--1443628074.434635 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:47:54--1443628074.434942 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:47:54--1443628074.436066 - LogWriter - INFO - start board configuration
-2015-09-30,17:47:54--1443628074.540962 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:47:54--1443628074.652584 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,17:47:54--1443628074.653107 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:48:05--1443628085.413073 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:48:05--1443628085.413654 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:48:05--1443628085.413874 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:48:05--1443628085.414618 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:48:05--1443628085.415952 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:48:05--1443628085.417148 - LogWriter - INFO - start board configuration
-2015-09-30,17:48:05--1443628085.521788 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:48:05--1443628085.794518 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:48:05--1443628085.795067 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:48:05--1443628085.795261 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:48:05--1443628085.843133 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,17:48:05--1443628085.843835 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:48:09--1443628089.878119 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:48:09--1443628089.879044 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:48:09--1443628089.879250 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:48:09--1443628089.880014 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:48:09--1443628089.880247 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:48:09--1443628089.881354 - LogWriter - INFO - start board configuration
-2015-09-30,17:48:09--1443628089.985432 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:48:10--1443628090.206096 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,17:48:10--1443628090.206820 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:48:41--1443628121.403051 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:48:41--1443628121.403549 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:48:41--1443628121.403744 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:48:41--1443628121.404503 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:48:41--1443628121.404735 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:48:41--1443628121.405869 - LogWriter - INFO - start board configuration
-2015-09-30,17:48:41--1443628121.510426 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:48:41--1443628121.931581 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:48:42--1443628122.036614 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:48:42--1443628122.151782 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 127.0.0.1
-2015-09-30,17:48:42--1443628122.152458 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:49:33--1443628173.536960 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:49:33--1443628173.537459 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:49:33--1443628173.537653 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:49:33--1443628173.538388 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:49:33--1443628173.538621 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:49:33--1443628173.539826 - LogWriter - INFO - start board configuration
-2015-09-30,17:49:33--1443628173.644692 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:49:34--1443628174.065794 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:49:34--1443628174.170754 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:49:34--1443628174.287869 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:49:34--1443628174.288537 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:49:46--1443628186.964947 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:49:46--1443628186.965454 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:49:46--1443628186.965649 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:49:46--1443628186.966387 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:49:46--1443628186.966616 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:49:46--1443628186.968314 - LogWriter - INFO - start board configuration
-2015-09-30,17:49:47--1443628187.072742 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:49:47--1443628187.492942 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:49:47--1443628187.597927 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:49:47--1443628187.715191 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:49:47--1443628187.715867 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:49:56--1443628196.606197 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:49:56--1443628196.606749 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:49:56--1443628196.606953 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:49:56--1443628196.607684 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
-2015-09-30,17:49:56--1443628196.608069 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
-2015-09-30,17:49:56--1443628196.609401 - LogWriter - INFO - start board configuration
-2015-09-30,17:49:56--1443628196.714140 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
-2015-09-30,17:49:57--1443628197.135276 - LogWriter - INFO - channels of board /dev/ttyACM5: {0: 74, 1: 75, 2: 76, 3: 77}
-2015-09-30,17:49:57--1443628197.240349 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
-2015-09-30,17:49:57--1443628197.357453 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
-2015-09-30,17:49:57--1443628197.358123 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:50:15--1443628215.588517 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:50:15--1443628215.589044 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:50:15--1443628215.589241 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:50:15--1443628215.589994 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM6
-2015-09-30,17:50:15--1443628215.590232 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6']
-2015-09-30,17:50:15--1443628215.591436 - LogWriter - INFO - start board configuration
-2015-09-30,17:50:15--1443628215.695892 - LogWriter - INFO - board /dev/ttyACM6 has ID 6
-2015-09-30,17:50:16--1443628216.117072 - LogWriter - INFO - channels of board /dev/ttyACM6: {0: 78, 1: 79, 2: 80, 3: 81}
-2015-09-30,17:50:16--1443628216.222180 - LogWriter - INFO - IP of board /dev/ttyACM6:  192.168.1.6
-2015-09-30,17:50:16--1443628216.339108 - LogWriter - INFO - NTP server for board /dev/ttyACM6: 192.168.1.1
-2015-09-30,17:50:16--1443628216.339551 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:51:07--1443628267.561583 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:51:07--1443628267.562066 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:51:07--1443628267.562266 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:51:07--1443628267.563032 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM6
-2015-09-30,17:51:07--1443628267.563327 - LogWriter - INFO - Boards found at: ['/dev/ttyACM6']
-2015-09-30,17:51:07--1443628267.564128 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM6: [Errno 16] Device or resource busy: '/dev/ttyACM6'
-2015-09-30,17:51:07--1443628267.564658 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:51:18--1443628278.177533 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:51:18--1443628278.178085 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:51:18--1443628278.178285 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:51:18--1443628278.179057 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:51:18--1443628278.179429 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:51:18--1443628278.180959 - LogWriter - INFO - start board configuration
-2015-09-30,17:51:18--1443628278.285838 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:51:18--1443628278.707903 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:51:18--1443628278.813025 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:51:18--1443628278.929935 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:51:18--1443628278.930608 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:51:29--1443628289.194868 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:51:29--1443628289.195448 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:51:29--1443628289.195648 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:51:29--1443628289.196389 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:51:29--1443628289.196660 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:51:29--1443628289.197846 - LogWriter - INFO - start board configuration
-2015-09-30,17:51:29--1443628289.203050 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:51:29--1443628289.309100 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,17:51:29--1443628289.309899 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:51:52--1443628312.204013 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:51:52--1443628312.204524 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:51:52--1443628312.204718 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:51:52--1443628312.205455 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:51:52--1443628312.205729 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:51:52--1443628312.208112 - LogWriter - INFO - start board configuration
-2015-09-30,17:51:52--1443628312.312253 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:51:52--1443628312.429671 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,17:51:52--1443628312.430355 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:52:06--1443628326.476757 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:52:06--1443628326.477249 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:52:06--1443628326.477448 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:52:06--1443628326.478187 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:52:06--1443628326.478440 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:52:06--1443628326.479776 - LogWriter - INFO - start board configuration
-2015-09-30,17:52:06--1443628326.584470 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:52:07--1443628327.005676 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:52:07--1443628327.110704 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:52:07--1443628327.227522 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:52:07--1443628327.227952 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:52:45--1443628365.290909 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:52:45--1443628365.291390 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:52:45--1443628365.291583 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:52:45--1443628365.292312 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:52:45--1443628365.292546 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:52:45--1443628365.294038 - LogWriter - INFO - start board configuration
-2015-09-30,17:52:45--1443628365.398467 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:52:45--1443628365.719575 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:52:45--1443628365.824630 - LogWriter - INFO - IP of board /dev/ttyACM1:  192.168.1.7
-2015-09-30,17:52:45--1443628365.841037 - LogWriter - INFO - NTP server for board /dev/ttyACM1: 192.168.1.1
-2015-09-30,17:52:45--1443628365.841683 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:53:36--1443628416.277176 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:53:36--1443628416.277675 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:53:36--1443628416.277876 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:53:36--1443628416.278735 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM1
-2015-09-30,17:53:36--1443628416.279019 - LogWriter - INFO - Boards found at: ['/dev/ttyACM1']
-2015-09-30,17:53:36--1443628416.280226 - LogWriter - INFO - start board configuration
-2015-09-30,17:53:36--1443628416.384592 - LogWriter - INFO - board /dev/ttyACM1 has ID 7
-2015-09-30,17:53:36--1443628416.709349 - LogWriter - INFO - channels of board /dev/ttyACM1: {0: 82, 1: 83, 2: 84, 3: 0}
-2015-09-30,17:53:36--1443628416.814644 - LogWriter - INFO - IP of board /dev/ttyACM1:  192.168.1.7
-2015-09-30,17:53:36--1443628416.932744 - LogWriter - INFO - NTP server for board /dev/ttyACM1: 192.168.1.1
-2015-09-30,17:53:36--1443628416.933441 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:53:45--1443628425.693258 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:53:45--1443628425.697685 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:53:45--1443628425.698396 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:53:45--1443628425.699285 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:53:45--1443628425.699586 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:53:45--1443628425.700993 - LogWriter - INFO - start board configuration
-2015-09-30,17:53:45--1443628425.805373 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,17:53:46--1443628426.229565 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,17:53:46--1443628426.335816 - LogWriter - INFO - IP of board /dev/ttyACM2:  192.168.1.4
-2015-09-30,17:53:46--1443628426.453736 - LogWriter - INFO - NTP server for board /dev/ttyACM2: 192.168.1.1
-2015-09-30,17:53:46--1443628426.454416 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:54:17--1443628457.056857 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:54:17--1443628457.057359 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:54:17--1443628457.057554 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:54:17--1443628457.058303 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,17:54:17--1443628457.058536 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,17:54:17--1443628457.059461 - LogWriter - ERROR - failed to create OptoBoardCommunicationThread for interface /dev/ttyACM2: [Errno 16] Device or resource busy: '/dev/ttyACM2'
-2015-09-30,17:54:17--1443628457.060213 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:54:25--1443628465.975127 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:54:25--1443628465.979451 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:54:25--1443628465.979660 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:54:25--1443628465.980393 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,17:54:25--1443628465.980633 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,17:54:25--1443628465.982631 - LogWriter - INFO - start board configuration
-2015-09-30,17:54:26--1443628466.086877 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,17:54:26--1443628466.522065 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,17:54:26--1443628466.628179 - LogWriter - INFO - IP of board /dev/ttyACM3:  192.168.1.2
-2015-09-30,17:54:26--1443628466.746113 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,17:54:26--1443628466.746841 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:54:36--1443628476.336206 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:54:36--1443628476.336690 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:54:36--1443628476.336885 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:54:36--1443628476.338145 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:54:36--1443628476.338416 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:54:36--1443628476.339935 - LogWriter - INFO - start board configuration
-2015-09-30,17:54:36--1443628476.343715 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:54:36--1443628476.450984 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,17:54:36--1443628476.451658 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:55:02--1443628502.529434 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:55:02--1443628502.529931 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:55:02--1443628502.530126 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:55:02--1443628502.530919 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:55:02--1443628502.531158 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:55:02--1443628502.532810 - LogWriter - INFO - start board configuration
-2015-09-30,17:55:02--1443628502.637271 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:55:03--1443628503.061524 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:55:03--1443628503.167552 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:55:03--1443628503.285555 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:55:03--1443628503.286236 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:55:18--1443628518.980192 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:55:18--1443628518.980752 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:55:18--1443628518.980949 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:55:18--1443628518.981872 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:55:18--1443628518.982179 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:55:18--1443628518.983416 - LogWriter - INFO - start board configuration
-2015-09-30,17:55:19--1443628519.087809 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:55:19--1443628519.513086 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:55:19--1443628519.619125 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:55:19--1443628519.737176 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:55:19--1443628519.737973 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:55:25--1443628525.090766 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:55:25--1443628525.091326 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:55:25--1443628525.091523 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:55:25--1443628525.092261 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:55:25--1443628525.092499 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:55:25--1443628525.093645 - LogWriter - INFO - start board configuration
-2015-09-30,17:55:25--1443628525.197916 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:55:25--1443628525.622986 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:55:25--1443628525.729141 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:55:25--1443628525.847153 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:55:25--1443628525.847868 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:55:27--1443628527.506127 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:55:27--1443628527.506634 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:55:27--1443628527.506872 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:55:27--1443628527.507660 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:55:27--1443628527.507930 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:55:27--1443628527.509129 - LogWriter - INFO - start board configuration
-2015-09-30,17:55:27--1443628527.598782 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:55:27--1443628527.599272 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:55:27--1443628527.599465 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:55:27--1443628527.613251 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:55:28--1443628528.040467 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:55:28--1443628528.146542 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:55:28--1443628528.264460 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:55:28--1443628528.265158 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:55:38--1443628538.263701 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:55:38--1443628538.264201 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:55:38--1443628538.264395 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:55:38--1443628538.265128 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:55:38--1443628538.265366 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:55:38--1443628538.266506 - LogWriter - INFO - start board configuration
-2015-09-30,17:55:38--1443628538.370965 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:55:38--1443628538.796054 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:55:38--1443628538.902311 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:55:39--1443628539.020251 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:55:39--1443628539.020931 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:55:47--1443628547.650731 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:55:47--1443628547.651324 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:55:47--1443628547.651530 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:55:47--1443628547.652288 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,17:55:47--1443628547.652528 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,17:55:47--1443628547.653801 - LogWriter - INFO - start board configuration
-2015-09-30,17:55:47--1443628547.758440 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,17:55:48--1443628548.183579 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,17:55:48--1443628548.289747 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,17:55:48--1443628548.407738 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,17:55:48--1443628548.408419 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:56:13--1443628573.171822 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:56:13--1443628573.172350 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:56:13--1443628573.172553 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:56:13--1443628573.173402 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,17:56:13--1443628573.173667 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,17:56:13--1443628573.174856 - LogWriter - INFO - start board configuration
-2015-09-30,17:56:13--1443628573.178678 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,17:56:13--1443628573.603298 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,17:56:13--1443628573.609058 - LogWriter - INFO - IP of board /dev/ttyACM3:  192.168.1.2
-2015-09-30,17:56:13--1443628573.626898 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,17:56:23--1443628583.882897 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: could activate the network interface
-2015-09-30,17:56:23--1443628583.883419 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:56:36--1443628596.941140 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:56:36--1443628596.941634 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:56:36--1443628596.941828 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:56:36--1443628596.942572 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,17:56:36--1443628596.942867 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,17:56:36--1443628596.944016 - LogWriter - INFO - start board configuration
-2015-09-30,17:56:37--1443628597.048423 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,17:56:37--1443628597.473606 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,17:56:37--1443628597.582067 - LogWriter - INFO - IP of board /dev/ttyACM3: 
-2015-09-30,17:56:37--1443628597.699588 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,17:56:37--1443628597.703787 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: could activate the network interface
-2015-09-30,17:56:37--1443628597.704101 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:56:50--1443628610.521847 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:56:50--1443628610.522346 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:56:50--1443628610.522539 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:56:50--1443628610.523336 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,17:56:50--1443628610.523575 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,17:56:50--1443628610.524755 - LogWriter - INFO - start board configuration
-2015-09-30,17:56:50--1443628610.629286 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,17:56:51--1443628611.053561 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,17:56:51--1443628611.161873 - LogWriter - INFO - IP of board /dev/ttyACM3: 
-2015-09-30,17:56:51--1443628611.279571 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,17:56:51--1443628611.283885 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: could activate the network interface
-2015-09-30,17:56:51--1443628611.284555 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:57:43--1443628663.895158 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:57:43--1443628663.895666 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:57:43--1443628663.895880 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:57:43--1443628663.896660 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,17:57:43--1443628663.896900 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,17:57:43--1443628663.898089 - LogWriter - INFO - start board configuration
-2015-09-30,17:57:43--1443628663.902605 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,17:57:44--1443628664.227727 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: list index out of range
-2015-09-30,17:57:44--1443628664.228524 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:57:48--1443628668.469523 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:57:48--1443628668.470023 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:57:48--1443628668.470218 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:57:48--1443628668.471064 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,17:57:48--1443628668.471339 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,17:57:48--1443628668.472556 - LogWriter - INFO - start board configuration
-2015-09-30,17:57:48--1443628668.577601 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,17:57:48--1443628668.801274 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,17:57:48--1443628668.806923 - LogWriter - INFO - IP of board /dev/ttyACM3: 
-2015-09-30,17:57:48--1443628668.824476 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: could not set IP for NTP server
-2015-09-30,17:57:48--1443628668.824861 - LogWriter - INFO - control host is shutting down
-2015-09-30,17:57:54--1443628674.694511 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,17:57:54--1443628674.695094 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,17:57:54--1443628674.695291 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,17:57:54--1443628674.696015 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,17:57:54--1443628674.696249 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,17:57:54--1443628674.697510 - LogWriter - INFO - start board configuration
-2015-09-30,17:57:54--1443628674.801350 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,17:57:55--1443628675.226646 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,17:57:55--1443628675.334921 - LogWriter - INFO - IP of board /dev/ttyACM3: 
-2015-09-30,17:57:55--1443628675.352207 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,17:57:55--1443628675.862171 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: could activate the network interface
-2015-09-30,17:57:55--1443628675.862950 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:01:51--1443628911.546625 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:01:51--1443628911.547144 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:01:51--1443628911.547344 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:01:51--1443628911.548083 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,18:01:51--1443628911.549174 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,18:01:51--1443628911.550537 - LogWriter - INFO - start board configuration
-2015-09-30,18:01:51--1443628911.655165 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,18:01:52--1443628912.076165 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,18:01:52--1443628912.183461 - LogWriter - INFO - IP of board /dev/ttyACM3: 
-2015-09-30,18:01:52--1443628912.300480 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: could not set IP for NTP server
-2015-09-30,18:01:52--1443628912.301131 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:02:23--1443628943.849775 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:02:23--1443628943.850288 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:02:23--1443628943.850488 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:02:23--1443628943.851259 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,18:02:23--1443628943.851501 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,18:02:23--1443628943.852668 - LogWriter - INFO - start board configuration
-2015-09-30,18:02:23--1443628943.957672 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,18:02:24--1443628944.378824 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,18:02:24--1443628944.486305 - LogWriter - INFO - IP of board /dev/ttyACM3: 
-2015-09-30,18:02:24--1443628944.603177 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: could not set IP for NTP server
-2015-09-30,18:02:24--1443628944.603835 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:07:57--1443629277.594335 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:07:57--1443629277.594895 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:07:57--1443629277.595099 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:07:57--1443629277.595832 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,18:07:57--1443629277.596063 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,18:07:57--1443629277.597606 - LogWriter - INFO - start board configuration
-2015-09-30,18:07:57--1443629277.701875 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,18:07:58--1443629278.021915 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,18:07:58--1443629278.128335 - LogWriter - INFO - IP of board /dev/ttyACM3:  192.168.1.2
-2015-09-30,18:07:58--1443629278.245400 - LogWriter - ERROR - failed to configure board /dev/ttyACM3: could not set IP for NTP server
-2015-09-30,18:07:58--1443629278.246048 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:10:54--1443629454.602313 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:10:54--1443629454.602834 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:10:54--1443629454.603037 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:10:54--1443629454.604292 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,18:10:54--1443629454.604563 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,18:10:54--1443629454.605756 - LogWriter - INFO - start board configuration
-2015-09-30,18:10:54--1443629454.709982 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,18:10:55--1443629455.131176 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,18:10:55--1443629455.238386 - LogWriter - INFO - IP of board /dev/ttyACM3:  192.168.1.2
-2015-09-30,18:10:55--1443629455.355141 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,18:10:55--1443629455.865879 - LogWriter - INFO - network interface of board /dev/ttyACM3 is ready
-2015-09-30,18:10:55--1443629455.866814 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:11:14--1443629474.800251 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:11:14--1443629474.800733 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:11:14--1443629474.800927 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:11:14--1443629474.801676 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,18:11:14--1443629474.801968 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,18:11:14--1443629474.803066 - LogWriter - INFO - start board configuration
-2015-09-30,18:11:14--1443629474.907747 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,18:11:15--1443629475.228780 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,18:11:15--1443629475.333913 - LogWriter - INFO - IP of board /dev/ttyACM0: 192.168.1.1
-2015-09-30,18:11:15--1443629475.450878 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,18:11:15--1443629475.960851 - LogWriter - INFO - network interface of board /dev/ttyACM0 is ready
-2015-09-30,18:11:15--1443629475.961737 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:11:49--1443629509.142043 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:11:49--1443629509.142543 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:11:49--1443629509.142795 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:11:49--1443629509.144002 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,18:11:49--1443629509.144280 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,18:11:49--1443629509.145586 - LogWriter - INFO - start board configuration
-2015-09-30,18:11:49--1443629509.252632 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: list index out of range
-2015-09-30,18:11:49--1443629509.253247 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:16:20--1443629780.856015 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:16:20--1443629780.856578 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:16:20--1443629780.856786 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:16:20--1443629780.858431 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,18:16:20--1443629780.858857 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,18:16:20--1443629780.860338 - LogWriter - INFO - start board configuration
-2015-09-30,18:16:20--1443629780.965194 - LogWriter - ERROR - failed to configure board /dev/ttyACM0: invalid literal for int() with base 10: ':\t 1'
-2015-09-30,18:16:20--1443629780.965654 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:16:53--1443629813.487692 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:16:53--1443629813.488171 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:16:53--1443629813.488378 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:16:53--1443629813.489097 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,18:16:53--1443629813.489328 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,18:16:53--1443629813.490468 - LogWriter - INFO - start board configuration
-2015-09-30,18:16:53--1443629813.595149 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,18:16:54--1443629814.015227 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,18:16:54--1443629814.122429 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,18:16:54--1443629814.239358 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,18:16:54--1443629814.750491 - LogWriter - INFO - network interface of board /dev/ttyACM0 is ready
-2015-09-30,18:16:54--1443629814.751171 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:00--1443629820.593499 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:00--1443629820.593985 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:00--1443629820.594181 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:00--1443629820.595074 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,18:17:00--1443629820.595315 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,18:17:00--1443629820.596836 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:00--1443629820.701380 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,18:17:00--1443629820.922073 - LogWriter - INFO - channels of board /dev/ttyACM4: {0: 66, 1: 67, 2: 68, 3: 69}
-2015-09-30,18:17:00--1443629820.925983 - LogWriter - INFO - IP of board /dev/ttyACM4: 192.168.1.3
-2015-09-30,18:17:00--1443629820.942008 - LogWriter - INFO - NTP server for board /dev/ttyACM4: 192.168.1.1
-2015-09-30,18:17:01--1443629821.451417 - LogWriter - INFO - network interface of board /dev/ttyACM4 is ready
-2015-09-30,18:17:01--1443629821.452304 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:06--1443629826.021742 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:06--1443629826.022280 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:06--1443629826.022481 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:06--1443629826.023426 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,18:17:06--1443629826.023994 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,18:17:06--1443629826.025248 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:06--1443629826.131097 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,18:17:06--1443629826.452185 - LogWriter - INFO - channels of board /dev/ttyACM4: {0: 66, 1: 67, 2: 68, 3: 69}
-2015-09-30,18:17:06--1443629826.559449 - LogWriter - INFO - IP of board /dev/ttyACM4:  192.168.1.3
-2015-09-30,18:17:06--1443629826.676215 - LogWriter - INFO - NTP server for board /dev/ttyACM4: 192.168.1.1
-2015-09-30,18:17:07--1443629827.186417 - LogWriter - INFO - network interface of board /dev/ttyACM4 is ready
-2015-09-30,18:17:07--1443629827.187352 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:08--1443629828.362850 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:08--1443629828.363355 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:08--1443629828.363550 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:08--1443629828.364281 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,18:17:08--1443629828.364520 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,18:17:08--1443629828.365773 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:08--1443629828.470458 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,18:17:08--1443629828.791526 - LogWriter - INFO - channels of board /dev/ttyACM4: {0: 66, 1: 67, 2: 68, 3: 69}
-2015-09-30,18:17:08--1443629828.899009 - LogWriter - INFO - IP of board /dev/ttyACM4:  192.168.1.3
-2015-09-30,18:17:08--1443629828.915168 - LogWriter - INFO - NTP server for board /dev/ttyACM4: 192.168.1.1
-2015-09-30,18:17:09--1443629829.425154 - LogWriter - INFO - network interface of board /dev/ttyACM4 is ready
-2015-09-30,18:17:09--1443629829.426039 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:10--1443629830.593611 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:10--1443629830.594206 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:10--1443629830.594419 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:10--1443629830.595198 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,18:17:10--1443629830.596605 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,18:17:10--1443629830.598689 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:10--1443629830.603398 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,18:17:11--1443629831.023943 - LogWriter - INFO - channels of board /dev/ttyACM4: {0: 66, 1: 67, 2: 68, 3: 69}
-2015-09-30,18:17:11--1443629831.131348 - LogWriter - INFO - IP of board /dev/ttyACM4:  192.168.1.3
-2015-09-30,18:17:11--1443629831.247902 - LogWriter - INFO - NTP server for board /dev/ttyACM4: 192.168.1.1
-2015-09-30,18:17:11--1443629831.758124 - LogWriter - INFO - network interface of board /dev/ttyACM4 is ready
-2015-09-30,18:17:11--1443629831.759216 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:13--1443629833.432400 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:13--1443629833.432895 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:13--1443629833.433091 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:13--1443629833.433875 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,18:17:13--1443629833.434150 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,18:17:13--1443629833.435479 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:13--1443629833.540107 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,18:17:13--1443629833.761290 - LogWriter - INFO - channels of board /dev/ttyACM4: {0: 66, 1: 67, 2: 68, 3: 69}
-2015-09-30,18:17:13--1443629833.868702 - LogWriter - INFO - IP of board /dev/ttyACM4:  192.168.1.3
-2015-09-30,18:17:13--1443629833.985232 - LogWriter - INFO - NTP server for board /dev/ttyACM4: 192.168.1.1
-2015-09-30,18:17:14--1443629834.495252 - LogWriter - INFO - network interface of board /dev/ttyACM4 is ready
-2015-09-30,18:17:14--1443629834.496184 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:16--1443629836.119633 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:16--1443629836.120127 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:16--1443629836.120324 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:16--1443629836.121049 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM4
-2015-09-30,18:17:16--1443629836.121280 - LogWriter - INFO - Boards found at: ['/dev/ttyACM4']
-2015-09-30,18:17:16--1443629836.122478 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:16--1443629836.226514 - LogWriter - INFO - board /dev/ttyACM4 has ID 3
-2015-09-30,18:17:16--1443629836.647521 - LogWriter - INFO - channels of board /dev/ttyACM4: {0: 66, 1: 67, 2: 68, 3: 69}
-2015-09-30,18:17:16--1443629836.754882 - LogWriter - INFO - IP of board /dev/ttyACM4:  192.168.1.3
-2015-09-30,18:17:16--1443629836.771147 - LogWriter - INFO - NTP server for board /dev/ttyACM4: 192.168.1.1
-2015-09-30,18:17:17--1443629837.281207 - LogWriter - INFO - network interface of board /dev/ttyACM4 is ready
-2015-09-30,18:17:17--1443629837.282113 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:21--1443629841.136205 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:21--1443629841.136691 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:21--1443629841.136887 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:21--1443629841.137600 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,18:17:21--1443629841.137836 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,18:17:21--1443629841.139024 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:21--1443629841.243819 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,18:17:21--1443629841.664870 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,18:17:21--1443629841.772404 - LogWriter - INFO - IP of board /dev/ttyACM3:  192.168.1.2
-2015-09-30,18:17:21--1443629841.788460 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,18:17:22--1443629842.299044 - LogWriter - INFO - network interface of board /dev/ttyACM3 is ready
-2015-09-30,18:17:22--1443629842.299986 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:32--1443629852.874495 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:32--1443629852.875056 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:32--1443629852.875256 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:32--1443629852.876113 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,18:17:32--1443629852.876415 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,18:17:32--1443629852.877576 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:32--1443629852.982461 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,18:17:33--1443629853.403614 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,18:17:33--1443629853.510869 - LogWriter - INFO - IP of board /dev/ttyACM3:  192.168.1.2
-2015-09-30,18:17:33--1443629853.627638 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,18:17:34--1443629854.138099 - LogWriter - INFO - network interface of board /dev/ttyACM3 is ready
-2015-09-30,18:17:34--1443629854.139057 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:43--1443629863.182645 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:43--1443629863.183164 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:43--1443629863.183358 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:43--1443629863.184096 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM3
-2015-09-30,18:17:43--1443629863.184327 - LogWriter - INFO - Boards found at: ['/dev/ttyACM3']
-2015-09-30,18:17:43--1443629863.185495 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:43--1443629863.289981 - LogWriter - INFO - board /dev/ttyACM3 has ID 2
-2015-09-30,18:17:43--1443629863.610971 - LogWriter - INFO - channels of board /dev/ttyACM3: {0: 62, 1: 63, 2: 64, 3: 65}
-2015-09-30,18:17:43--1443629863.718341 - LogWriter - INFO - IP of board /dev/ttyACM3:  192.168.1.2
-2015-09-30,18:17:43--1443629863.835134 - LogWriter - INFO - NTP server for board /dev/ttyACM3: 192.168.1.1
-2015-09-30,18:17:44--1443629864.346453 - LogWriter - INFO - network interface of board /dev/ttyACM3 is ready
-2015-09-30,18:17:44--1443629864.347399 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:48--1443629868.382751 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:48--1443629868.383245 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:48--1443629868.383441 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:48--1443629868.384193 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM0
-2015-09-30,18:17:48--1443629868.384427 - LogWriter - INFO - Boards found at: ['/dev/ttyACM0']
-2015-09-30,18:17:48--1443629868.385570 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:48--1443629868.489704 - LogWriter - INFO - board /dev/ttyACM0 has ID 1
-2015-09-30,18:17:48--1443629868.910891 - LogWriter - INFO - channels of board /dev/ttyACM0: {0: 58, 1: 59, 2: 60, 3: 61}
-2015-09-30,18:17:49--1443629869.018146 - LogWriter - INFO - IP of board /dev/ttyACM0:  192.168.1.1
-2015-09-30,18:17:49--1443629869.134941 - LogWriter - INFO - NTP server for board /dev/ttyACM0: 192.168.1.1
-2015-09-30,18:17:49--1443629869.645307 - LogWriter - INFO - network interface of board /dev/ttyACM0 is ready
-2015-09-30,18:17:49--1443629869.646209 - LogWriter - INFO - control host is shutting down
-2015-09-30,18:17:59--1443629879.290622 - LogWriter - INFO - LogWriter created successfully
-2015-09-30,18:17:59--1443629879.291132 - LogWriter - INFO - NumpyDataWriter created successfully
-2015-09-30,18:17:59--1443629879.291326 - LogWriter - INFO - NTP Client created successfully
-2015-09-30,18:17:59--1443629879.292044 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM2
-2015-09-30,18:17:59--1443629879.292275 - LogWriter - INFO - Boards found at: ['/dev/ttyACM2']
-2015-09-30,18:17:59--1443629879.296965 - LogWriter - INFO - start board configuration
-2015-09-30,18:17:59--1443629879.301229 - LogWriter - INFO - board /dev/ttyACM2 has ID 4
-2015-09-30,18:17:59--1443629879.622726 - LogWriter - INFO - channels of board /dev/ttyACM2: {0: 70, 1: 71, 2: 72, 3: 73}
-2015-09-30,18:17:59--1443629879.727944 - LogWriter - INFO - IP of board /dev/ttyACM2: 192.168.1.4
-2015-09-30,18:17:59--1443629879.744245 - LogWriter - INFO - NTP server for board /dev/ttyACM2: 192.168.1.1
-2015-09-30,18:18:00--1443629880.254226 - LogWriter - INFO - network interface of board /dev/ttyACM2 is ready
-2015-09-30,18:18:00--1443629880.255050 - LogWriter - INFO - control host is shutting down
+2015-10-02,12:13:42--1443780822.536271 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,12:13:42--1443780822.537715 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,12:13:42--1443780822.538250 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,12:13:42--1443780822.538458 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,12:13:42--1443780822.539435 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,12:13:42--1443780822.539811 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,12:13:42--1443780822.540873 - LogWriter - INFO - start board configuration
+2015-10-02,12:13:42--1443780822.644966 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,12:13:43--1443780823.174622 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,12:13:43--1443780823.175279 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,12:13:43--1443780823.175661 - LogWriter - INFO - channel 0 has min value  -3530
+2015-10-02,12:13:43--1443780823.176028 - LogWriter - INFO - channel 0 has max value -2042
+2015-10-02,12:13:43--1443780823.176377 - LogWriter - INFO - channel 0 has low threshold  -3232
+2015-10-02,12:13:43--1443780823.176724 - LogWriter - INFO - channel 0 has high threshold -2339 
+2015-10-02,12:13:43--1443780823.177086 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,12:13:43--1443780823.177447 - LogWriter - INFO - channel 1 has min value  -3792
+2015-10-02,12:13:43--1443780823.177794 - LogWriter - INFO - channel 1 has max value -1829
+2015-10-02,12:13:43--1443780823.178140 - LogWriter - INFO - channel 1 has low threshold  -3399
+2015-10-02,12:13:43--1443780823.178487 - LogWriter - INFO - channel 1 has high threshold -2221 
+2015-10-02,12:13:43--1443780823.178840 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,12:13:43--1443780823.179208 - LogWriter - INFO - channel 2 has min value  -3232
+2015-10-02,12:13:43--1443780823.179567 - LogWriter - INFO - channel 2 has max value -1928
+2015-10-02,12:13:43--1443780823.179915 - LogWriter - INFO - channel 2 has low threshold  -2971
+2015-10-02,12:13:43--1443780823.180262 - LogWriter - INFO - channel 2 has high threshold -2188 
+2015-10-02,12:13:43--1443780823.180652 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,12:13:43--1443780823.181002 - LogWriter - INFO - channel 3 has min value  -3609
+2015-10-02,12:13:43--1443780823.181349 - LogWriter - INFO - channel 3 has max value -1971
+2015-10-02,12:13:43--1443780823.181695 - LogWriter - INFO - channel 3 has low threshold  -3281
+2015-10-02,12:13:43--1443780823.182041 - LogWriter - INFO - channel 3 has high threshold -2298 
+2015-10-02,12:13:43--1443780823.288064 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,12:13:43--1443780823.405168 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,12:13:43--1443780823.915841 - LogWriter - INFO - network interface of board /dev/ttyACM5 is ready
+2015-10-02,12:13:44--1443780824.548170 - LogWriter - INFO - board /dev/ttyACM5 is synchronized
+2015-10-02,12:13:44--1443780824.554166 - LogWriter - INFO - Current time  (counter_3):	156385237, with 0 overflow
+2015-10-02,12:13:44--1443780824.554627 - LogWriter - INFO - Time elapsed in microseconds (counter_3):	170
+2015-10-02,12:13:44--1443780824.555009 - LogWriter - INFO - Counter 2 reads: 		1563 seconds,	722 ms,	614.083 us
+2015-10-02,12:13:45--1443780825.056031 - LogWriter - INFO - Initialization done on /dev/ttyACM5, ready to collect data!
+2015-10-02,12:13:45--1443780825.056627 - LogWriter - INFO - start experiment environment
+2015-10-02,12:13:45--1443780825.057021 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:6000
+2015-10-02,12:13:45--1443780825.057511 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5000
+2015-10-02,12:13:45--1443780825.058213 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5005
+2015-10-02,12:13:45--1443780825.060251 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5006
+2015-10-02,12:13:45--1443780825.060799 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5002
+2015-10-02,12:13:45--1443780825.061954 - LogWriter - INFO - LogWriter Thread started
+2015-10-02,12:13:46--1443780826.064238 - LogWriter - INFO - experiment: Experiment Handler is ready and waiting for the experiment
+2015-10-02,12:13:56--1443780836.697788 - LogWriter - INFO - experiment: Connection received from: ('127.0.0.1', 49311)
+2015-10-02,12:13:57--1443780837.199354 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 0, 0, 0, 0, 1443780837.198343]
+2015-10-02,12:13:57--1443780837.199970 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 0, u'FeedbackID': u'MIDI', u'StimNum': 0, u'StreamDat': [255, 0, 0, 0, 0, 0, 1443780837.198343], u'FeedbackNum': 0, u'BlockID': u'SETUP', u'TrialNum': 0, u'SubjectID': u'P00', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1443780837.198343, u'date': u'Fri Oct  2 12:13:57 2015', u'BlockType': u'Baseline', u'TrialID': u'SETUP', u'BlockNum': 0}
+2015-10-02,12:14:00--1443780840.201575 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 1, 0, 0, 0, 1443780840.200636]
+2015-10-02,12:14:00--1443780840.202181 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 0, u'FeedbackID': u'None', u'StimNum': 0, u'StreamDat': [255, 0, 1, 0, 0, 0, 1443780840.200636], u'FeedbackNum': 0, u'BlockID': u'REST_1', u'TrialNum': 1, u'SubjectID': u'P00', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1443780840.200636, u'date': u'Fri Oct  2 12:14:00 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_1', u'BlockNum': 0}
+2015-10-02,12:14:03--1443780843.204047 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 1, 0, 0, 2, 1443780843.203121]
+2015-10-02,12:14:03--1443780843.204643 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 2, u'FeedbackID': u'TIME_SYNC', u'StimNum': 0, u'StreamDat': [255, 0, 1, 0, 0, 2, 1443780843.203121], u'FeedbackNum': 0, u'BlockID': u'Time_SYNC_test', u'TrialNum': 1, u'SubjectID': u'P00', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1443780843.203121, u'date': u'Fri Oct  2 12:14:03 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_1', u'BlockNum': 0}
+2015-10-02,12:14:05--1443780845.205553 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 2, 0, 0, 3, 1443780845.204627]
+2015-10-02,12:14:05--1443780845.206147 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 3, u'FeedbackID': u'TIME_SYNC', u'StimNum': 0, u'StreamDat': [255, 0, 2, 0, 0, 3, 1443780845.204627], u'FeedbackNum': 0, u'BlockID': u'Block_3_scanning', u'TrialNum': 2, u'SubjectID': u'P00', u'TrialType': u'STIM/FDBK', u'StimID': u'None', u'time': 1443780845.204627, u'date': u'Fri Oct  2 12:14:05 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_2', u'BlockNum': 0}
+2015-10-02,12:14:15--1443780855.211980 - LogWriter - INFO - experiment: Received message from control socket: [255, 3, 2, 0, 0, 4, 1443780855.210585]
+2015-10-02,12:14:15--1443780855.212594 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 4, u'FeedbackID': u'TIME_SYNC', u'StimNum': 0, u'StreamDat': [255, 3, 2, 0, 0, 4, 1443780855.210585], u'FeedbackNum': 0, u'BlockID': u'END', u'TrialNum': 2, u'SubjectID': u'P00', u'TrialType': u'STIM/FDBK', u'StimID': u'None', u'time': 1443780855.210585, u'date': u'Fri Oct  2 12:14:15 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_2', u'BlockNum': 3}
+2015-10-02,12:14:15--1443780855.213032 - LogWriter - INFO - experiment: received end of experiment message
+2015-10-02,12:14:15--1443780855.213510 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,12:14:15--1443780855.217530 - LogWriter - INFO - experiment: Experiment Handler is shutting down
+2015-10-02,12:14:15--1443780855.417601 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,12:14:15--1443780855.418567 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,12:14:15--1443780855.420297 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,13:50:53--1443786653.437702 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,13:50:53--1443786653.438622 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,13:51:33--1443786693.488148 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,13:51:33--1443786693.489109 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,13:51:33--1443786693.489594 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,13:51:33--1443786693.489803 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,13:51:33--1443786693.490472 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,13:51:33--1443786693.490713 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,13:51:33--1443786693.491814 - LogWriter - INFO - start board configuration
+2015-10-02,13:51:33--1443786693.596436 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,13:51:34--1443786694.123348 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,13:51:34--1443786694.123710 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,13:51:34--1443786694.123890 - LogWriter - INFO - channel 0 has min value  -3530
+2015-10-02,13:51:34--1443786694.124064 - LogWriter - INFO - channel 0 has max value -2042
+2015-10-02,13:51:34--1443786694.124236 - LogWriter - INFO - channel 0 has low threshold  -3232
+2015-10-02,13:51:34--1443786694.124407 - LogWriter - INFO - channel 0 has high threshold -2339 
+2015-10-02,13:51:34--1443786694.124578 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,13:51:34--1443786694.124749 - LogWriter - INFO - channel 1 has min value  -3792
+2015-10-02,13:51:34--1443786694.124920 - LogWriter - INFO - channel 1 has max value -1829
+2015-10-02,13:51:34--1443786694.125091 - LogWriter - INFO - channel 1 has low threshold  -3399
+2015-10-02,13:51:34--1443786694.125261 - LogWriter - INFO - channel 1 has high threshold -2221 
+2015-10-02,13:51:34--1443786694.125432 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,13:51:34--1443786694.125603 - LogWriter - INFO - channel 2 has min value  -3232
+2015-10-02,13:51:34--1443786694.125927 - LogWriter - INFO - channel 2 has max value -1928
+2015-10-02,13:51:34--1443786694.126104 - LogWriter - INFO - channel 2 has low threshold  -2971
+2015-10-02,13:51:34--1443786694.126276 - LogWriter - INFO - channel 2 has high threshold -2188 
+2015-10-02,13:51:34--1443786694.126448 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,13:51:34--1443786694.126620 - LogWriter - INFO - channel 3 has min value  -3609
+2015-10-02,13:51:34--1443786694.126828 - LogWriter - INFO - channel 3 has max value -1971
+2015-10-02,13:51:34--1443786694.127004 - LogWriter - INFO - channel 3 has low threshold  -3281
+2015-10-02,13:51:34--1443786694.127382 - LogWriter - INFO - channel 3 has high threshold -2298 
+2015-10-02,13:51:34--1443786694.232763 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,13:51:34--1443786694.349531 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,13:51:34--1443786694.860435 - LogWriter - INFO - network interface of board /dev/ttyACM5 is ready
+2015-10-02,13:51:35--1443786695.414994 - LogWriter - ERROR - failed to configure board /dev/ttyACM5: could not synchronize time with the ntp server
+2015-10-02,13:51:35--1443786695.415602 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,13:53:11--1443786791.973509 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,13:53:11--1443786791.974260 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,13:53:11--1443786791.974708 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,13:53:11--1443786791.974911 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,13:53:11--1443786791.975541 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,13:53:11--1443786791.975773 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,13:53:11--1443786791.976794 - LogWriter - INFO - start board configuration
+2015-10-02,13:53:12--1443786792.082008 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,13:53:12--1443786792.611510 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,13:53:12--1443786792.612057 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,13:53:12--1443786792.612415 - LogWriter - INFO - channel 0 has min value  -3530
+2015-10-02,13:53:12--1443786792.612782 - LogWriter - INFO - channel 0 has max value -2042
+2015-10-02,13:53:12--1443786792.613130 - LogWriter - INFO - channel 0 has low threshold  -3232
+2015-10-02,13:53:12--1443786792.613477 - LogWriter - INFO - channel 0 has high threshold -2339 
+2015-10-02,13:53:12--1443786792.613823 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,13:53:12--1443786792.614167 - LogWriter - INFO - channel 1 has min value  -3792
+2015-10-02,13:53:12--1443786792.614523 - LogWriter - INFO - channel 1 has max value -1829
+2015-10-02,13:53:12--1443786792.614869 - LogWriter - INFO - channel 1 has low threshold  -3399
+2015-10-02,13:53:12--1443786792.615438 - LogWriter - INFO - channel 1 has high threshold -2221 
+2015-10-02,13:53:12--1443786792.615795 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,13:53:12--1443786792.616146 - LogWriter - INFO - channel 2 has min value  -3232
+2015-10-02,13:53:12--1443786792.616491 - LogWriter - INFO - channel 2 has max value -1928
+2015-10-02,13:53:12--1443786792.616836 - LogWriter - INFO - channel 2 has low threshold  -2971
+2015-10-02,13:53:12--1443786792.617181 - LogWriter - INFO - channel 2 has high threshold -2188 
+2015-10-02,13:53:12--1443786792.617528 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,13:53:12--1443786792.617873 - LogWriter - INFO - channel 3 has min value  -3609
+2015-10-02,13:53:12--1443786792.618218 - LogWriter - INFO - channel 3 has max value -1971
+2015-10-02,13:53:12--1443786792.618562 - LogWriter - INFO - channel 3 has low threshold  -3281
+2015-10-02,13:53:12--1443786792.618906 - LogWriter - INFO - channel 3 has high threshold -2298 
+2015-10-02,13:53:12--1443786792.724941 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,13:53:12--1443786792.842182 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,13:53:13--1443786793.353596 - LogWriter - INFO - network interface of board /dev/ttyACM5 is ready
+2015-10-02,13:53:13--1443786793.976651 - LogWriter - INFO - board /dev/ttyACM5 is synchronized
+2015-10-02,13:53:13--1443786793.982337 - LogWriter - INFO - Current time  (counter_3):	753289977, with 0 overflow
+2015-10-02,13:53:13--1443786793.982772 - LogWriter - INFO - Time elapsed in microseconds (counter_3):	180
+2015-10-02,13:53:13--1443786793.983216 - LogWriter - INFO - Counter 2 reads: 		7532 seconds,	272 ms,	584.5 us
+2015-10-02,13:53:14--1443786794.484209 - LogWriter - INFO - Initialization done on /dev/ttyACM5, ready to collect data!
+2015-10-02,13:53:14--1443786794.484813 - LogWriter - INFO - start experiment environment
+2015-10-02,13:53:14--1443786794.485209 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:6000
+2015-10-02,13:53:14--1443786794.485711 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5000
+2015-10-02,13:53:14--1443786794.486326 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5005
+2015-10-02,13:53:14--1443786794.486759 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5007
+2015-10-02,13:53:14--1443786794.487638 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5006
+2015-10-02,13:53:14--1443786794.488512 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5002
+2015-10-02,13:53:14--1443786794.490047 - LogWriter - INFO - LogWriter Thread started
+2015-10-02,13:53:15--1443786795.493917 - LogWriter - INFO - experiment: Experiment Handler is ready and waiting for the experiment
+2015-10-02,13:54:34--1443786874.025128 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,13:54:39--1443786879.729299 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,13:54:39--1443786879.734597 - LogWriter - INFO - experiment: Experiment Handler is shutting down
+2015-10-02,13:54:39--1443786879.934711 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,13:54:39--1443786879.936436 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,13:54:39--1443786879.937284 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,13:54:49--1443786889.821441 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,13:54:49--1443786889.822260 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,13:54:49--1443786889.822721 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,13:54:49--1443786889.822926 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,13:54:49--1443786889.824021 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,13:54:49--1443786889.824383 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,13:54:49--1443786889.825462 - LogWriter - INFO - start board configuration
+2015-10-02,13:54:49--1443786889.930364 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,13:54:50--1443786890.458952 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,13:54:50--1443786890.459554 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,13:54:50--1443786890.459914 - LogWriter - INFO - channel 0 has min value  -3530
+2015-10-02,13:54:50--1443786890.460268 - LogWriter - INFO - channel 0 has max value -2042
+2015-10-02,13:54:50--1443786890.460618 - LogWriter - INFO - channel 0 has low threshold  -3232
+2015-10-02,13:54:50--1443786890.460966 - LogWriter - INFO - channel 0 has high threshold -2339 
+2015-10-02,13:54:50--1443786890.461327 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,13:54:50--1443786890.461676 - LogWriter - INFO - channel 1 has min value  -3792
+2015-10-02,13:54:50--1443786890.462027 - LogWriter - INFO - channel 1 has max value -1829
+2015-10-02,13:54:50--1443786890.462378 - LogWriter - INFO - channel 1 has low threshold  -3399
+2015-10-02,13:54:50--1443786890.462755 - LogWriter - INFO - channel 1 has high threshold -2221 
+2015-10-02,13:54:50--1443786890.463123 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,13:54:50--1443786890.463547 - LogWriter - INFO - channel 2 has min value  -3232
+2015-10-02,13:54:50--1443786890.463910 - LogWriter - INFO - channel 2 has max value -1928
+2015-10-02,13:54:50--1443786890.464260 - LogWriter - INFO - channel 2 has low threshold  -2971
+2015-10-02,13:54:50--1443786890.464608 - LogWriter - INFO - channel 2 has high threshold -2188 
+2015-10-02,13:54:50--1443786890.464956 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,13:54:50--1443786890.465301 - LogWriter - INFO - channel 3 has min value  -3609
+2015-10-02,13:54:50--1443786890.465648 - LogWriter - INFO - channel 3 has max value -1971
+2015-10-02,13:54:50--1443786890.465994 - LogWriter - INFO - channel 3 has low threshold  -3281
+2015-10-02,13:54:50--1443786890.466339 - LogWriter - INFO - channel 3 has high threshold -2298 
+2015-10-02,13:54:50--1443786890.572497 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,13:54:50--1443786890.689576 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,13:54:51--1443786891.201774 - LogWriter - INFO - network interface of board /dev/ttyACM5 is ready
+2015-10-02,13:54:51--1443786891.829765 - LogWriter - INFO - board /dev/ttyACM5 is synchronized
+2015-10-02,13:54:51--1443786891.835532 - LogWriter - INFO - Current time  (counter_3):	763074689, with 0 overflow
+2015-10-02,13:54:51--1443786891.835936 - LogWriter - INFO - Time elapsed in microseconds (counter_3):	190
+2015-10-02,13:54:51--1443786891.836290 - LogWriter - INFO - Counter 2 reads: 		7630 seconds,	111 ms,	606 us
+2015-10-02,13:54:52--1443786892.337255 - LogWriter - INFO - Initialization done on /dev/ttyACM5, ready to collect data!
+2015-10-02,13:54:52--1443786892.337858 - LogWriter - INFO - start experiment environment
+2015-10-02,13:54:52--1443786892.338254 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:6000
+2015-10-02,13:54:52--1443786892.338745 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5000
+2015-10-02,13:54:52--1443786892.339230 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5005
+2015-10-02,13:54:52--1443786892.339832 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5007
+2015-10-02,13:54:52--1443786892.340496 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5006
+2015-10-02,13:54:52--1443786892.340923 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5002
+2015-10-02,13:54:52--1443786892.341922 - LogWriter - INFO - LogWriter Thread started
+2015-10-02,13:54:52--1443786892.343303 - LogWriter - INFO - numpy data writer: NumpyDataWriter is ready
+2015-10-02,13:54:53--1443786893.344725 - LogWriter - INFO - experiment: Experiment Handler is ready and waiting for the experiment
+2015-10-02,13:55:45--1443786945.282815 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,13:55:45--1443786945.287125 - LogWriter - INFO - experiment: Experiment Handler is shutting down
+2015-10-02,13:55:45--1443786945.487382 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,13:56:05--1443786965.482356 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,13:56:05--1443786965.483273 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,13:56:05--1443786965.483768 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,13:56:05--1443786965.483978 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,13:56:05--1443786965.484625 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,13:56:05--1443786965.484883 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,13:56:05--1443786965.485912 - LogWriter - INFO - start board configuration
+2015-10-02,13:56:05--1443786965.590489 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,13:56:06--1443786966.014444 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,13:56:06--1443786966.014906 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,13:56:06--1443786966.015467 - LogWriter - INFO - channel 0 has min value 0
+2015-10-02,13:56:06--1443786966.015711 - LogWriter - INFO - channel 0 has max value 0
+2015-10-02,13:56:06--1443786966.015932 - LogWriter - INFO - channel 0 has low threshold 0
+2015-10-02,13:56:06--1443786966.016144 - LogWriter - INFO - channel 0 has high threshold 0
+2015-10-02,13:56:06--1443786966.016325 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,13:56:06--1443786966.016509 - LogWriter - INFO - channel 1 has min value 0
+2015-10-02,13:56:06--1443786966.016682 - LogWriter - INFO - channel 1 has max value 0
+2015-10-02,13:56:06--1443786966.016855 - LogWriter - INFO - channel 1 has low threshold 0
+2015-10-02,13:56:06--1443786966.017027 - LogWriter - INFO - channel 1 has high threshold 0
+2015-10-02,13:56:06--1443786966.017200 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,13:56:06--1443786966.017373 - LogWriter - INFO - channel 2 has min value 0
+2015-10-02,13:56:06--1443786966.017546 - LogWriter - INFO - channel 2 has max value 0
+2015-10-02,13:56:06--1443786966.017717 - LogWriter - INFO - channel 2 has low threshold 0
+2015-10-02,13:56:06--1443786966.017889 - LogWriter - INFO - channel 2 has high threshold 0
+2015-10-02,13:56:06--1443786966.018062 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,13:56:06--1443786966.018234 - LogWriter - INFO - channel 3 has min value 0
+2015-10-02,13:56:06--1443786966.018406 - LogWriter - INFO - channel 3 has max value 0
+2015-10-02,13:56:06--1443786966.018579 - LogWriter - INFO - channel 3 has low threshold 0
+2015-10-02,13:56:06--1443786966.018939 - LogWriter - INFO - channel 3 has high threshold 0
+2015-10-02,13:56:06--1443786966.128304 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,13:56:06--1443786966.144180 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,13:56:06--1443786966.660377 - LogWriter - INFO - network interface of board /dev/ttyACM5 is ready
+2015-10-02,13:56:07--1443786967.284471 - LogWriter - INFO - board /dev/ttyACM5 is synchronized
+2015-10-02,13:56:07--1443786967.288698 - LogWriter - INFO - Current time  (counter_3):	770619618, with 0 overflow
+2015-10-02,13:56:07--1443786967.289136 - LogWriter - INFO - Time elapsed in microseconds (counter_3):	180
+2015-10-02,13:56:07--1443786967.289316 - LogWriter - INFO - Counter 2 reads: 		7705 seconds,	554 ms,	594.667 us
+2015-10-02,13:56:07--1443786967.790083 - LogWriter - INFO - Initialization done on /dev/ttyACM5, ready to collect data!
+2015-10-02,13:56:07--1443786967.790485 - LogWriter - INFO - start experiment environment
+2015-10-02,13:56:07--1443786967.790690 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:6000
+2015-10-02,13:56:07--1443786967.790970 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5000
+2015-10-02,13:56:07--1443786967.791326 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5005
+2015-10-02,13:56:07--1443786967.791564 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5007
+2015-10-02,13:56:07--1443786967.791928 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5006
+2015-10-02,13:56:07--1443786967.792154 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5002
+2015-10-02,13:56:07--1443786967.794005 - LogWriter - INFO - LogWriter Thread started
+2015-10-02,13:56:07--1443786967.794689 - LogWriter - INFO - numpy data writer: NumpyDataWriter is ready
+2015-10-02,13:56:08--1443786968.796698 - LogWriter - INFO - experiment: Experiment Handler is ready and waiting for the experiment
+2015-10-02,14:01:51--1443787311.366605 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:01:51--1443787311.370820 - LogWriter - INFO - experiment: Experiment Handler is shutting down
+2015-10-02,14:01:51--1443787311.571044 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,14:01:51--1443787311.572364 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:01:51--1443787311.573189 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,14:01:57--1443787317.680959 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,14:01:57--1443787317.681775 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,14:01:57--1443787317.682221 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,14:01:57--1443787317.682424 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,14:01:57--1443787317.683040 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,14:01:57--1443787317.683321 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,14:01:57--1443787317.684391 - LogWriter - INFO - start board configuration
+2015-10-02,14:01:57--1443787317.688818 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,14:01:58--1443787318.217997 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,14:01:58--1443787318.218556 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,14:01:58--1443787318.218903 - LogWriter - INFO - channel 0 has min value  -3530
+2015-10-02,14:01:58--1443787318.219300 - LogWriter - INFO - channel 0 has max value -2042
+2015-10-02,14:01:58--1443787318.219659 - LogWriter - INFO - channel 0 has low threshold  -3232
+2015-10-02,14:01:58--1443787318.220019 - LogWriter - INFO - channel 0 has high threshold -2339 
+2015-10-02,14:01:58--1443787318.220373 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,14:01:58--1443787318.220721 - LogWriter - INFO - channel 1 has min value  -3792
+2015-10-02,14:01:58--1443787318.221083 - LogWriter - INFO - channel 1 has max value -1829
+2015-10-02,14:01:58--1443787318.221431 - LogWriter - INFO - channel 1 has low threshold  -3399
+2015-10-02,14:01:58--1443787318.221790 - LogWriter - INFO - channel 1 has high threshold -2221 
+2015-10-02,14:01:58--1443787318.222139 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,14:01:58--1443787318.222480 - LogWriter - INFO - channel 2 has min value  -3232
+2015-10-02,14:01:58--1443787318.222803 - LogWriter - INFO - channel 2 has max value -1928
+2015-10-02,14:01:58--1443787318.223186 - LogWriter - INFO - channel 2 has low threshold  -2971
+2015-10-02,14:01:58--1443787318.223398 - LogWriter - INFO - channel 2 has high threshold -2188 
+2015-10-02,14:01:58--1443787318.223572 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,14:01:58--1443787318.223810 - LogWriter - INFO - channel 3 has min value  -3609
+2015-10-02,14:01:58--1443787318.223985 - LogWriter - INFO - channel 3 has max value -1971
+2015-10-02,14:01:58--1443787318.224157 - LogWriter - INFO - channel 3 has low threshold  -3281
+2015-10-02,14:01:58--1443787318.224330 - LogWriter - INFO - channel 3 has high threshold -2298 
+2015-10-02,14:01:58--1443787318.329497 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,14:01:58--1443787318.446415 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,14:01:58--1443787318.956970 - LogWriter - INFO - network interface of board /dev/ttyACM5 is ready
+2015-10-02,14:01:59--1443787319.587948 - LogWriter - INFO - board /dev/ttyACM5 is synchronized
+2015-10-02,14:01:59--1443787319.593575 - LogWriter - INFO - Current time  (counter_3):	805847753, with 0 overflow
+2015-10-02,14:01:59--1443787319.593983 - LogWriter - INFO - Time elapsed in microseconds (counter_3):	190
+2015-10-02,14:01:59--1443787319.594362 - LogWriter - INFO - Counter 2 reads: 		8057 seconds,	806 ms,	607.5 us
+2015-10-02,14:02:00--1443787320.095344 - LogWriter - INFO - Initialization done on /dev/ttyACM5, ready to collect data!
+2015-10-02,14:02:00--1443787320.095954 - LogWriter - INFO - start experiment environment
+2015-10-02,14:02:00--1443787320.096351 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:6000
+2015-10-02,14:02:00--1443787320.096840 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5000
+2015-10-02,14:02:00--1443787320.097475 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5005
+2015-10-02,14:02:00--1443787320.098265 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5007
+2015-10-02,14:02:00--1443787320.100419 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5006
+2015-10-02,14:02:00--1443787320.101023 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5002
+2015-10-02,14:02:00--1443787320.102122 - LogWriter - INFO - LogWriter Thread started
+2015-10-02,14:02:00--1443787320.103099 - LogWriter - INFO - numpy data writer: NumpyDataWriter is ready
+2015-10-02,14:02:01--1443787321.104636 - LogWriter - INFO - experiment: Experiment Handler is ready and waiting for the experiment
+2015-10-02,14:02:45--1443787365.010215 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:02:45--1443787365.014674 - LogWriter - INFO - experiment: Experiment Handler is shutting down
+2015-10-02,14:02:45--1443787365.214808 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,14:02:45--1443787365.216201 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:02:45--1443787365.216994 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,14:07:25--1443787645.659489 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,14:07:25--1443787645.660318 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,14:07:25--1443787645.660765 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,14:07:25--1443787645.660971 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,14:07:25--1443787645.661624 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,14:07:25--1443787645.662088 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,14:07:25--1443787645.663202 - LogWriter - INFO - start board configuration
+2015-10-02,14:07:25--1443787645.767585 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,14:07:26--1443787646.296458 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,14:07:26--1443787646.297009 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,14:07:26--1443787646.297366 - LogWriter - INFO - channel 0 has min value  -3530
+2015-10-02,14:07:26--1443787646.297809 - LogWriter - INFO - channel 0 has max value -2042
+2015-10-02,14:07:26--1443787646.298161 - LogWriter - INFO - channel 0 has low threshold  -3232
+2015-10-02,14:07:26--1443787646.298507 - LogWriter - INFO - channel 0 has high threshold -2339 
+2015-10-02,14:07:26--1443787646.298853 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,14:07:26--1443787646.299373 - LogWriter - INFO - channel 1 has min value  -3792
+2015-10-02,14:07:26--1443787646.299723 - LogWriter - INFO - channel 1 has max value -1829
+2015-10-02,14:07:26--1443787646.300069 - LogWriter - INFO - channel 1 has low threshold  -3399
+2015-10-02,14:07:26--1443787646.300415 - LogWriter - INFO - channel 1 has high threshold -2221 
+2015-10-02,14:07:26--1443787646.300767 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,14:07:26--1443787646.301115 - LogWriter - INFO - channel 2 has min value  -3232
+2015-10-02,14:07:26--1443787646.301477 - LogWriter - INFO - channel 2 has max value -1928
+2015-10-02,14:07:26--1443787646.301822 - LogWriter - INFO - channel 2 has low threshold  -2971
+2015-10-02,14:07:26--1443787646.302167 - LogWriter - INFO - channel 2 has high threshold -2188 
+2015-10-02,14:07:26--1443787646.302513 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,14:07:26--1443787646.302856 - LogWriter - INFO - channel 3 has min value  -3609
+2015-10-02,14:07:26--1443787646.303245 - LogWriter - INFO - channel 3 has max value -1971
+2015-10-02,14:07:26--1443787646.303430 - LogWriter - INFO - channel 3 has low threshold  -3281
+2015-10-02,14:07:26--1443787646.303602 - LogWriter - INFO - channel 3 has high threshold -2298 
+2015-10-02,14:07:26--1443787646.408755 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,14:07:26--1443787646.525590 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,14:07:27--1443787647.035459 - LogWriter - INFO - network interface of board /dev/ttyACM5 is ready
+2015-10-02,14:07:27--1443787647.668143 - LogWriter - INFO - board /dev/ttyACM5 is synchronized
+2015-10-02,14:07:27--1443787647.673834 - LogWriter - INFO - Current time  (counter_3):	838653688, with 0 overflow
+2015-10-02,14:07:27--1443787647.674236 - LogWriter - INFO - Time elapsed in microseconds (counter_3):	170
+2015-10-02,14:07:27--1443787647.674591 - LogWriter - INFO - Counter 2 reads: 		8385 seconds,	838 ms,	615.333 us
+2015-10-02,14:07:28--1443787648.175605 - LogWriter - INFO - Initialization done on /dev/ttyACM5, ready to collect data!
+2015-10-02,14:07:28--1443787648.176220 - LogWriter - INFO - start experiment environment
+2015-10-02,14:07:28--1443787648.176616 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:6000
+2015-10-02,14:07:28--1443787648.177123 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5000
+2015-10-02,14:07:28--1443787648.177583 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5006
+2015-10-02,14:07:28--1443787648.178020 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5003
+2015-10-02,14:07:28--1443787648.178608 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5007
+2015-10-02,14:07:28--1443787648.179368 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5002
+2015-10-02,14:07:28--1443787648.180538 - LogWriter - INFO - LogWriter Thread started
+2015-10-02,14:07:28--1443787648.181633 - LogWriter - INFO - numpy data writer: NumpyDataWriter is ready
+2015-10-02,14:07:29--1443787649.183793 - LogWriter - INFO - experiment: Experiment Handler is ready and waiting for the experiment
+2015-10-02,14:07:41--1443787661.457464 - LogWriter - INFO - experiment: Connection received from: ('127.0.0.1', 49587)
+2015-10-02,14:07:41--1443787661.962087 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 0, 0, 0, 0, 1443787661.957707]
+2015-10-02,14:07:41--1443787661.962769 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 0, u'FeedbackID': u'MIDI', u'StimNum': 0, u'StreamDat': [255, 0, 0, 0, 0, 0, 1443787661.957707], u'FeedbackNum': 0, u'BlockID': u'SETUP', u'TrialNum': 0, u'SubjectID': u'P00', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1443787661.957707, u'date': u'Fri Oct  2 14:07:41 2015', u'BlockType': u'Baseline', u'TrialID': u'SETUP', u'BlockNum': 0}
+2015-10-02,14:07:41--1443787661.965899 - LogWriter - ERROR - experiment: array([  2.55000000e+02,   0.00000000e+00,   0.00000000e+00,
+         0.00000000e+00,   0.00000000e+00,   0.00000000e+00,
+         1.44378766e+09]) is not JSON serializable
+2015-10-02,14:08:09--1443787689.945130 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:08:09--1443787689.948755 - LogWriter - INFO - experiment: Experiment Handler is shutting down
+2015-10-02,14:08:10--1443787690.148940 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,14:08:10--1443787690.149899 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:08:10--1443787690.150698 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,14:10:21--1443787821.782625 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,14:10:21--1443787821.783505 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,14:10:21--1443787821.783972 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,14:10:21--1443787821.784271 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,14:10:21--1443787821.784927 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,14:10:21--1443787821.785160 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,14:10:21--1443787821.786611 - LogWriter - INFO - start board configuration
+2015-10-02,14:10:21--1443787821.891688 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,14:10:22--1443787822.116391 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,14:10:22--1443787822.116733 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,14:10:22--1443787822.116912 - LogWriter - INFO - channel 0 has min value 0
+2015-10-02,14:10:22--1443787822.117088 - LogWriter - INFO - channel 0 has max value 0
+2015-10-02,14:10:22--1443787822.117261 - LogWriter - INFO - channel 0 has low threshold 0
+2015-10-02,14:10:22--1443787822.117433 - LogWriter - INFO - channel 0 has high threshold 0
+2015-10-02,14:10:22--1443787822.117698 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,14:10:22--1443787822.117878 - LogWriter - INFO - channel 1 has min value 0
+2015-10-02,14:10:22--1443787822.118159 - LogWriter - INFO - channel 1 has max value 0
+2015-10-02,14:10:22--1443787822.118383 - LogWriter - INFO - channel 1 has low threshold 0
+2015-10-02,14:10:22--1443787822.118557 - LogWriter - INFO - channel 1 has high threshold 0
+2015-10-02,14:10:22--1443787822.118731 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,14:10:22--1443787822.118945 - LogWriter - INFO - channel 2 has min value 0
+2015-10-02,14:10:22--1443787822.119127 - LogWriter - INFO - channel 2 has max value 0
+2015-10-02,14:10:22--1443787822.119413 - LogWriter - INFO - channel 2 has low threshold 0
+2015-10-02,14:10:22--1443787822.119588 - LogWriter - INFO - channel 2 has high threshold 0
+2015-10-02,14:10:22--1443787822.119760 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,14:10:22--1443787822.119979 - LogWriter - INFO - channel 3 has min value 0
+2015-10-02,14:10:22--1443787822.120158 - LogWriter - INFO - channel 3 has max value 0
+2015-10-02,14:10:22--1443787822.120401 - LogWriter - INFO - channel 3 has low threshold 0
+2015-10-02,14:10:22--1443787822.120576 - LogWriter - INFO - channel 3 has high threshold 0
+2015-10-02,14:10:22--1443787822.227184 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,14:10:22--1443787822.343639 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,14:10:27--1443787827.206282 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:10:27--1443787827.411483 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,14:10:59--1443787859.459772 - LogWriter - INFO - LogWriter created successfully
+2015-10-02,14:10:59--1443787859.460647 - LogWriter - INFO - ExperimentHandler created successfully
+2015-10-02,14:10:59--1443787859.461111 - LogWriter - INFO - NumpyDataWriter created successfully
+2015-10-02,14:10:59--1443787859.461316 - LogWriter - INFO - NTP Client created successfully
+2015-10-02,14:10:59--1443787859.461933 - LogWriter - INFO - try to find some boards with the pattern: /dev/ttyACM5
+2015-10-02,14:10:59--1443787859.462163 - LogWriter - INFO - Boards found at: ['/dev/ttyACM5']
+2015-10-02,14:10:59--1443787859.463413 - LogWriter - INFO - start board configuration
+2015-10-02,14:10:59--1443787859.568053 - LogWriter - INFO - board /dev/ttyACM5 has ID 5
+2015-10-02,14:11:00--1443787860.100240 - LogWriter - INFO - channels of board /dev/ttyACM5: 
+2015-10-02,14:11:00--1443787860.100873 - LogWriter - INFO - channel 0 has name 74
+2015-10-02,14:11:00--1443787860.101235 - LogWriter - INFO - channel 0 has min value  -3530
+2015-10-02,14:11:00--1443787860.101585 - LogWriter - INFO - channel 0 has max value -2042
+2015-10-02,14:11:00--1443787860.101929 - LogWriter - INFO - channel 0 has low threshold  -3232
+2015-10-02,14:11:00--1443787860.102276 - LogWriter - INFO - channel 0 has high threshold -2339 
+2015-10-02,14:11:00--1443787860.102619 - LogWriter - INFO - channel 1 has name 75
+2015-10-02,14:11:00--1443787860.102977 - LogWriter - INFO - channel 1 has min value  -3792
+2015-10-02,14:11:00--1443787860.103375 - LogWriter - INFO - channel 1 has max value -1829
+2015-10-02,14:11:00--1443787860.103722 - LogWriter - INFO - channel 1 has low threshold  -3399
+2015-10-02,14:11:00--1443787860.104066 - LogWriter - INFO - channel 1 has high threshold -2221 
+2015-10-02,14:11:00--1443787860.104412 - LogWriter - INFO - channel 2 has name 76
+2015-10-02,14:11:00--1443787860.104756 - LogWriter - INFO - channel 2 has min value  -3232
+2015-10-02,14:11:00--1443787860.105100 - LogWriter - INFO - channel 2 has max value -1928
+2015-10-02,14:11:00--1443787860.105442 - LogWriter - INFO - channel 2 has low threshold  -2971
+2015-10-02,14:11:00--1443787860.105784 - LogWriter - INFO - channel 2 has high threshold -2188 
+2015-10-02,14:11:00--1443787860.106127 - LogWriter - INFO - channel 3 has name 77
+2015-10-02,14:11:00--1443787860.106471 - LogWriter - INFO - channel 3 has min value  -3609
+2015-10-02,14:11:00--1443787860.106812 - LogWriter - INFO - channel 3 has max value -1971
+2015-10-02,14:11:00--1443787860.107194 - LogWriter - INFO - channel 3 has low threshold  -3281
+2015-10-02,14:11:00--1443787860.107404 - LogWriter - INFO - channel 3 has high threshold -2298 
+2015-10-02,14:11:00--1443787860.213170 - LogWriter - INFO - IP of board /dev/ttyACM5:  192.168.1.5
+2015-10-02,14:11:00--1443787860.330250 - LogWriter - INFO - NTP server for board /dev/ttyACM5: 192.168.1.1
+2015-10-02,14:11:00--1443787860.841281 - LogWriter - INFO - network interface of board /dev/ttyACM5 is ready
+2015-10-02,14:11:01--1443787861.468164 - LogWriter - INFO - board /dev/ttyACM5 is synchronized
+2015-10-02,14:11:01--1443787861.474734 - LogWriter - INFO - Current time  (counter_3):	860032370, with 0 overflow
+2015-10-02,14:11:01--1443787861.475251 - LogWriter - INFO - Time elapsed in microseconds (counter_3):	180
+2015-10-02,14:11:01--1443787861.475547 - LogWriter - INFO - Counter 2 reads: 		8599 seconds,	607 ms,	605.5 us
+2015-10-02,14:11:01--1443787861.976455 - LogWriter - INFO - Initialization done on /dev/ttyACM5, ready to collect data!
+2015-10-02,14:11:01--1443787861.977003 - LogWriter - INFO - start experiment environment
+2015-10-02,14:11:01--1443787861.977353 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:6000
+2015-10-02,14:11:01--1443787861.977791 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5000
+2015-10-02,14:11:01--1443787861.978388 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5006
+2015-10-02,14:11:01--1443787861.978778 - LogWriter - INFO - LogWriter subscribes to: 127.0.0.1:5003
+2015-10-02,14:11:01--1443787861.979687 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5007
+2015-10-02,14:11:01--1443787861.980248 - LogWriter - INFO - Control Host subscribes to: 127.0.0.1:5002
+2015-10-02,14:11:01--1443787861.983594 - LogWriter - INFO - LogWriter Thread started
+2015-10-02,14:11:01--1443787861.984799 - LogWriter - INFO - numpy data writer: NumpyDataWriter is ready
+2015-10-02,14:11:02--1443787862.986556 - LogWriter - INFO - experiment: Experiment Handler is ready and waiting for the experiment
+2015-10-02,14:11:07--1443787867.198225 - LogWriter - INFO - experiment: Connection received from: ('127.0.0.1', 49627)
+2015-10-02,14:11:07--1443787867.702786 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 0, 0, 0, 0, 1443787867.698688]
+2015-10-02,14:11:07--1443787867.703482 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 0, u'FeedbackID': u'MIDI', u'StimNum': 0, u'StreamDat': [255, 0, 0, 0, 0, 0, 1443787867.698688], u'FeedbackNum': 0, u'BlockID': u'SETUP', u'TrialNum': 0, u'SubjectID': u'P00', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1443787867.698688, u'date': u'Fri Oct  2 14:11:07 2015', u'BlockType': u'Baseline', u'TrialID': u'SETUP', u'BlockNum': 0}
+2015-10-02,14:11:10--1443787870.706963 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 1, 0, 0, 0, 1443787870.706005]
+2015-10-02,14:11:10--1443787870.707774 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 0, u'FeedbackID': u'None', u'StimNum': 0, u'StreamDat': [255, 0, 1, 0, 0, 0, 1443787870.706005], u'FeedbackNum': 0, u'BlockID': u'REST_1', u'TrialNum': 1, u'SubjectID': u'P00', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1443787870.706005, u'date': u'Fri Oct  2 14:11:10 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_1', u'BlockNum': 0}
+2015-10-02,14:11:13--1443787873.710319 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 1, 0, 0, 2, 1443787873.709354]
+2015-10-02,14:11:13--1443787873.710940 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 2, u'FeedbackID': u'TIME_SYNC', u'StimNum': 0, u'StreamDat': [255, 0, 1, 0, 0, 2, 1443787873.709354], u'FeedbackNum': 0, u'BlockID': u'Time_SYNC_test', u'TrialNum': 1, u'SubjectID': u'P00', u'TrialType': u'No_Stim/No_Feedback', u'StimID': u'None', u'time': 1443787873.709354, u'date': u'Fri Oct  2 14:11:13 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_1', u'BlockNum': 0}
+2015-10-02,14:11:15--1443787875.712188 - LogWriter - INFO - experiment: Received message from control socket: [255, 0, 2, 0, 0, 3, 1443787875.71119]
+2015-10-02,14:11:15--1443787875.712784 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 3, u'FeedbackID': u'TIME_SYNC', u'StimNum': 0, u'StreamDat': [255, 0, 2, 0, 0, 3, 1443787875.71119], u'FeedbackNum': 0, u'BlockID': u'Block_3_scanning', u'TrialNum': 2, u'SubjectID': u'P00', u'TrialType': u'STIM/FDBK', u'StimID': u'None', u'time': 1443787875.71119, u'date': u'Fri Oct  2 14:11:15 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_2', u'BlockNum': 0}
+2015-10-02,14:11:25--1443787885.721062 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:11:25--1443787885.722157 - LogWriter - INFO - experiment: Received message from control socket: [255, 3, 2, 0, 0, 4, 1443787885.719566]
+2015-10-02,14:11:25--1443787885.722654 - LogWriter - INFO - experiment: Received Packet from control socket:{u'Count': 4, u'FeedbackID': u'TIME_SYNC', u'StimNum': 0, u'StreamDat': [255, 3, 2, 0, 0, 4, 1443787885.719566], u'FeedbackNum': 0, u'BlockID': u'END', u'TrialNum': 2, u'SubjectID': u'P00', u'TrialType': u'STIM/FDBK', u'StimID': u'None', u'time': 1443787885.719566, u'date': u'Fri Oct  2 14:11:25 2015', u'BlockType': u'Baseline', u'TrialID': u'Trial_2', u'BlockNum': 3}
+2015-10-02,14:11:25--1443787885.723081 - LogWriter - INFO - experiment: received end of experiment message
+2015-10-02,14:11:25--1443787885.727857 - LogWriter - INFO - experiment: Experiment Handler is shutting down
+2015-10-02,14:11:25--1443787885.928083 - LogWriter - INFO - LogWriter is shutting down
+2015-10-02,14:11:25--1443787885.929040 - LogWriter - INFO - Control Host is shutting down
+2015-10-02,14:11:25--1443787885.929835 - LogWriter - INFO - LogWriter is shutting down
