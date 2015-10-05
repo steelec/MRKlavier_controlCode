@@ -33,10 +33,10 @@ class ControlHost(object):
 
         context = zmq.Context()
 
-        self.control_socket = context.socket(zmq.PUSH)  # for messages from the host to the boards
-        self.control_socket.bind("tcp://127.0.0.1:"+str(settings.control_host_push_port))
+        self.control_send_socket = context.socket(zmq.PUSH)  # for messages from the host to the boards
+        self.control_send_socket.bind("tcp://127.0.0.1:"+str(settings.control_host_push_port))
 
-        self.pull_socket = context.socket(zmq.PULL)  # for messages from the boards to the host
+        self.control_receive_socket = context.socket(zmq.PULL)  # for messages from the boards to the host
 
         self.publish_socket = context.socket(zmq.PUB)  # for logging messages from the host to the log writer
         self.publish_socket.bind("tcp://127.0.0.1:"+str(settings.control_host_publish_port))
@@ -91,9 +91,9 @@ class ControlHost(object):
                     self.logger.create_info_log_entry("channel "+str(c)+" has min value "+str(board.channels[c].min))
                     self.logger.create_info_log_entry("channel "+str(c)+" has max value "+str(board.channels[c].max))
                     self.logger.create_info_log_entry("channel "+str(c)+" has low threshold "+
-                                                      str(board.channels[c].low_threshold))
+                                                      str(board.channels[c].threshold_off_state))
                     self.logger.create_info_log_entry("channel "+str(c)+" has high threshold "+
-                                                      str(board.channels[c].high_threshold))
+                                                      str(board.channels[c].threshold_on_state))
 
                 board.determine_ip_address()
                 self.logger.create_info_log_entry("IP of board "+interface+": "+board.boardIP)
@@ -108,20 +108,21 @@ class ControlHost(object):
 
                 time.sleep(0.5)
 
-                if not board.update_ntp_time():
-                    raise Exception("could not synchronize time with the ntp server")
-                self.logger.create_info_log_entry("board "+interface+" is synchronized")
+                if not board.update_time_sync():
+                    raise Exception("could not update time settings")
 
-                time_settings = board.get_ntp_time()
-                for line in time_settings:
-                    if "Current time" in line:
-                        self.logger.create_info_log_entry("Current time "+line.split("Current time")[1].rstrip())
-                    else:
-                        self.logger.create_info_log_entry(line.rstrip())
+                board.update_counter3()
 
-                #if not board.activate_board_port():
-                #    raise Exception("could not activate TCP port")
-                #self.logger.create_info_log_entry("TCP port of the board "+interface+" is ready")
+                self.logger.create_info_log_entry("time settings for board "+str(interface)+":")
+                self.logger.create_info_log_entry("Counter 3 last Sync: "+str(board.counter3_lastSync))
+                self.logger.create_info_log_entry("NTP sec int last Sync: "+str(board.ntp_sec_int_lastSync))
+                self.logger.create_info_log_entry("NTP sec frac last Sync: "+str(board.ntp_frac_int_lastSync))
+                self.logger.create_info_log_entry("NTP sec float last Sync: "+str(board.ntp_sec_float_lastSync))
+                self.logger.create_info_log_entry("clock offset: "+str(board.clock_offset))
+
+                if not board.activate_board_port():
+                    raise Exception("could not activate TCP port")
+                self.logger.create_info_log_entry("TCP port of the board "+interface+" is ready")
                 time.sleep(0.5)
                 self.logger.create_info_log_entry("Initialization done on "+interface+", ready to collect data!")
 
@@ -147,6 +148,7 @@ class ControlHost(object):
         for i in range(0,len(self.obct)):
             data_publisher.append(["127.0.0.1", settings.opto_board_data_start_port + i])
         data_publisher.append(["127.0.0.1", settings.experiment_publish_data_port])
+        data_publisher.append(["127.0.0.1", settings.control_host_publish_port])
         self.npy_writer.subscribe(data_publisher)
 
         # create subscriptions / targets to pull from
@@ -160,7 +162,7 @@ class ControlHost(object):
     def subscribe(self, publisher):
         for line in publisher:
             self.logger.create_info_log_entry("Control Host subscribes to: "+str(line[0])+":"+str(line[1]))
-            self.pull_socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
+            self.control_receive_socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
 
 
     def start_experiment(self):
@@ -172,15 +174,17 @@ class ControlHost(object):
         self.logger.start()
         self.npy_writer.start()
         self.experiment_handler.start()
+        for interface in self.obct:
+            self.obct[interface].start()
 
         while self.status == "busy":
             try:
-                msg = self.pull_socket.recv_json()
+                msg = self.control_receive_socket.recv_json()
                 if slaves.is_msg_valid(msg):
-                    print "configuration host received a message"
-                    if msg['message'] == "kill":
-                        print("received kill message")
-                        self.shutdown()
+                    if msg['receiver'] == "control host" or msg['receiver'] == "all":
+                        if msg['type'] == "kill":
+                            print("received kill message")
+                            self.shutdown()
 
                 else:
                     self.create_log_entry("received invalid message... I throw it away","error")
@@ -197,20 +201,16 @@ class ControlHost(object):
 
     def shutdown(self):
         print "[+] Shutting down"
-        self.logger.create_info_log_entry("Control Host is shutting down")
-        for interface in self.obct:
-            board = self.obct[interface]
-            if board.serial_port.isOpen():
-                board.serial_port.close()
-            if board.board_port_active:
-                board.board_socket.connect((board.boardIP,settings.board_tcp_port))
-                time.sleep(0.5)
-                board.board_socket.close()
-
+        self.logger.create_info_log_entry("Shutting all slaves down")
         self.experiment_handler.shutdown()
-        self.npy_writer.shutdown()
-        self.logger.shutdown()
+        message = {'sender':'control host', 'receiver':'all', 'message':None, 'type':'shutdown'}
+        self.control_send_socket.send_json(message)
+        time.sleep(0.5)
+        self.publish_socket.send_json(message)
+
         exit(0)
+
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='control and logging application for the MR Piano')
@@ -238,5 +238,6 @@ if __name__ == "__main__":
     if control_host.find_boards(settings.board_interface_pattern) < 1 or not control_host.configure_boards():
         exit(-1)
 
+    #exit(0)
     control_host.start_experiment()
 

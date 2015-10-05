@@ -11,6 +11,8 @@ import subprocess
 import time
 import json
 import numpy as np
+import traceback
+import struct
 
 def is_msg_valid(msg):
     if "sender" in msg and "receiver" in msg and "type" in msg and "message" in msg:
@@ -24,7 +26,7 @@ class ExperimentHandler(threading.Thread):
                  experiment_port = settings.experiment_port,
                  log_publish_port = settings.experiment_publish_log_port,
                  data_publish_port = settings.experiment_publish_data_port,
-                 push_port = settings.experiment_push_port):
+                 push_port = settings.experiment_push_port,):
 
         threading.Thread.__init__(self)
         self.setDaemon(True)
@@ -68,7 +70,7 @@ class ExperimentHandler(threading.Thread):
         print("Received message from control socket: " + recvMsg)
 
 
-        while not self.end:
+        while True:
             try:
                 jDat= conn.recv(1024)
                 dDat=json.loads(jDat)
@@ -80,21 +82,26 @@ class ExperimentHandler(threading.Thread):
                 self.DataStream = dDat['StreamDat']
 
                 if "StreamDat" in dDat:
-                    data = np.array(dDat["StreamDat"])
-                    self.send_data_msg(data.tolist())
+                    data = [dDat["StreamDat"]] # make 1,n matrix
+                    self.send_data_msg(data)
 
                 if self.blockID == "SETUP":
                     conn.send("hello experiment") #confirm the reception of the message block
 
                 if self.blockID == "END":
                     self.create_log_entry("received end of experiment message")
-                    self.send_push_message("kill")
+                    self.send_push_message(None,"kill")
                     break
 
-
+            except ValueError:
+                self.create_log_entry("lost connection to the experiment","error")
+                break
 
             except Exception as e:
+                print(traceback.format_exc())
                 self.create_log_entry(str(e),"error")
+
+        self.shutdown()
 
 
     def create_log_entry(self,msg,type="info"):
@@ -107,7 +114,7 @@ class ExperimentHandler(threading.Thread):
         self.push_socket.send_json(message)
 
     def send_data_msg(self,msg):
-        message = {'sender':'experiment', 'receiver':'control host', 'message':msg, 'type':'data'}
+        message = {'sender':'experiment', 'receiver':'npy writer', 'message':msg, 'type':'data'}
         self.data_socket.send_json(message)
 
     def shutdown(self):
@@ -154,6 +161,11 @@ class LogWriter(threading.Thread):
             os.mkdir(target_dir)
 
         logfile = target_dir+"/"+filename+".log"
+
+        i=1
+        while os.path.exists(logfile):
+            logfile = target_dir+"/"+filename+"_"+str(i)+".log"
+            i += 1
 
         self.logger = logging.getLogger('LogWriter')
         self.logger.setLevel(logging.DEBUG)
@@ -204,28 +216,28 @@ class LogWriter(threading.Thread):
     def run(self):
         #self.socket.setsockopt(zmq.SUBSCRIBE, "12")
         self.create_info_log_entry("LogWriter Thread started")
-        while not self.end:
+        while True:
             try:
                 msg = self.socket.recv_json()
                 if is_msg_valid(msg):
-                    if msg['type'] == "info":
-                        self.create_info_log_entry(str(msg['sender']+": "+str(msg['message'])))
-                    elif msg['type'] == "error":
-                        self.create_error_log_entry(str(msg['sender']+": "+str(msg['message'])))
+                    if msg['receiver'] == "all" or msg['receiver'] == "log":
+                        if msg['type'] == "info":
+                            self.create_info_log_entry(str(msg['sender']+": "+str(msg['message'])))
+
+                        elif msg['type'] == "error":
+                            self.create_error_log_entry(str(msg['sender']+": "+str(msg['message'])))
+
+                        elif msg['type'] == "shutdown":
+                            break
                 else:
                     self.create_error_log_entry("received invalid message ... I throw it away")
 
             except Exception as e:
                 print(str(e))
 
-
-    def shutdown(self):
-        with self.lock:
-            self.end = True
-
+        self.end = True
         self.create_info_log_entry("LogWriter is shutting down")
         self.socket.close()
-
         for hand in list(self.logger.handlers):
             hand.close()
 
@@ -238,7 +250,6 @@ class NumpyDataWriter(threading.Thread):
     def __init__(self, filename, publish_port = settings.numpy_writer_publish_port):
         threading.Thread.__init__(self)
         self.setDaemon(True)
-        self.filename = filename
         self.subscribed_ports = []  # array of port numbers for reception of data
         self.end = False # kill switch for the run method
         self.publish_port = publish_port
@@ -247,6 +258,17 @@ class NumpyDataWriter(threading.Thread):
         target_dir = os.getcwd()+"/"+settings.log_subdirectory
         if not os.path.exists(target_dir):
             os.mkdir(target_dir)
+
+        npyfile = target_dir+"/"+filename+".npy"
+
+        i=1
+        while os.path.exists(npyfile):
+            npyfile = target_dir+"/"+filename+"_"+str(i)+".npy"
+            i += 1
+
+        os.mknod(npyfile)
+        self.file_handle = open(npyfile,'a')
+
 
         context = zmq.Context()
         self.data_socket = context.socket(zmq.SUB)
@@ -263,24 +285,30 @@ class NumpyDataWriter(threading.Thread):
     def run(self):
         self.create_log_entry("NumpyDataWriter is ready")
 
-        while not self.end:
+        while True:
             try:
                 message = self.data_socket.recv_json()
                 if is_msg_valid(message):
-                    print("got numpy data")
-                    print(message)
+                    if message['receiver'] == "all" or message['receiver'] == "npy writer":
+                        if message['type'] == "data":
+                            # message['message'] is still a normal two dimensional array
+                            np.savetxt(self.file_handle,np.array(message['message']))
+                        elif message['type'] == "shutdown":
+                            break
                 else:
                     self.create_log_entry("received invalid message ... I throw it away")
 
             except Exception as e:
                 self.create_log_entry(str(e),"error")
 
+        #self.create_log_entry("NumpyDataWriter is shutting down")
+        self.file_handle.close()
+
+
     def create_log_entry(self,msg,type="info"):
         message = {'sender':'numpy data writer', 'receiver':'log', 'message':msg, 'type':type}
         self.log_socket.send_json(message)
 
-    def shutdown(self):
-        self.end = True
 
 
 
@@ -294,12 +322,13 @@ class OptoBoardCommunicationThread(threading.Thread):
         """
         sub class for the physical channels of the board
         """
-        def __init__(self,min, max, low,high,midi):
+        def __init__(self,min, max, off_th,on_th,midi):
             self.min = min
             self.max = max
-            self.low_threshold = low
-            self.high_threshold = high
+            self.threshold_off_state = off_th
+            self.threshold_on_state = on_th
             self.midiID = midi
+            self.pressed = False
 
 
     def __init__(self,
@@ -307,12 +336,13 @@ class OptoBoardCommunicationThread(threading.Thread):
                  log_port=settings.opto_board_log_start_port,
                  data_port=settings.opto_board_data_start_port,
                  control_port=settings.control_host_push_port,
-                 push_port=settings.opto_board_push_port):
+                 push_port=settings.opto_board_push_port,
+                 pull_ip=settings.control_host_ip):
 
         threading.Thread.__init__(self)
         self.log_port = int(log_port)
         self.data_port = int(data_port)
-        self.control_port = int(control_port)
+        self.pull_port = int(control_port)
         self.device = device
 
         # zmq stuff
@@ -322,6 +352,7 @@ class OptoBoardCommunicationThread(threading.Thread):
         self.data_socket = context.socket(zmq.PUB)   # for messages from the board to the data writer
         self.data_socket.bind("tcp://*:%s" % self.data_port)
         self.pull_socket = context.socket(zmq.PULL)  # for messages from the host to the board
+        self.pull_socket.connect("tcp://"+str(pull_ip)+":"+str(self.pull_port))
         self.push_socket = context.socket(zmq.PUSH)   # for messages from the board to the host
         self.push_socket.bind("tcp://127.0.0.1:"+str(push_port))
 
@@ -339,11 +370,24 @@ class OptoBoardCommunicationThread(threading.Thread):
         self.channels ={}
         self.boardIP = ""
         self.ntpIP = ""
-
+        self.counter3_lastSync = None
+        self.ntp_sec_int_lastSync = None
+        self.ntp_frac_int_lastSync = None
+        self.ntp_sec_float_lastSync = None
+        self.clock_offset = None
 
     def shutdown(self):
+        try:
+            self.create_log_entry("Communication Thread is shutting down")
+        except:
+            pass
         if self.serial_port.isOpen():
             self.serial_port.close()
+        self.board_socket.close()
+        self.data_socket.close()
+        self.log_socket.close()
+        self.send_and_receive("NSd")
+        self.board_port_active = False
 
 
     def send_and_receive(self,cmd):
@@ -352,6 +396,8 @@ class OptoBoardCommunicationThread(threading.Thread):
             if not self.serial_port.isOpen():
                 self.serial_port.open()
             self.serial_port.writelines(cmd)
+
+            time.sleep(0.2)
 
             line_list = []
             while self.serial_port.inWaiting():
@@ -393,15 +439,15 @@ class OptoBoardCommunicationThread(threading.Thread):
                 if "Channel "+str(i)+" has min" in line:
                     line = line.replace("Channel "+str(i)+" has min","").rstrip()
                     values = line.split(" and max ")
-                    min = values[0]
-                    max = values[1]
+                    min = int(values[0])
+                    max = int(values[1])
 
                 if "Channel "+str(i)+" has low" in line:
                     line = line.replace("Channel "+str(i)+" has low","").rstrip()
                     line = line.replace("thresholds","")
                     values = line.split(" and high ")
-                    low = values[0]
-                    high = values[1]
+                    low = int(values[0])
+                    high = int(values[1])
 
             channels[i] = OptoBoardCommunicationThread.Channel(min,max,low,high,midiID[i])
 
@@ -454,15 +500,42 @@ class OptoBoardCommunicationThread(threading.Thread):
         if es < 1:
             return True
 
-    def update_ntp_time(self):
+    def update_time_sync(self):
         response = self.send_and_receive("NN")
         for line in response:
-            if "Calling ntp get time, returned 1" in line:
-                return True
-        return False
+            if "Counter3 last update count: " in line:
+                substring = line.split("Counter3 last update count: ")[1]
+                self.counter3_lastSync=int(substring.split(",")[0])
 
-    def get_ntp_time(self):
-        return self.send_and_receive("?t")
+            if "Last NTP update secs,fracs:" in line:
+                substring = line.split("Last NTP update secs,fracs: ")[1]
+                substring = substring.split(", Counter3")[0]
+                substring = substring.replace(",",".")
+                self.ntp_sec_int_lastSync = int(float(substring))
+                self.ntp_frac_int_lastSync = int(substring.split(".")[1])
+                self.ntp_sec_float_lastSync = float(substring)
+
+
+            if "clock offset (seconds):" in line:
+                substring = line.split("clock offset (seconds):")[1]
+                substring = substring.split("\t and us")[0]
+                self.clock_offset = int(substring)
+
+        if self.counter3_lastSync is not None and self.ntp_sec_int_lastSync is not None and \
+            self.ntp_frac_int_lastSync is not None and self.ntp_sec_float_lastSync is not None \
+            and self.clock_offset is not None:
+                return True
+        else:
+            return False
+
+    def update_counter3(self):
+        response = self.send_and_receive("?t")
+        for line in response:
+            line = line.rstrip()
+            if "Counter3 last update count: " in line:
+                substring = line.split("Counter3 last update count: ")[1]
+                self.counter3_lastSync=int(substring.split(",")[0])
+
 
     def activate_board_port(self):
         self.serial_port.flushInput()
@@ -480,8 +553,97 @@ class OptoBoardCommunicationThread(threading.Thread):
 
 
     def run(self):
-        pass
+        self.board_socket.connect((self.boardIP, settings.board_tcp_port))
+        self.board_socket.send("hello board")
+        while self.serial_port.inWaiting(): # seems that the reading is necessary here
+            self.serial_port.readline()
 
+        self.create_log_entry("Communication Thread connected with board")
+
+        while True:
+            # ask for control messages from the host
+            try:
+                message = self.pull_socket.recv_json(flags=zmq.NOBLOCK)
+                if is_msg_valid(message):
+                    # all -> broadcast message for all slaves
+                    # ttyACM* -> multicast message for opto board communication slaves
+                    # ttyACM1,2,3, ... unicast message
+                    if message['receiver'] == "all" or message['receiver'] == "ttyACM*" or message['receiver'] == str(self.device):
+                        if message['type'] == "shutdown":
+                            break
+                        elif message['type'] == "cmd":
+                            self.execute_command(message['message'])
+                else:
+                    self.create_log_entry("received invalid message ... I throw it away")
+            except zmq.ZMQError as e:
+                if e.errno == zmq.EAGAIN:
+                    pass
+                else:
+                    self.create_log_entry(str(e),"error")
+
+            # get and publish the channel values
+            data = self.get_data()
+            if data is not None:
+                self.create_data_entry(data)
+                self.check_thresholds(data)
+
+        self.shutdown()
+
+
+    def check_thresholds(self,data):
+        for j in range(0,len(data)):
+            for i in range(0,len(self.channels)):
+                if data[j][i+1] > self.channels[i].threshold_on_state and not self.channels[i].pressed:
+                    self.channels[i].pressed = True
+                    self.create_log_entry("Channel "+str(i)+" is now ON")
+                    # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
+                    entry = [255 - data[j][0], i, data[j][i+1], 0, 1, data[j][5], data[j][6]]
+                    self.create_data_entry([entry])
+
+                if data[j][i+1] <= self.channels[i].threshold_off_state and self.channels[i].pressed:
+                    self.channels[i].pressed = False
+                    self.create_log_entry("Channel "+str(i)+" is now OFF")
+                    # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
+                    entry = [255 - data[j][0], i, data[j][i+1], 0, 0, data[j][5], data[j][6]]
+                    self.create_data_entry([entry])
+
+
+    def create_log_entry(self,msg,type="info"):
+        message = {'sender':'Board '+str(self.device), 'receiver':'log', 'message':msg, 'type':type}
+        self.log_socket.send_json(message)
+
+
+    def execute_command(self, cmd):
+        self.create_log_entry("execute cmd: "+str(cmd))
+
+    def get_data(self):
+        raw = self.board_socket.recv(6000)
+
+        if len(raw) % 20 != 0:
+            self.create_log_entry("block size of "+str(len(raw))+" did not match. Skip block",type="error")
+            return None
+
+        data = []
+        for i in range(0,len(raw)/20):
+            row = [self.ID]
+            # structure; C0 C1 C2 C3 BoardTime
+            values = list(struct.unpack('iiiiI',raw[i*20:(i+1)*20]))
+            row = row + values
+
+            # some wired time conversion / synchronisation
+            board_time = row[-1]
+            utc_time = (float(board_time) - float(self.counter3_lastSync))/100000
+            utc_time += self.ntp_sec_float_lastSync + self.clock_offset
+            utc_time -= float(2208988800)
+            row.append(utc_time)
+
+            data.append(row)
+
+        return data
+
+    def create_data_entry(self,data):
+        message = {'sender':'Board '+str(self.device), 'receiver':'npy writer', 'message':data, 'type':'data'}
+        self.data_socket.send_json(message)
 
 class NTPClient(object):
     """

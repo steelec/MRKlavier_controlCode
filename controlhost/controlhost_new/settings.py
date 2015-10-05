@@ -2,8 +2,10 @@
 this file contains all relevant configuration parameter
 """
 
-board_interface_pattern = "/dev/ttyACM5"
+board_interface_pattern = "/dev/ttyACM0"
 log_subdirectory = "data"
+
+
 
 experiment_port = 4999
 experiment_publish_log_port = 5000
@@ -17,6 +19,8 @@ board_tcp_port = 9004
 control_host_push_port = 5004
 control_host_pull_port = 5005
 control_host_publish_port = 5006
+control_host_ip = "127.0.0.1"
+
 
 opto_board_push_port = 5007
 opto_board_log_start_port = 6000
