@@ -33,13 +33,10 @@ class ControlHost(object):
 
         context = zmq.Context()
 
-        self.control_send_socket = context.socket(zmq.PUSH)  # for messages from the host to the boards
-        self.control_send_socket.bind("tcp://127.0.0.1:"+str(settings.control_host_push_port))
-
         self.control_receive_socket = context.socket(zmq.PULL)  # for messages from the boards to the host
 
-        self.publish_socket = context.socket(zmq.PUB)  # for logging messages from the host to the log writer
-        self.publish_socket.bind("tcp://127.0.0.1:"+str(settings.control_host_publish_port))
+        self.control_send_socket = context.socket(zmq.PUB)  # for logging messages from the host to the log writer
+        self.control_send_socket.bind("tcp://127.0.0.1:"+str(settings.control_host_control_send_port))
 
         self.status = "ready"
 
@@ -59,15 +56,17 @@ class ControlHost(object):
         self.logger.create_info_log_entry("Boards found at: "+str(matches))
         log_port = settings.opto_board_log_start_port
         data_port = settings.opto_board_data_start_port
+        push_port = settings.opto_board_control_send_port
         interface = ""
         try:
             for interface in matches:
-                self.obct[interface] = slaves.OptoBoardCommunicationThread(interface,
-                                                                           log_port=log_port, data_port=data_port)
+                self.obct[interface] = slaves.OptoBoardCommunicationThread(interface, log_port=log_port,
+                                                                           data_port=data_port, control_send_port=push_port)
                 log_port += 1
+                push_port += 1
                 data_port += 1
         except Exception as e:
-            print(str(e))
+            print(traceback.format_exc())
             self.logger.create_error_log_entry("failed to create OptoBoardCommunicationThread for interface "+interface
                                                + ": " + str(e))
             return 0
@@ -102,16 +101,20 @@ class ControlHost(object):
                     raise Exception("could not set IP for NTP server")
                 self.logger.create_info_log_entry("NTP server for board "+interface+": "+board.ntpIP)
 
+
                 if not board.activate_network():
                     raise Exception("could activate the network interface")
                 self.logger.create_info_log_entry("network interface of board "+interface+" is ready")
 
                 time.sleep(0.5)
 
-                if not board.update_time_sync():
-                    raise Exception("could not update time settings")
-
-                board.update_counter3()
+                i=0
+                while not(board.update_time_sync() and board.update_counter3()):
+                    i += 1
+                    self.logger.create_info_log_entry("failed to update time settings for board "+str(interface)+".Try again.")
+                    if i == 3:
+                        raise Exception("could not update time settings")
+                    time.sleep(0.2)
 
                 self.logger.create_info_log_entry("time settings for board "+str(interface)+":")
                 self.logger.create_info_log_entry("Counter 3 last Sync: "+str(board.counter3_lastSync))
@@ -139,7 +142,7 @@ class ControlHost(object):
         for i in range(0,len(self.obct)):
             log_publisher.append(["127.0.0.1", settings.opto_board_log_start_port + i])
         log_publisher.append(["127.0.0.1", settings.experiment_publish_log_port])
-        log_publisher.append(["127.0.0.1", settings.control_host_publish_port])
+        log_publisher.append(["127.0.0.1", settings.control_host_control_send_port])
         log_publisher.append(["127.0.0.1", settings.numpy_writer_publish_port])
         self.logger.subscribe(log_publisher)
 
@@ -148,13 +151,13 @@ class ControlHost(object):
         for i in range(0,len(self.obct)):
             data_publisher.append(["127.0.0.1", settings.opto_board_data_start_port + i])
         data_publisher.append(["127.0.0.1", settings.experiment_publish_data_port])
-        data_publisher.append(["127.0.0.1", settings.control_host_publish_port])
+        data_publisher.append(["127.0.0.1", settings.control_host_control_send_port])
         self.npy_writer.subscribe(data_publisher)
 
         # create subscriptions / targets to pull from
         hosts_to_pull_from = []
         for i in range(0,len(self.obct)):
-            hosts_to_pull_from.append(["127.0.0.1",settings.opto_board_push_port + i])
+            hosts_to_pull_from.append(["127.0.0.1",settings.opto_board_control_send_port + i])
         hosts_to_pull_from.append(["127.0.0.1",settings.experiment_push_port])
         self.subscribe(hosts_to_pull_from)
 
@@ -196,17 +199,22 @@ class ControlHost(object):
 
     def create_log_entry(self,msg, type="info"):
         message = {'sender':'control host', 'receiver':'log', 'message':msg, 'type':type}
-        self.publish_socket.send_json(message)
+        self.control_send_socket.send_json(message)
 
 
     def shutdown(self):
         print "[+] Shutting down"
         self.logger.create_info_log_entry("Shutting all slaves down")
         self.experiment_handler.shutdown()
-        message = {'sender':'control host', 'receiver':'all', 'message':None, 'type':'shutdown'}
+
+        # kill the opto board threads
+        message = {'sender':'control host', 'receiver':'ttyACM*', 'message':None, 'type':'shutdown'}
         self.control_send_socket.send_json(message)
-        time.sleep(0.5)
-        self.publish_socket.send_json(message)
+
+        # kill the rest to ensure a nice shutdown order
+        time.sleep(0.2)
+        message['receiver'] = 'all'
+        self.control_send_socket.send_json(message)
 
         exit(0)
 
