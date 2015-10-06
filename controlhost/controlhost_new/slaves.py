@@ -97,6 +97,7 @@ class ExperimentHandler(threading.Thread):
                     self.send_control_message("time sync","cmd")
 
             except ValueError:
+                print(traceback.format_exec())
                 self.create_log_entry("lost connection to the experiment","error")
                 break
 
@@ -632,7 +633,7 @@ class OptoBoardCommunicationThread(threading.Thread):
 
 
     def create_log_entry(self,msg,type="info"):
-        message = {'sender':'Board '+str(self.device), 'receiver':'log', 'message':msg, 'type':type}
+        message = {'sender':'Board '+str(self.ID), 'receiver':'log', 'message':msg, 'type':type}
         self.log_socket.send_json(message)
 
 
