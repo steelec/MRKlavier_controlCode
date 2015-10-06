@@ -72,8 +72,9 @@ class ExperimentHandler(threading.Thread):
 
 
         while True:
+            jDat = ""
             try:
-                jDat= conn.recv(1024)
+                jDat= conn.recv(2048)
                 dDat=json.loads(jDat)
                 self.create_log_entry("Received message from control socket: " + str(dDat['StreamDat']))
                 self.create_log_entry("Received Packet from control socket:" + str(dDat) )
@@ -97,9 +98,13 @@ class ExperimentHandler(threading.Thread):
                     self.send_control_message("time sync","cmd")
 
             except ValueError:
-                print(traceback.format_exec())
-                self.create_log_entry("lost connection to the experiment","error")
-                break
+                print(traceback.format_exc())
+                try:
+                    print("jDat: "+str(jDat))
+                    conn.send("hello?")
+                except:
+                    self.create_log_entry("lost connection to the experiment","error")
+                    break
 
             except Exception as e:
                 print(traceback.format_exc())
