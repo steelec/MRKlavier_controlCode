@@ -2,7 +2,7 @@
 this file contains all relevant configuration parameter
 """
 
-board_interface_pattern = "/dev/ttyACM3"
+board_interface_pattern = "/dev/ttyACM*"
 log_subdirectory = "data"
 
 

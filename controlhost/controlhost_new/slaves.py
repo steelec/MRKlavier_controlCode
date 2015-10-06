@@ -86,12 +86,15 @@ class ExperimentHandler(threading.Thread):
                     data = [dDat["StreamDat"]] # make 1,n matrix
                     self.send_data_msg(data)
 
-                if self.blockID == "SETUP":
-                    conn.send("hello experiment") #confirm the reception of the message block
+                if self.blockID == "SETUP" or self.blockID == "START":
+                    conn.send("ready") #confirm the reception of the message block
 
                 if self.blockID == "END":
                     self.create_log_entry("received end of experiment message")
                     break
+
+                if "FeedbackID" in dDat and dDat['FeedbackID'] == "TIME_SYNC":
+                    self.send_control_message("time sync","cmd")
 
             except ValueError:
                 self.create_log_entry("lost connection to the experiment","error")
@@ -101,15 +104,16 @@ class ExperimentHandler(threading.Thread):
                 print(traceback.format_exc())
                 self.create_log_entry(str(e),"error")
 
-        self.shutdown()
-        self.send_push_message(None,"kill")
+        self.send_control_message(None,"kill")
+        #self.shutdown()
+
 
     def create_log_entry(self,msg,type="info"):
         message = {'sender':'experiment', 'receiver':'log', 'message':msg, 'type':type}
         self.log_socket.send_json(message)
 
 
-    def send_push_message(self,msg, type='info'):
+    def send_control_message(self,msg, type='info'):
         message = {'sender':'experiment', 'receiver':'control host', 'message':msg, 'type':type}
         self.control_send_socket.send_json(message)
 
@@ -384,7 +388,6 @@ class OptoBoardCommunicationThread(threading.Thread):
     def shutdown(self):
         self.serial_port.flushOutput()
         self.serial_port.flushInput()
-        print str(self.device)+" is shutting down"
         try:
             self.create_log_entry("Communication Thread is shutting down")
         except:
@@ -635,6 +638,13 @@ class OptoBoardCommunicationThread(threading.Thread):
 
     def execute_command(self, cmd):
         self.create_log_entry("execute cmd: "+str(cmd))
+        if cmd == "time sync":
+            if self.update_time_sync():
+                self.create_log_entry("time synchronization successful")
+            else:
+                self.create_log_entry("time synchronization failed","error")
+
+
 
     def get_data(self):
         raw = self.board_socket.recv(6000)

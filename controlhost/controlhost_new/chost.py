@@ -188,7 +188,11 @@ class ControlHost(object):
                         if msg['type'] == "kill":
                             print("received kill message")
                             self.shutdown()
-
+                        if msg['type'] == "cmd":
+                            if msg['message'] == "time sync":
+                                print "got time sync message"
+                                message = {'sender':'control host', 'receiver':'ttyACM*', 'message':'time sync', 'type':'cmd'}
+                                self.control_send_socket.send_json(message)
                 else:
                     self.create_log_entry("received invalid message... I throw it away","error")
 
