@@ -2,10 +2,12 @@
 this file contains all relevant configuration parameter
 """
 
-board_interface_pattern = "/dev/ttyACM*"
+board_interface_pattern = "/dev/ttyACM0"
 log_subdirectory = "data"
 
-
+# number of probes which have to be higher or lower then the threshold to avoid to indicate a
+# status change
+probe_counter = 8
 
 experiment_port = 4999
 experiment_publish_log_port = 5000

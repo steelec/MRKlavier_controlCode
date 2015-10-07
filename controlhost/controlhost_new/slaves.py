@@ -14,6 +14,7 @@ import json
 import numpy as np
 import traceback
 import struct
+import datetime
 
 def is_msg_valid(msg):
     if "sender" in msg and "receiver" in msg and "type" in msg and "message" in msg:
@@ -340,7 +341,6 @@ class OptoBoardCommunicationThread(threading.Thread):
             self.midiID = midi
             self.pressed = False
 
-
     def __init__(self,
                  device,
                  log_port=settings.opto_board_log_start_port,
@@ -522,25 +522,29 @@ class OptoBoardCommunicationThread(threading.Thread):
 
     def update_time_sync(self):
         try:
-            response = self.send_and_receive("NN")
-            for line in response:
-                if "Counter3 last update count: " in line:
-                    substring = line.split("Counter3 last update count: ")[1]
-                    self.counter3_lastSync=int(substring.split(",")[0])
+            offset = 1
+            while offset != 0:
+                response = self.send_and_receive("NN")
+                for line in response:
+                    line = line.rstrip()
+                    if "Counter3 last update count: " in line:
+                        substring = line.split("Counter3 last update count: ")[1]
+                        self.counter3_lastSync=int(substring.split(",")[0])
 
-                if "Last NTP update secs,fracs:" in line:
-                    substring = line.split("Last NTP update secs,fracs: ")[1]
-                    substring = substring.split(", Counter3")[0]
-                    substring = substring.replace(",",".")
-                    self.ntp_sec_int_lastSync = int(float(substring))
-                    self.ntp_frac_int_lastSync = int(substring.split(".")[1])
-                    self.ntp_sec_float_lastSync = float(substring)
+                    if "Last NTP update secs,fracs:" in line:
+                        substring = line.split("Last NTP update secs,fracs: ")[1]
+                        substring = substring.split(", Counter3")[0]
+                        substring = substring.replace(",",".")
+                        self.ntp_sec_int_lastSync = int(float(substring))
+                        self.ntp_frac_int_lastSync = int(substring.split(".")[1])
+                        self.ntp_sec_float_lastSync = float(substring)
 
 
-                if "clock offset (seconds):" in line:
-                    substring = line.split("clock offset (seconds):")[1]
-                    substring = substring.split("\t and us")[0]
-                    self.clock_offset = int(substring)
+                    if "clock offset (seconds):" in line:
+                        substring = line.split("clock offset (seconds):")[1]
+                        substring = substring.split("\t and us: ")
+                        self.clock_offset = float(substring[0])+(float(substring[1])/1000.0/1000.0)
+                        offset = int(float(substring[0]))
 
             if self.counter3_lastSync is not None and self.ntp_sec_int_lastSync is not None and \
                 self.ntp_frac_int_lastSync is not None and self.ntp_sec_float_lastSync is not None \
@@ -620,21 +624,40 @@ class OptoBoardCommunicationThread(threading.Thread):
 
 
     def check_thresholds(self,data):
+        on_counter = []
+        off_counter = []
+        for i in range(0,len(data[0])-3):
+            on_counter.append(0)
+            off_counter.append(0)
+
         for j in range(0,len(data)):
             for i in range(0,len(self.channels)):
-                if data[j][i+1] > self.channels[i].threshold_on_state and not self.channels[i].pressed:
-                    self.channels[i].pressed = True
-                    self.create_log_entry("Channel "+str(i)+" with MIDI ID "+str(self.channels[i].midiID)+" is now ON")
-                    # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
-                    entry = [255 - data[j][0], i, data[j][i+1], 0, 1, data[j][5], data[j][6]]
-                    self.create_data_entry([entry])
+                # !!! channel 3 of board 7 is not in use at the moment, So, I ignore them for the ON/OFF detection
+                # to avoid ON/OFF messages for this specific channel
+                if self.channels[i].midiID != 0:
+                    if data[j][i+1] > self.channels[i].threshold_on_state:
+                        on_counter[i] += 1
+                        if on_counter[i] > settings.probe_counter and not self.channels[i].pressed:
+                            on_counter[i] = 0
+                            self.channels[i].pressed = True
+                            self.create_log_entry("Channel "+str(i)+" with MIDI ID "+str(self.channels[i].midiID)+" is now ON")
+                            # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
+                            entry = [255 - data[j][0], i, data[j][i+1], 0, 1, data[j][5], data[j][6]]
+                            self.create_data_entry([entry])
+                    else:
+                        on_counter[i] = 0
 
-                if data[j][i+1] <= self.channels[i].threshold_off_state and self.channels[i].pressed:
-                    self.channels[i].pressed = False
-                    self.create_log_entry("Channel "+str(i)+" with MIDI ID "+str(self.channels[i].midiID)+" is now OFF")
-                    # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
-                    entry = [255 - data[j][0], i, data[j][i+1], 0, 0, data[j][5], data[j][6]]
-                    self.create_data_entry([entry])
+                    if data[j][i+1] <= self.channels[i].threshold_off_state:
+                        off_counter[i] += 1
+                        if off_counter[i] > settings.probe_counter and self.channels[i].pressed:
+                            off_counter[i] = 0
+                            self.channels[i].pressed = False
+                            self.create_log_entry("Channel "+str(i)+" with MIDI ID "+str(self.channels[i].midiID)+" is now OFF")
+                            # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
+                            entry = [255 - data[j][0], i, data[j][i+1], 0, 0, data[j][5], data[j][6]]
+                            self.create_data_entry([entry])
+                    else:
+                        off_counter[i] = 0
 
 
     def create_log_entry(self,msg,type="info"):
@@ -664,16 +687,22 @@ class OptoBoardCommunicationThread(threading.Thread):
             row = [self.ID]
             # structure; C0 C1 C2 C3 BoardTime
             values = list(struct.unpack('iiiiI',raw[i*20:(i+1)*20]))
-            row = row + values
 
-            # some wired time conversion / synchronisation
-            board_time = row[-1]
-            utc_time = (float(board_time) - float(self.counter3_lastSync))/100000
-            utc_time += self.ntp_sec_float_lastSync + self.clock_offset
-            utc_time -= float(2208988800)
-            row.append(utc_time)
+            valid_values = True
+            for i in range(0,len(values)-1):
+                if not(self.channels[i].min - 15 < values[i] < self.channels[i].max + 15):
+                    valid_values = False
 
-            data.append(row)
+            if valid_values:
+                row = row + values
+                # some wired time conversion / synchronisation
+                board_time = row[-1]
+                utc_time = (float(board_time) - float(self.counter3_lastSync))/100000 + self.ntp_sec_float_lastSync
+                utc_time += self.clock_offset
+                utc_time -= float(2208988800)
+                #print(datetime.datetime.fromtimestamp(utc_time).strftime('%Y-%m-%d %H:%M:%S'))
+                row.append(utc_time)
+                data.append(row)
 
         return data
 
