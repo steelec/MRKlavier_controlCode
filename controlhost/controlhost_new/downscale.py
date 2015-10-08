@@ -1,102 +1,84 @@
 #!/usr/bin/python
 import argparse
 import traceback
+import datetime
 
 
-def fill_matrix(matrix, parameters, filename):
-    print("[*] fill the matrix")
-    try:
-        start_detection = False
-        with open(filename,"r") as fh:
-            for line in fh:
-                line = line.rstrip()
-                values = line.split(" ")
-                boardID = int(float(values[0]))
-                if boardID == 255:
-                    start_detection = True
-                    continue
-                if boardID < 128 and start_detection:
-                    timestamp = float(values[-1])
-                    delta = timestamp - parameters['start']
-                    if delta > 0:
-                        print(line)
-                        print("delta: "+str(delta))
-                        row_number = int(delta/parameters['step size'])
-                        print("put "+str(timestamp)+" in bucket with timestamp "+str(matrix[row_number][0]))
-                    else:
-                        print("delta < 0")
-        return matrix
-    except Exception as e:
-        print(traceback.format_exc())
-        return None
+def fill_matrix(matrix,filename,settings):
 
-
-def create_matrix(config):
-    print("[*] create the matrix")
-    #print(config)
-    try:
-        matrix = []
-        for i in range(0,config['length']):
-            row = []
-            timestamp = config['start'] + (i+1)*(config['step size']) - config['step size'] /2
-            print("create row for timestamp "+str(timestamp))
-            row.append(timestamp)
-            for j in range(0,config['width']):
-                board_data_array = []
-                for k in range(0,4):
-                    channel_data_array = []
-                    board_data_array.append(channel_data_array)
-                row.append(board_data_array)
-            matrix.append(row)
-        return matrix
-    except Exception as e:
-        print(traceback.format_exc())
-        return None
-
-
-
-def determine_matrix_parameters(filename, resolution):
-    min_utc_time = 0
-    max_utc_time = 0
-    boards = {}
     start_detection = False
-    try:
-        with open(filename,"r") as fh:
-            for line in fh:
-                line = line.rstrip()
-                values = line.split(" ")
+    timestamp_experiment_start = 0
+
+    with open(filename,"r") as fh:
+        for line in fh:
+            line = line.rstrip()
+            values = line.split(" ")
+
+            if float(values[0]) > 254 and not start_detection:
+                start_detection = True
+                timestamp_experiment_start = float(values[-1])
+                continue
+
+            if start_detection and float(values[0]) < 128:
+
+                timestamp = float(values[-1])
+                if timestamp >= timestamp_experiment_start:
+                    delta = timestamp - timestamp_experiment_start
+                    row_number = int(delta/settings['resolution'])
+                    #print("put line with timestamp "+str(timestamp)+" in bucket with timestamp "+str(matrix[row_number][0]))
+                    boardID = int(float(values[0]))
+                    for i in range(1,5):
+                        matrix[row_number][(boardID-1)*4+i].append(values[i])
+                else:
+                    pass
+                    #print("ignore line with timestamp "+str(timestamp))
+
+
+    print(matrix)
+
+    return matrix
+
+def generate_matrix(properties):
+    print("generate "+str(properties['length'])+" x "+str(properties['width'])+" matrix")
+    matrix = []
+    for i in range(0,properties['length']+1):
+        row = [properties['start utc']+(i+1)*properties['resolution']- properties['resolution']/2]
+        for j in range(1,properties['width']):
+            row.append([])
+        print(row)
+        matrix.append(row)
+    return matrix
+
+def analyze_raw_data(filename,res):
+    detected_boards = {}
+    min_utc = 2e11
+    max_utc = 0
+    start_detection = False
+    with open(filename,"r") as fh:
+        for line in fh:
+            line = line.rstrip()
+            values = line.split(" ")
+            if float(values[0]) > 254 and not start_detection:
+                start_detection = True
+                min_utc = float(values[-1])
+                print("Experiment start marker at "+datetime.datetime.fromtimestamp(float(values[-1])).strftime("%Y-%m-%d %H:%M:%S.%f"))
+                continue
+
+            if start_detection:
                 boardID = float(values[0])
-                if int(boardID) == 255 and not start_detection:
-                    print("[*] found start marker")
-                    start_detection = True
-                    min_utc_time = float(values[-1])
-                    continue
-                if start_detection:
-                    timestamp = float(values[-1])
-                    if timestamp > max_utc_time:
-                        max_utc_time = timestamp
+                if boardID < 128 and boardID not in detected_boards:
+                    print("add board with ID "+str(int(boardID)))
+                    detected_boards[boardID] = True
 
-                    if boardID < 128 and boardID not in boards:
-                        boards[boardID] = "foo"
-                        print("[*] found board with the ID "+str(boardID))
+                if float(values[-1]) > max_utc:
+                    max_utc = float(values[-1])
 
-        experiment_duration = max_utc_time - min_utc_time
-        print("[*] start of the experiment: "+str(min_utc_time))
-        print("[*] end of experiment: "+str(max_utc_time))
-        print("[*] duration of the experiment: "+str(experiment_duration)+" seconds")
-        matrix_length = int(experiment_duration/resolution) + 1
-        matrix_width = len(boards) + 1
-        print("[*] matrix length: "+str(matrix_length))
-        print("[*] matrix width: "+str(matrix_width))
+    print("Experiment start: "+str(min_utc)+" : "+datetime.datetime.fromtimestamp(min_utc).strftime("%Y-%m-%d %H:%M:%S.%f"))
+    print("Experiment stop: "+str(max_utc)+" : "+datetime.datetime.fromtimestamp(max_utc).strftime("%Y-%m-%d %H:%M:%S.%f"))
+    print("Experiment duration: "+str(max_utc-min_utc))
 
-        return {'length':matrix_length,'width':matrix_width,'start':min_utc_time,'step size':resolution}
+    return {'length':int((max_utc-min_utc)/res),'width':len(detected_boards)*4 + 1,'start utc':min_utc, 'resolution':resolution}
 
-    except OSError:
-        print("[!] Could not open the file")
-        return None
-    except Exception as e:
-        print(traceback.format_exc())
-        return None
 
 
 if __name__ == "__main__":
@@ -120,14 +102,10 @@ if __name__ == "__main__":
     print("[+] start down scale process with a resolution of "+str(parameters.resolution)+" ms")
 
     resolution = float(parameters.resolution) / 1000.0
-    matrix_config = determine_matrix_parameters(parameters.rawfile, resolution)
-    if matrix_config is None:
-        exit(-1)
 
-    matrix = create_matrix(matrix_config)
-    if matrix is None:
-        exit(-1)
+    foo = analyze_raw_data(parameters.rawfile,resolution)
 
-    matrix = fill_matrix(matrix,matrix_config,parameters.rawfile)
-    if matrix is None:
-        exit(-1)
+    matrix = generate_matrix(foo)
+
+    matrix = fill_matrix(matrix, parameters.rawfile,foo)
+

@@ -522,8 +522,8 @@ class OptoBoardCommunicationThread(threading.Thread):
 
     def update_time_sync(self):
         try:
-            offset = 1
-            while offset != 0:
+            zero_offset = 1
+            while zero_offset != 0:
                 response = self.send_and_receive("NN")
                 for line in response:
                     line = line.rstrip()
@@ -544,7 +544,7 @@ class OptoBoardCommunicationThread(threading.Thread):
                         substring = line.split("clock offset (seconds):")[1]
                         substring = substring.split("\t and us: ")
                         self.clock_offset = float(substring[0])+(float(substring[1])/1000.0/1000.0)
-                        offset = int(float(substring[0]))
+                        zero_offset = int(float(substring[0]))
 
             if self.counter3_lastSync is not None and self.ntp_sec_int_lastSync is not None and \
                 self.ntp_frac_int_lastSync is not None and self.ntp_sec_float_lastSync is not None \
@@ -620,6 +620,7 @@ class OptoBoardCommunicationThread(threading.Thread):
                 self.create_data_entry(data)
                 self.check_thresholds(data)
 
+
         self.shutdown()
 
 
@@ -635,17 +636,34 @@ class OptoBoardCommunicationThread(threading.Thread):
                 # !!! channel 3 of board 7 is not in use at the moment, So, I ignore them for the ON/OFF detection
                 # to avoid ON/OFF messages for this specific channel
                 if self.channels[i].midiID != 0:
-                    if data[j][i+1] > self.channels[i].threshold_on_state:
-                        on_counter[i] += 1
-                        if on_counter[i] > settings.probe_counter and not self.channels[i].pressed:
+                    # Channel 1 of Board 7 (midiID 83 toggels sometimes)
+                    if self.channels[i].midiID == 83:
+                        if data[j][i+1] > self.channels[i].threshold_on_state + 42:
+                            on_counter[i] += 1
+                            if on_counter[i] > settings.probe_counter + 7 and not self.channels[i].pressed:
+                                on_counter[i] = 0
+                                self.channels[i].pressed = True
+                                self.create_log_entry("Channel "+str(i)+" with MIDI ID "+str(self.channels[i].midiID)+" is now ON")
+                                # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
+                                entry = [255 - data[j][0], i, data[j][i+1], 0, 1, data[j-4][5], data[j-4][6]]
+                                self.create_log_entry(str(entry))
+                                self.create_data_entry([entry])
+                        else:
                             on_counter[i] = 0
-                            self.channels[i].pressed = True
-                            self.create_log_entry("Channel "+str(i)+" with MIDI ID "+str(self.channels[i].midiID)+" is now ON")
-                            # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
-                            entry = [255 - data[j][0], i, data[j][i+1], 0, 1, data[j][5], data[j][6]]
-                            self.create_data_entry([entry])
+
                     else:
-                        on_counter[i] = 0
+                        if data[j][i+1] > self.channels[i].threshold_on_state:
+                            on_counter[i] += 1
+                            if on_counter[i] > settings.probe_counter and not self.channels[i].pressed:
+                                on_counter[i] = 0
+                                self.channels[i].pressed = True
+                                self.create_log_entry("Channel "+str(i)+" with MIDI ID "+str(self.channels[i].midiID)+" is now ON")
+                                # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
+                                entry = [255 - data[j][0], i, data[j][i+1], 0, 1, data[j][5], data[j][6]]
+                                self.create_log_entry(str(entry))
+                                self.create_data_entry([entry])
+                        else:
+                            on_counter[i] = 0
 
                     if data[j][i+1] <= self.channels[i].threshold_off_state:
                         off_counter[i] += 1
@@ -655,6 +673,7 @@ class OptoBoardCommunicationThread(threading.Thread):
                             self.create_log_entry("Channel "+str(i)+" with MIDI ID "+str(self.channels[i].midiID)+" is now OFF")
                             # structure: 255 - boardID, channel, value, velocity, 1=key pressed/ 0= key released, timestamp1, timestamp2
                             entry = [255 - data[j][0], i, data[j][i+1], 0, 0, data[j][5], data[j][6]]
+                            self.create_log_entry(str(entry))
                             self.create_data_entry([entry])
                     else:
                         off_counter[i] = 0
@@ -679,7 +698,7 @@ class OptoBoardCommunicationThread(threading.Thread):
         raw = self.board_socket.recv(6000)
 
         if len(raw) % 20 != 0:
-            self.create_log_entry("block size of "+str(len(raw))+" did not match. Skip block",type="error")
+            self.create_log_entry("received block size of "+str(len(raw))+" mod 20 != 0. Skip block",type="error")
             return None
 
         data = []
@@ -688,21 +707,15 @@ class OptoBoardCommunicationThread(threading.Thread):
             # structure; C0 C1 C2 C3 BoardTime
             values = list(struct.unpack('iiiiI',raw[i*20:(i+1)*20]))
 
-            valid_values = True
-            for i in range(0,len(values)-1):
-                if not(self.channels[i].min - 15 < values[i] < self.channels[i].max + 15):
-                    valid_values = False
-
-            if valid_values:
-                row = row + values
-                # some wired time conversion / synchronisation
-                board_time = row[-1]
-                utc_time = (float(board_time) - float(self.counter3_lastSync))/100000 + self.ntp_sec_float_lastSync
-                utc_time += self.clock_offset
-                utc_time -= float(2208988800)
-                #print(datetime.datetime.fromtimestamp(utc_time).strftime('%Y-%m-%d %H:%M:%S'))
-                row.append(utc_time)
-                data.append(row)
+            row = row + values
+            # some wired time conversion / synchronisation
+            board_time = row[-1]
+            utc_time = (float(board_time) - float(self.counter3_lastSync))/100000 + self.ntp_sec_float_lastSync
+            utc_time += self.clock_offset
+            utc_time -= float(2208988800)
+            #print(datetime.datetime.fromtimestamp(utc_time).strftime('%Y-%m-%d %H:%M:%S'))
+            row.append(utc_time)
+            data.append(row)
 
         return data
 

@@ -2,7 +2,7 @@
 this file contains all relevant configuration parameter
 """
 
-board_interface_pattern = "/dev/ttyACM0"
+board_interface_pattern = "/dev/ttyACM*"
 log_subdirectory = "data"
 
 # number of probes which have to be higher or lower then the threshold to avoid to indicate a
