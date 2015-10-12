@@ -6,7 +6,6 @@ import time
 import slaves
 import traceback
 import atexit
-import socket
 import settings
 import zmq
 
@@ -28,9 +27,6 @@ class ControlHost(object):
         self.logger.create_info_log_entry("NTP Client created successfully")
         self.obct = {}  # obct = OptoBoardCommunicationThread
 
-        self.experiment_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.experiment_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-
         context = zmq.Context()
 
         self.control_receive_socket = context.socket(zmq.PULL)  # for messages from the boards to the host
@@ -43,7 +39,8 @@ class ControlHost(object):
 
     def find_boards(self,pattern):
         """
-        method tries to find some serial interfaces with given pattern
+        method tries to find some serial interfaces with given pattern and creates for each match an instance of the
+        OptoBoardCommunication class.
         :return: number of successfully created OptoBoardCommunicationThreads (equals the number of matches)
         """
         self.logger.create_info_log_entry("try to find some boards with the pattern: "+str(pattern))
@@ -61,7 +58,8 @@ class ControlHost(object):
         try:
             for interface in matches:
                 self.obct[interface] = slaves.OptoBoardCommunicationThread(interface, log_port=log_port,
-                                                                           data_port=data_port, control_send_port=push_port)
+                                                                           data_port=data_port,
+                                                                           control_send_port=push_port)
                 log_port += 1
                 push_port += 1
                 data_port += 1
@@ -75,6 +73,9 @@ class ControlHost(object):
 
 
     def configure_boards(self):
+        """
+        This method is responsible for the whole configuration and reading process of the board parameters.
+        """
         self.logger.create_info_log_entry("start board configuration")
         for interface in self.obct:
             try:
@@ -137,6 +138,10 @@ class ControlHost(object):
 
 
     def create_slave_subscriptions(self):
+        """
+        This method organizes and creates the subscriptions of the LogWriter, the NumpyWriter ... .
+        """
+
         # create subscriptions for LogWriter
         log_publisher = []
         for i in range(0,len(self.obct)):
@@ -169,6 +174,11 @@ class ControlHost(object):
 
 
     def start_experiment(self):
+        """
+        This method contains the main loop of the program. After the start of all slaves the control host waits for
+        incoming messages from the OptoBoardCommunicationThreads or the ExperimentHandler class. If a kill message
+        arrives (message type = 'kill') the control host shuts all slaves down ends the main program.
+        """
         self.status = "busy"
         self.logger.create_info_log_entry("start experiment environment")
 
@@ -225,6 +235,7 @@ class ControlHost(object):
 
 
 if __name__ == "__main__":
+    # the entire program starts HERE
     parser = argparse.ArgumentParser(description='control and logging application for the MR Piano')
     parser.add_argument('--ntp', action="store", dest="server_ip", type=str, help="IP address of the NTP server",
                         default="127.0.0.1")

@@ -1,11 +1,11 @@
 """
-this file contains all relevant configuration parameter
+this module contains all relevant configuration parameters
 """
 
 board_interface_pattern = "/dev/ttyACM*"
 log_subdirectory = "data"
 
-# number of probes which have to be higher or lower then the threshold to avoid to indicate a
+# number of values which have to be higher or lower then the threshold to indicate a
 # status change
 probe_counter = 8
 
@@ -23,7 +23,7 @@ control_host_control_send_port = 5006
 control_host_ip = "127.0.0.1"
 
 
-opto_board_control_send_port = 5007
+opto_board_control_send_port = 8000
 opto_board_log_start_port = 6000
 opto_board_data_start_port = 7000
 

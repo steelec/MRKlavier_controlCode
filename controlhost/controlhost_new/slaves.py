@@ -1,10 +1,14 @@
+"""
+This module contains all helper classes that are responsible for the exchange of information between the control host,
+the opto boards of the piano and the sender/ experiment program.
+"""
+
+
 import socket
 import threading
 import logging
-from django.conf import settings
 import zmq
 import os
-import datetime
 import settings
 import ntplib
 import serial
@@ -17,6 +21,9 @@ import struct
 import datetime
 
 def is_msg_valid(msg):
+    """
+    simple method to check if the received message has a valid structure
+    """
     if "sender" in msg and "receiver" in msg and "type" in msg and "message" in msg:
         return True
     else:
@@ -24,6 +31,11 @@ def is_msg_valid(msg):
 
 
 class ExperimentHandler(threading.Thread):
+    """
+    This class is responsible for information exchange between sender/ experiment and the control host components.
+    It receives data from experiment socket, creates an entry in the log and numpy file via the publication sockets and
+    pushs if necessary a message to the control host class (e.g. end of experiment).
+    """
     def __init__(self,
                  experiment_port = settings.experiment_port,
                  log_publish_port = settings.experiment_publish_log_port,
@@ -58,6 +70,9 @@ class ExperimentHandler(threading.Thread):
 
 
     def run(self):
+        """
+        run method of thread class
+        """
         time.sleep(1)
         self.experiment_socket.listen(1)
         self.create_log_entry("Experiment Handler is ready and waiting for the experiment")
@@ -75,7 +90,7 @@ class ExperimentHandler(threading.Thread):
         while True:
             jDat = ""
             try:
-                jDat= conn.recv(2048)
+                jDat= conn.recv(2048)  # conn.recv(1024) is to small for some information from the sender
                 dDat=json.loads(jDat)
                 self.create_log_entry("Received message from control socket: " + str(dDat['StreamDat']))
                 self.create_log_entry("Received Packet from control socket:" + str(dDat) )
@@ -85,11 +100,11 @@ class ExperimentHandler(threading.Thread):
                 self.DataStream = dDat['StreamDat']
 
                 if "StreamDat" in dDat:
-                    data = [dDat["StreamDat"]] # make 1,n matrix
+                    data = [dDat["StreamDat"]]  # make a two dimensional array for the numpy data writer
                     self.send_data_msg(data)
 
                 if self.blockID == "SETUP" or self.blockID == "START":
-                    conn.send("ready") #confirm the reception of the message block
+                    conn.send("ready")  # confirm the reception of the message block
 
                 if self.blockID == "END":
                     self.create_log_entry("received end of experiment message")
@@ -102,7 +117,7 @@ class ExperimentHandler(threading.Thread):
                 print(traceback.format_exc())
                 try:
                     print("jDat: "+str(jDat))
-                    conn.send("hello?")
+                    conn.send("hello?")  # did we receive invalid data or is the connection broken?
                 except:
                     self.create_log_entry("lost connection to the experiment","error")
                     break
@@ -116,17 +131,28 @@ class ExperimentHandler(threading.Thread):
 
 
     def create_log_entry(self,msg,type="info"):
+        """
+        method publishs a message in the JSON format via the log socket
+        """
         message = {'sender':'experiment', 'receiver':'log', 'message':msg, 'type':type}
         self.log_socket.send_json(message)
 
 
     def send_control_message(self,msg, type='info'):
+        """
+        method sends a message in the JSON format to the control host
+        """
         message = {'sender':'experiment', 'receiver':'control host', 'message':msg, 'type':type}
         self.control_send_socket.send_json(message)
 
+
     def send_data_msg(self,msg):
+        """
+        method publishs a message in the JSON format via the data socket
+        """
         message = {'sender':'experiment', 'receiver':'npy writer', 'message':msg, 'type':'data'}
         self.data_socket.send_json(message)
+
 
     def shutdown(self):
         try:
@@ -144,8 +170,8 @@ class ExperimentHandler(threading.Thread):
 
 class LogWriter(threading.Thread):
     """
-    This class is responsible for the creation of the *.log files
-    It uses ZMQ based subscribe socket writes the incoming data in a log file
+    This class is responsible for the creation of the *.log files.
+    It uses a ZMQ based subscription socket and saves the incoming data in the log file.
     """
 
     class Formatter(logging.Formatter):
@@ -173,6 +199,7 @@ class LogWriter(threading.Thread):
 
         logfile = target_dir+"/"+filename+".log"
 
+        # create a new log file if the file filename.log already exits
         i=1
         while os.path.exists(logfile):
             logfile = target_dir+"/"+filename+"_"+str(i)+".log"
@@ -209,6 +236,7 @@ class LogWriter(threading.Thread):
         with self.lock:
             self.logger.info(msg)
 
+
     def create_error_log_entry(self,msg,sender="LogWriter"):
         """
         method provides the possibility to create an error log entry
@@ -216,16 +244,19 @@ class LogWriter(threading.Thread):
         with self.lock:
             self.logger.error(msg)
 
+
     def subscribe(self, publisher):
+        """
+        This method connects the subscription socket to the given list of publishers
+        """
         for line in publisher:
             self.create_info_log_entry("LogWriter subscribes to: "+str(line[0])+":"+str(line[1]))
             self.socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
             self.subscribed_ports.append(line[1])
-        self.socket.setsockopt(zmq.SUBSCRIBE, '')
+        self.socket.setsockopt(zmq.SUBSCRIBE, '')  # remove the subscription filter
 
 
     def run(self):
-        #self.socket.setsockopt(zmq.SUBSCRIBE, "12")
         self.create_info_log_entry("LogWriter Thread started")
         while True:
             try:
@@ -255,8 +286,8 @@ class LogWriter(threading.Thread):
 
 class NumpyDataWriter(threading.Thread):
     """
-    This class is responsible for the creation of the *.npy files
-    It uses ZMQ based subscribe socket writes the incoming data in npy file
+    This class is responsible for the creation of the *.npy files.
+    It uses a ZMQ based subscription socket and stores the incoming data in a text based numpy file.
     """
     def __init__(self, filename, log_port = settings.numpy_writer_publish_port):
         threading.Thread.__init__(self)
@@ -272,6 +303,7 @@ class NumpyDataWriter(threading.Thread):
 
         npyfile = target_dir+"/"+filename+".npy"
 
+        # modify the file name if a file with the given name already exits
         i=1
         while os.path.exists(npyfile):
             npyfile = target_dir+"/"+filename+"_"+str(i)+".npy"
@@ -288,10 +320,14 @@ class NumpyDataWriter(threading.Thread):
 
 
     def subscribe(self, publisher):
+        """
+        This method connects the subscription socket to the given list of publishers
+        """
         for line in publisher:
             self.data_socket.connect("tcp://"+str(line[0])+":"+str(line[1]))
             self.subscribed_ports.append(line[1])
         self.data_socket.setsockopt(zmq.SUBSCRIBE, '')
+
 
     def run(self):
         self.create_log_entry("NumpyDataWriter is ready")
@@ -322,11 +358,10 @@ class NumpyDataWriter(threading.Thread):
 
 
 
-
 class OptoBoardCommunicationThread(threading.Thread):
     """
-    This class communicates with the OptoBoards and sends the data from the boards to broker via ZMQ for further
-    information processing
+    This class communicates with the opto boards and is responsible for the data forwarding and configuration of the
+    boards.
     """
 
     class Channel():
@@ -385,6 +420,8 @@ class OptoBoardCommunicationThread(threading.Thread):
         self.channels ={}
         self.boardIP = ""
         self.ntpIP = ""
+
+        # parameters for the time synchronization
         self.counter3_lastSync = None
         self.ntp_sec_int_lastSync = None
         self.ntp_frac_int_lastSync = None
@@ -392,6 +429,9 @@ class OptoBoardCommunicationThread(threading.Thread):
         self.clock_offset = None
 
     def shutdown(self):
+        """
+        method for a clean shutdown of the communication interfaces
+        """
         self.serial_port.flushOutput()
         self.serial_port.flushInput()
         try:
@@ -408,6 +448,10 @@ class OptoBoardCommunicationThread(threading.Thread):
 
 
     def send_and_receive(self,cmd):
+        """
+        generic method for the communication with the board via the serial interface.
+        This method returns a list of strings with the response of the board.
+        """
         cmd += "\r\n"
         try:
             if not self.serial_port.isOpen():
@@ -424,13 +468,15 @@ class OptoBoardCommunicationThread(threading.Thread):
             self.serial_port.flushInput()
 
             return line_list
-
-
         except Exception as e:
             print(e)
             return None
 
+
     def determine_ID(self):
+        """
+        method determines the ID of the board
+        """
         response = self.send_and_receive("!A")
         for line in response:
             if "Current addr is:" in line:
@@ -439,7 +485,11 @@ class OptoBoardCommunicationThread(threading.Thread):
                 return id
         raise Exception("could not determine ID of the board")
 
+
     def determine_channels(self):
+        """
+        method determines the channel configurations like thresholds, max, min, ...
+        """
         channels = {}
 
         midiID = []
@@ -486,6 +536,7 @@ class OptoBoardCommunicationThread(threading.Thread):
         for i in range(0,8):
             self.send_and_receive("Sl"+str(i)+",0")
 
+
     def determine_ip_address(self):
         response = self.send_and_receive("Ni")
         for line in response:
@@ -512,6 +563,7 @@ class OptoBoardCommunicationThread(threading.Thread):
                     return False
         return False
 
+
     def activate_network(self):
         self.send_and_receive("NE")
         time.sleep(0.5)
@@ -520,8 +572,16 @@ class OptoBoardCommunicationThread(threading.Thread):
         if es < 1:
             return True
 
+
     def update_time_sync(self):
+        """
+        This method is responsible for the time synchronization of the board. It starts a NTP time synchronization and
+        stores the offset values for the correct utc time stamp calculations.
+        TO DO: The time stamp calculation in the get_data method is not working properly at the moment. I think that the
+        cause of this bug is in this function. The old code for this function was really hard to understand.
+        """
         try:
+            # repeat the NTP time synchronization until the clock offset is 0
             zero_offset = 1
             while zero_offset != 0:
                 response = self.send_and_receive("NN")
@@ -556,7 +616,11 @@ class OptoBoardCommunicationThread(threading.Thread):
             print(str(e))
             return False
 
+
     def update_counter3(self):
+        """
+        This method updates the value of the variable counter3_lastSync
+        """
         try:
             response = self.send_and_receive("?t")
             for line in response:
@@ -570,9 +634,12 @@ class OptoBoardCommunicationThread(threading.Thread):
             print(str(e))
             return False
 
-    def activate_board_port(self):
-        self.serial_port.flushInput()
 
+    def activate_board_port(self):
+        """
+        This method activates the TCP data port of the board
+        """
+        self.serial_port.flushInput()
         self.serial_port.writelines("NSt\r\n")
         i=0
         while i < 100:
@@ -588,7 +655,9 @@ class OptoBoardCommunicationThread(threading.Thread):
     def run(self):
         self.board_socket.connect((self.boardIP, settings.board_tcp_port))
         self.board_socket.send("hello board")
-        while self.serial_port.inWaiting(): # seems that the reading is necessary here
+
+        # seems that the reading loop is necessary to continue the TCP communication
+        while self.serial_port.inWaiting():
             self.serial_port.readline()
 
         self.create_log_entry("Communication Thread connected with board")
@@ -619,12 +688,16 @@ class OptoBoardCommunicationThread(threading.Thread):
             if data is not None:
                 self.create_data_entry(data)
                 self.check_thresholds(data)
-
-
         self.shutdown()
 
 
     def check_thresholds(self,data):
+        """
+        This method compares the received and transformed channel data with the threshold values to detect key pressed/
+        key released events. I had some toggle problems with channel 1 and 3 of board 7 sometimes. So, I excluded
+        channel 3 (MIDI 0). I also implemented a counter and defined a threshold to avoid these toggle messages for
+        short peaks.
+        """
         on_counter = []
         off_counter = []
         for i in range(0,len(data[0])-3):
@@ -633,10 +706,8 @@ class OptoBoardCommunicationThread(threading.Thread):
 
         for j in range(0,len(data)):
             for i in range(0,len(self.channels)):
-                # !!! channel 3 of board 7 is not in use at the moment, So, I ignore them for the ON/OFF detection
-                # to avoid ON/OFF messages for this specific channel
                 if self.channels[i].midiID != 0:
-                    # Channel 1 of Board 7 (midiID 83 toggels sometimes)
+                    # Channel 1 of Board 7 (midiID 83 toggles sometimes)
                     if self.channels[i].midiID == 83:
                         if data[j][i+1] > self.channels[i].threshold_on_state + 42:
                             on_counter[i] += 1
@@ -686,15 +757,16 @@ class OptoBoardCommunicationThread(threading.Thread):
 
     def execute_command(self, cmd):
         self.create_log_entry("execute cmd: "+str(cmd))
-        if cmd == "time sync":
-            if self.update_time_sync():
-                self.create_log_entry("time synchronization successful")
-            else:
-                self.create_log_entry("time synchronization failed","error")
-
 
 
     def get_data(self):
+        """
+        This method receives a certain amount of bytes from the board and tries to convert them into an array of integers.
+        If the block size is not a multiple of 20 it is not possible to convert these bytes because each 'data block' of
+        the board consists of five 4 byte integer values (C0, C1, C2, C3, board time stamp)
+        TO DO: The correct calculation of the utc time stamps is not working at moment!!!! I think the reading of some
+        timer offset values in the method update_time_sync is not correct.
+        """
         raw = self.board_socket.recv(6000)
 
         if len(raw) % 20 != 0:
@@ -709,6 +781,7 @@ class OptoBoardCommunicationThread(threading.Thread):
 
             row = row + values
             # some wired time conversion / synchronisation
+            # something is wrong here
             board_time = row[-1]
             utc_time = (float(board_time) - float(self.counter3_lastSync))/100000 + self.ntp_sec_float_lastSync
             utc_time += self.clock_offset
@@ -719,13 +792,15 @@ class OptoBoardCommunicationThread(threading.Thread):
 
         return data
 
+
     def create_data_entry(self,data):
         message = {'sender':'Board '+str(self.device), 'receiver':'npy writer', 'message':data, 'type':'data'}
         self.data_socket.send_json(message)
 
+
 class NTPClient(object):
     """
-    simple ntp client for the time synchronisation of the boards
+    simple ntp client
     """
     def __init__(self,ip):
         self.server_ip = ip
@@ -741,6 +816,6 @@ class NTPClient(object):
     def get_UTC_time(self):
         ntp_time = self.get_NTP_time()
         if ntp_time is not None:
-            return (response.tx_timestamp-float(2208988800))
+            return (ntp_time.tx_timestamp-float(2208988800))
         else:
             return None
